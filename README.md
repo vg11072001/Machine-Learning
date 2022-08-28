@@ -7,4 +7,4 @@ All Resources, codes and problems
 * [3 Best metrics to evaluate Regression Model?](https://towardsdatascience.com/what-are-the-best-metrics-to-evaluate-your-regression-model-418ca481755b)
 * [Hyperparameter Tuning the Random Forest in Python](https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74)
 * [A Beginner’s Guide to Random Forest Hyperparameter Tuning](https://www.analyticsvidhya.com/blog/2020/03/beginners-guide-random-forest-hyperparameter-tuning/)
-
+* [15 Generative Adversarial Networks (GAN) Based Project Ideas](https://www.projectpro.io/article/generative-adversarial-networks-gan-based-projects-to-work-on/530)
