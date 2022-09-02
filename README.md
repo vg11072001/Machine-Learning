@@ -11,6 +11,7 @@ All Resources, codes and problems
 * [Hyperparameter Tuning the Random Forest in Python](https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74)
 * [A Beginner’s Guide to Random Forest Hyperparameter Tuning](https://www.analyticsvidhya.com/blog/2020/03/beginners-guide-random-forest-hyperparameter-tuning/)
 * [15 Generative Adversarial Networks (GAN) Based Project Ideas](https://www.projectpro.io/article/generative-adversarial-networks-gan-based-projects-to-work-on/530)
+* [Breaking it Down: Logistic Regression](https://towardsdatascience.com/breaking-it-down-logistic-regression-e5c3f1450bd)
 
 ## Kaggle Dataset
 * [Anime Face Dataset](https://www.kaggle.com/datasets/splcher/animefacedataset/code?datasetId=379764&sortBy=voteCount)
