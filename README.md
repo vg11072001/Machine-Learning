@@ -1,5 +1,5 @@
 # Machine-Learning
-[![image](https://user-images.githubusercontent.com/67424390/207838174-b1917ff8-5446-4361-8340-a343c02ffc34.png)](https://chart-studio.plotly.com/create/?fid=SolClover:53#/)
+[![image-removebg-preview](https://user-images.githubusercontent.com/67424390/207838604-7743996b-f01f-4537-9f2c-17257309d00e.png)](https://chart-studio.plotly.com/create/?fid=SolClover:53#/)
 
 All Resources, codes and problems
 
