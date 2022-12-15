@@ -7,6 +7,7 @@ All Resources, codes and problems
 * [GAN - Generative Adversarial Networks](https://drive.google.com/file/d/1Gm4hNSXY03DrYDU4rh0NRlDcXo20a3pL/view)
 * [Swiggy- Data Science blogs](https://bytes.swiggy.com/tagged/swiggy-data-science)
 * [Amazon Science blogs](https://www.amazon.science/blog?q=&f0=0000016e-2ff1-d205-a5ef-aff9651e0000&f1=0000016e-4373-de2e-a76e-cff717cf0000&f1=0000016e-39f9-d205-a5ef-bff9944b0000&s=0&expandedFilters=Research%2520area%2CTag%2CConference%2CAuthor%2CDate%2C)
+* [ML/ Recommendation Netflix Research](https://research.netflix.com/research-area/machine-learning)
 
 ## Interesting Blogs
 * [When You Should Not Use Accuracy to Evaluate Your Machine Learning Model](https://towardsdatascience.com/when-you-should-not-use-accuracy-to-evaluate-your-machine-learning-model-4d58f16968e6)
