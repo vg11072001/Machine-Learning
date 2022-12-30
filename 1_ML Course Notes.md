@@ -131,17 +131,4 @@ Lectures by: Alexander Amini and Ava Soleimany
   </tr>
 </table>
 
-      
----
-### How To Contribute
-
-1) Identify a course and lecture from this [list](https://github.com/dair-ai/ML-YouTube-Courses). If you are working on notes for a lecture, please indicate by opening an issue. This avoids duplicate work. 
-2) Write your notes, preferably in a Google document, Notion document, or GitHup repo.
-3) We care about quality, so make sure to revise your notes before submitting.
-4) Once you are finished, open a PR here.
-
-If you encounter any problems with the notes? Reach out to the authors of the notes and open issue here.
-
-If you have any questions, open an issue or reach out to me on [Twitter](https://twitter.com/omarsar0).
-
-Join our [Discord](https://discord.gg/FzNtjEK9dg). 
+Credits: https://github.com/omarsar
