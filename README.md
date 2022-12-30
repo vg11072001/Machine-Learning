@@ -49,3 +49,11 @@ All Resources, codes and problems
 ## Kaggle projects
 * [Introduction to GANIME](https://www.kaggle.com/code/mrigendraagrawal/introduction-to-ganime)
 * [Image Colorization Process / Auto-Encoder](https://www.kaggle.com/code/brsdincer/image-colorization-process-auto-encoder)
+
+## DL
+* https://cs231n.github.io/python-numpy-tutorial/
+* http://cs231n.stanford.edu/
+* https://www.deeplearning.ai/about/
+* http://introtodeeplearning.com/2021/index.html
+* https://d2l.ai/chapter_preface/index.html#about-this-book
+* https://www.deeplearningbook.org/front_matter.pdf
