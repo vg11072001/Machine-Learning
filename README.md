@@ -3,6 +3,10 @@
 
 All Resources, codes and problems
 
+## Learning Material 
+* DL Playlist https://www.youtube.com/playlist?list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi 
+* DL Stanford CS230:https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb 
+
 ## Resources
 * [GAN - Generative Adversarial Networks](https://drive.google.com/file/d/1Gm4hNSXY03DrYDU4rh0NRlDcXo20a3pL/view)
 * [Swiggy- Data Science blogs](https://bytes.swiggy.com/tagged/swiggy-data-science)
