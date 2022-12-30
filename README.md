@@ -19,6 +19,7 @@ All Resources, codes and problems
    * [Deep Learning Architectures Comparative Analysis](https://aman.ai/primers/ai/dl-comp/)
    * [Deep Learning Specialization on Coursera (offered by deeplearning.ai)](https://aman.ai/coursera-dl/)
       * https://github.com/ashishpatel26/Andrew-NG-Notes
+      * https://github.com/SHANK885/Machine-Learning-Andrew-Ng
 
  ### Machine Learning
    * CS229: Machine Learning: https://aman.ai/cs229/
