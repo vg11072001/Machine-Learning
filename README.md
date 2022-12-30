@@ -7,6 +7,7 @@ All Resources, codes and problems
 * https://aman.ai/papers/
 
 ## Learning Material
+* https://github.com/vg11072001/applied-ml
 
  ### Deep Learning 
    * DL Playlist https://www.youtube.com/playlist?list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi 
