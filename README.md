@@ -7,7 +7,8 @@ All Resources, codes and problems
 * DL Playlist https://www.youtube.com/playlist?list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi 
   * https://github.com/krishnaik06/Complete-Deep-Learning-With-Materials
 * DL Stanford CS230:https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb 
-
+* MIT 6.S191: Introduction to DL https://www.youtube.com/playlist?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI
+* MIT 6.S192: Deep Learning for Art, Aesthetics, and Creativity: https://www.youtube.com/playlist?list=PLCpMvp7ftsnIbNwRnQJbDNRqO6qiN3EyH 
 ## Resources
 * [GAN - Generative Adversarial Networks](https://drive.google.com/file/d/1Gm4hNSXY03DrYDU4rh0NRlDcXo20a3pL/view)
 * [Swiggy- Data Science blogs](https://bytes.swiggy.com/tagged/swiggy-data-science)
