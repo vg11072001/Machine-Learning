@@ -13,6 +13,7 @@ All Resources, codes and problems
    * MIT 6.S192: Deep Learning for Art, Aesthetics, and Creativity: https://www.youtube.com/playlist?list=PLCpMvp7ftsnIbNwRnQJbDNRqO6qiN3EyH 
    * Convolutional Neural Networks for Visual Recognition: https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv
    * [Deep Learning Architectures Comparative Analysis](https://aman.ai/primers/ai/dl-comp/)
+   * [Deep Learning Specialization on Coursera (offered by deeplearning.ai)](https://aman.ai/coursera-dl/)
 
  ### Machine Learning
    * CS229: Machine Learning: https://aman.ai/cs229/
