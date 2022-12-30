@@ -16,6 +16,8 @@ All Resources, codes and problems
 
  ### Machine Learning
    * CS229: Machine Learning: https://aman.ai/cs229/
+   * Machine Learning Specialization on Coursera (offered by deeplearning.ai): https://aman.ai/coursera-ml/
+ 
 
 ## Resources
 * [GAN - Generative Adversarial Networks](https://drive.google.com/file/d/1Gm4hNSXY03DrYDU4rh0NRlDcXo20a3pL/view)
