@@ -5,6 +5,7 @@ All Resources, codes and problems
 
 ## Learning Material 
 * DL Playlist https://www.youtube.com/playlist?list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi 
+  * https://github.com/krishnaik06/Complete-Deep-Learning-With-Materials
 * DL Stanford CS230:https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb 
 
 ## Resources
