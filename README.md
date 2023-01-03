@@ -41,10 +41,11 @@ All Resources, codes and problems
 * [A Beginner’s Guide to Random Forest Hyperparameter Tuning](https://www.analyticsvidhya.com/blog/2020/03/beginners-guide-random-forest-hyperparameter-tuning/)
 * [15 Generative Adversarial Networks (GAN) Based Project Ideas](https://www.projectpro.io/article/generative-adversarial-networks-gan-based-projects-to-work-on/530)
 * [Breaking it Down: Logistic Regression](https://towardsdatascience.com/breaking-it-down-logistic-regression-e5c3f1450bd)
-
+* [ML Collaboration: Best Practices From 4 ML Teams](https://neptune.ai/blog/ml-collaboration-best-practices-from-ml-teams)
 * [An ML approach for routing payment transactions](https://bytes.swiggy.com/an-ml-approach-for-routing-payment-transactions-5a14efb643a8)
 ## Kaggle Dataset
 * [Anime Face Dataset](https://www.kaggle.com/datasets/splcher/animefacedataset/code?datasetId=379764&sortBy=voteCount)
+
 
 ## Kaggle projects
 * [Introduction to GANIME](https://www.kaggle.com/code/mrigendraagrawal/introduction-to-ganime)
