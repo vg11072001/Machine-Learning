@@ -1,6 +1,7 @@
 ## Recommendation System
 ![image](https://user-images.githubusercontent.com/67424390/213967109-03aeefd2-3325-4097-8a80-526572dfcb0e.png)
 
+
 ## General Steps for this system
 1. Scraping data from the web using BeautifulSoup(Data Extraction)
 
