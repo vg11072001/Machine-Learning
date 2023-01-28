@@ -23,4 +23,4 @@
 * [Content-Based](https://pub.towardsai.net/how-to-build-a-content-based-recommendation-system-f7d881a53e9a) - [GitHub](https://github.com/gowthamsr37/Movie-Recommendation-System)
 
 * [2 Recommendation System Projects with Python advanced level on kaggle](https://www.kaggle.com/general/231001)
-
+* [Movie Recommendation System](https://github.com/kishan0725/AJAX-Movie-Recommendation-System-with-Sentiment-Analysis#readme)
