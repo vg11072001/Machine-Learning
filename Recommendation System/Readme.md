@@ -17,3 +17,10 @@
 1. [A Complete End-to-End Machine Learning Based Recommendation Project & Project on book recommendations system](https://pub.towardsai.net/step-by-step-approach-to-building-a-recommendation-system-a65be5a54045)
 
 2. [END TO END Movie Recommendation System](https://medium.com/geekculture/end-to-end-movie-recommendation-system-49b29a8b57ac)
+
+3. Implementations - 
+* [Collaborative filtering](https://pub.towardsai.net/step-by-step-approach-to-building-a-recommendation-system-a65be5a54045) - [GitHub](https://github.com/gowthamsr37/Book-Recommendation-system)
+* [Content-Based](https://pub.towardsai.net/how-to-build-a-content-based-recommendation-system-f7d881a53e9a) - [GitHub](https://github.com/gowthamsr37/Movie-Recommendation-System)
+
+* [2 Recommendation System Projects with Python advanced level on kaggle](https://www.kaggle.com/general/231001)
+
