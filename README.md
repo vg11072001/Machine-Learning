@@ -5,6 +5,7 @@ All Resources, codes and problems
 
 ## Data Science 
 * [Structure of Data Science Projects](https://www.linkedin.com/posts/dhananjai-singh-852351142_structure-of-data-science-project-activity-7026032488997105664-Z_Qf?utm_source=share&utm_medium=member_desktop)
+* [How a machine learning project pipeline is build](https://youtu.be/0iQT5XfbadE)
 
 ## Reasearch Papers
 * https://aman.ai/papers/
