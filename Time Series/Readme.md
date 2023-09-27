@@ -1,7 +1,7 @@
 # Time Series Forecasting
 ## Theory
 
-#### The Power of Time Series Forecasting: Predicting Ecuador’s Grocery Sales with Precision
+#### The Power of Time Series Forecasting: Predicting Ecuador’s Grocery Sales with Precision [Link](https://medium.com/@isaacrambo/revealing-the-power-of-time-series-forecasting-predicting-ecuadors-grocery-sales-with-precision-8c3b0bac97be)
 > Predict store sales on data from Corporation Favorita, a large Ecuadorian-based grocery retailer.
 >
 > Using `pyodbc`: to connect to various database management systems and `dotenv`: managing environment variables
@@ -15,6 +15,8 @@
 > HYPOTHESIS - Null Hypothesis (H0) and Alternative Hypothesis (H1)
 >
 >  XGBoost, ARIMA, SARIMA, and ETS models.
+
+[Code on colab](https://colab.research.google.com/drive/1R_C7422mBQJ9M3ZfdTx-5ASeJwUWGmq5#scrollTo=RvUuWQ3JvW5a)
 
 
 #### Google’s Temporal Fusion Transformer (2021) [link](https://medium.com/dataness-ai/understanding-temporal-fusion-transformer-9a7a4fcde74b)
