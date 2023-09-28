@@ -1,5 +1,87 @@
 # Time Series Forecasting
 ## Theory
+### Concepts
+
+* Time Series Characteristics
+	* Trend 
+	* Seasonality - repeats with respect to timing, direction, and magnitude.
+ 	* Cyclic - up and down in graph, These are the trends with no set repetition over a particular period of time.
+  	* Irregular Variation
+  	* ETS Decomposition - for Error, Trend and Seasonality.
+ 
+* Types of Data
+	* Time series data - recored with time
+ 	* Cross sectional data -  one or more variables recorded at the same point in time.
+  	* Pooled data - combination of time series data and cross sectional data.
+ 
+* Terminology
+	* Dependence
+ 	* ****Stationarity**** - **mean value, variance and autocorrelation** of the series that **remains constant** over the time period. If past effects accumulate and the values increase towards infinity then stationarity is not met.
+  
+  	  > the values are independent of time and seasonal effects as well.
+           ![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/3c0f8c1d-2af4-4552-8415-df1543433351)
+          > 
+	  > Make Time Series stationary
+          >  1. Differencing the Series (once or more)
+     	  >  2. Take the log of the series
+          >  3. Take the nth root of the series
+     >
+     > Test for stationary also there
+ 
+ 	* Specification - **testing of the linear or non-linear relationships** of dependent variables by using time series models such as ARIMA models.
+  
+  	* **Differencing** - Differencing is used to **make the series stationary** and to control the auto-correlations
+  	  > differencing the series is nothing but subtracting the next value by the current value.
+  	  > 
+  	* **Exponential Smoothing** -  time series analysis predicts the one next period value based on the past and current value.
+  
+  	  > It involves **averaging of data** such that the non-systematic components of each individual case or observation cancel out each other. The exponential smoothing method is used to predict the short term prediction.
+  	* Curve fitting - is used **when data is in a non-linear relationship**.
+  	* **ARIMA** -  **Auto Regressive Integrated Moving Average**
+
+* Pattern in Time series
+	*  ETS Decomposition components-
+ 		*  Addictive Time Series: **Base Level + Trend + Seasonality + Error**.
+		* Multiplicative Time Series: **Base Level x Trend x Seasonality x Error**
+
+* Test for Stationarity
+	1. **Augmented Dickey Fuller test** (ADF Test)
+
+
+	> ADF test will return 'p-value' and 'Test Statistics' output values.
+	> p-value > 0.05: non-stationary.
+	> p-value <= 0.05: stationary.
+ 	> Test statistics: More negative this value more likely we have stationary series. Also, this value should be smaller than critical values(1%, 5%, 10%). For e.g. If test statistic is smaller than the 5% critical values, then we can say with 95% confidence that this is a stationary series.
+
+	2. **Kwiatkowski-Phillips-Schmidt-Shin – KPSS test** (trend stationary)
+
+
+	> The KPSS test, on the other hand, is used to test for trend stationarity. The null hypothesis and the P-Value interpretation is just the opposite of ADH test.
+ 	>
+ 
+	3. **Philips Perron test (PP Test)**
+
+* Test for Seasonality
+	1.  **Autocorrelation Function (ACF)** plot - is simply the correlation of a series with its own lags. If a series is significantly autocorrelated, that means, the previous values of the series (lags) may be helpful in predicting the current value.
+
+  	2.  **Partial Autocorrelation Function (PACF)** plot -  also conveys similar information but it conveys the pure correlation of a series and its lag, excluding the correlation contributions from the intermediate lags.
+ 
+* Some process
+	* Deseasonalize a Time series
+ 		* There are multiple approaches to deseasonalize a time series. These approaches are listed below: (1) Take a moving average with length as the seasonal window. This will smoothen in series in the process. (2) Seasonal difference the series (subtract the value of previous season from the current value). (3) Divide the series by the seasonal index obtained from STL decomposition.
+   		* If dividing by the seasonal index does not work well, we will take a log of the series and then do the deseasonalizing 
+ 	* Detrend a Time Series
+		* Detrending a time series means to remove the trend component from the time series. There are multiple approaches of doing this as listed below: (1) Subtract the line of best fit from the time series. (2) The line of best fit may be obtained from a linear regression model with the time steps as the predictor. For more complex trends, we may want to use quadratic terms (x^2) in the model. (3) We subtract the trend component obtained from time series decomposition. (4) Subtract the mean. (5) Apply a filter like Baxter-King filter(statsmodels.tsa.filters.bkfilter) or the Hodrick-Prescott Filter (statsmodels.tsa.filters.hpfilter) to remove the moving average trend lines or the cyclical components. 	
+  
+* Granger Causality Test
+
+* White noise
+  ![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/588391c1-e07c-4250-b2f6-4d4aef008e8f)
+  ![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/31a480ed-0192-4069-8997-6f9a5db8248c)
+
+
+
+### Blogs
 
 #### The Power of Time Series Forecasting: Predicting Ecuador’s Grocery Sales with Precision [Link](https://medium.com/@isaacrambo/revealing-the-power-of-time-series-forecasting-predicting-ecuadors-grocery-sales-with-precision-8c3b0bac97be)
 > Predict store sales on data from Corporation Favorita, a large Ecuadorian-based grocery retailer.
@@ -59,6 +141,28 @@ Code -
 > 
 
 ## Codes
+
+* Decomposition of a Time Series
+
+`````
+from statsmodels.tsa.seasonal import seasonal_decompose
+
+multiplicative_decomposition = seasonal_decompose(df['Number of Passengers'], model='multiplicative', period=30)
+
+additive_decomposition = seasonal_decompose(df['Number of Passengers'], model='additive', period=30)
+`````
+
+* Autocorrelation and Partial Autocorrelation Functions
+
+````
+from statsmodels.tsa.stattools import acf, pacf
+from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
+
+# Draw Plot
+fig, axes = plt.subplots(1,2,figsize=(16,3), dpi= 100)
+plot_acf(df['Number of Passengers'].tolist(), lags=50, ax=axes[0])
+plot_pacf(df['Number of Passengers'].tolist(), lags=50, ax=axes[1])
+````
 
 * [PyTorch Forecasting Documentation](https://pytorch-forecasting.readthedocs.io/en/stable/index.html) - PyTorch Forecasting aims to ease state-of-the-art timeseries forecasting with neural networks for both real-world cases and research alike. 
 
