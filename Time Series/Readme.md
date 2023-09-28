@@ -15,7 +15,7 @@
   	* Pooled data - combination of time series data and cross sectional data.
  
 * Terminology
-	* Dependence
+	* **Dependence**
  	* ****Stationarity**** - **mean value, variance and autocorrelation** of the series that **remains constant** over the time period. If past effects accumulate and the values increase towards infinity then stationarity is not met.
   
   	  > the values are independent of time and seasonal effects as well.
@@ -28,7 +28,7 @@
      >
      > Test for stationary also there
  
- 	* Specification - **testing of the linear or non-linear relationships** of dependent variables by using time series models such as ARIMA models.
+ 	* **Specification** - **testing of the linear or non-linear relationships** of dependent variables by using time series models such as ARIMA models.
   
   	* **Differencing** - Differencing is used to **make the series stationary** and to control the auto-correlations
   	  > differencing the series is nothing but subtracting the next value by the current value.
@@ -36,7 +36,7 @@
   	* **Exponential Smoothing** -  time series analysis predicts the one next period value based on the past and current value.
   
   	  > It involves **averaging of data** such that the non-systematic components of each individual case or observation cancel out each other. The exponential smoothing method is used to predict the short term prediction.
-  	* Curve fitting - is used **when data is in a non-linear relationship**.
+  	* **Curve fitting** - is used **when data is in a non-linear relationship**.
   	* **ARIMA** -  **Auto Regressive Integrated Moving Average**
 
 * Pattern in Time series
@@ -65,20 +65,82 @@
 	1.  **Autocorrelation Function (ACF)** plot - is simply the correlation of a series with its own lags. If a series is significantly autocorrelated, that means, the previous values of the series (lags) may be helpful in predicting the current value.
 
   	2.  **Partial Autocorrelation Function (PACF)** plot -  also conveys similar information but it conveys the pure correlation of a series and its lag, excluding the correlation contributions from the intermediate lags.
+  	
+   	3. **Lag Plots**- is a scatter plot of a time series against a lag of itself. It is normally used to check for autocorrelation. If there is any pattern existing in the series, the series is autocorrelated. If there is no such pattern, the series is likely to be random white noise.  
  
 * Some process
 	* Deseasonalize a Time series
  		* There are multiple approaches to deseasonalize a time series. These approaches are listed below: (1) Take a moving average with length as the seasonal window. This will smoothen in series in the process. (2) Seasonal difference the series (subtract the value of previous season from the current value). (3) Divide the series by the seasonal index obtained from STL decomposition.
    		* If dividing by the seasonal index does not work well, we will take a log of the series and then do the deseasonalizing 
- 	* Detrend a Time Series
-		* Detrending a time series means to remove the trend component from the time series. There are multiple approaches of doing this as listed below: (1) Subtract the line of best fit from the time series. (2) The line of best fit may be obtained from a linear regression model with the time steps as the predictor. For more complex trends, we may want to use quadratic terms (x^2) in the model. (3) We subtract the trend component obtained from time series decomposition. (4) Subtract the mean. (5) Apply a filter like Baxter-King filter(statsmodels.tsa.filters.bkfilter) or the Hodrick-Prescott Filter (statsmodels.tsa.filters.hpfilter) to remove the moving average trend lines or the cyclical components. 	
+
+  	* Detrend a Time Series
+		* Detrending a time series means to remove the trend component from the time series. There are multiple approaches of doing this as listed below: (1) Subtract the line of best fit from the time series. (2) The line of best fit may be obtained from a linear regression model with the time steps as the predictor. For more complex trends, we may want to use quadratic terms (x^2) in the model. (3) We subtract the trend component obtained from time series decomposition. (4) Subtract the mean. (5) Apply a filter like Baxter-King filter(statsmodels.tsa.filters.bkfilter) or the Hodrick-Prescott Filter (statsmodels.tsa.filters.hpfilter) to remove the moving average trend lines or the cyclical components.
+  	
+   	*  Smoothening a Time Series
+   		* methods: Take a moving average, Do a LOESS smoothing (Localized Regression) and Do a LOWESS smoothing (Locally Weighted Regression)   	
   
 * Granger Causality Test
+	* Granger Causality test is a statistical test that is used to determine if a given time series and it’s lags is helpful in explaining the value of another series. 
 
 * White noise
   ![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/588391c1-e07c-4250-b2f6-4d4aef008e8f)
   ![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/31a480ed-0192-4069-8997-6f9a5db8248c)
 
+* Treat missing values in a time series
+	* Backward Fill
+ 	* Linear Interpolation
+	* Quadratic interpolation
+	* Mean of nearest neighbors
+	* Mean of seasonal couterparts
+
+### Models
+
+* Statistical Models Used For Time Series Forecasting
+	* Autoregression (AR)
+
+	* Moving Average (MA)
+
+  	* Naive Approach
+
+	* Holt’s Linear Trend Model
+
+	* Autoregressive Moving Average (ARMA)
+
+	* Autoregressive Integrated Moving Average (ARIMA)
+
+	* Seasonal Autoregressive Integrated Moving-Average (SARIMA)
+
+	* Seasonal Autoregressive Integrated Moving-Average with Exogenous Regressors (SARIMAX)
+
+	* Vector Autoregression (VAR)
+
+	* Vector Autoregression Moving-Average (VARMA)
+
+	* Vector Autoregression Moving-Average with Exogenous Regressors (VARMAX)
+
+	* Simple Exponential Smoothing (SES)
+
+  	* Theta
+  	
+   	* Croston 
+
+	* Holt Winter’s Exponential Smoothing (HWES)
+
+* State-of-the-art machine learning models
+	* Classical NN- MLP, RNN
+ 	* XGBOOST
+ 	* LightGBM
+  	* LSTM 
+  	* feature engineering
+ 
+* Novel Proven
+	* NHITS
+ 	* NBEASTS
+  	* TFT      
+
+* Probabilistic forecasting
+
+* Global an Local models
 
 
 ### Blogs
@@ -100,6 +162,10 @@
 
 [Code on colab](https://colab.research.google.com/drive/1R_C7422mBQJ9M3ZfdTx-5ASeJwUWGmq5#scrollTo=RvUuWQ3JvW5a)
 
+
+#### An End-to-End Guide on Time Series Forecasting Using FbProphet
+
+>
 
 #### Google’s Temporal Fusion Transformer (2021) [link](https://medium.com/dataness-ai/understanding-temporal-fusion-transformer-9a7a4fcde74b)
 
@@ -163,6 +229,40 @@ fig, axes = plt.subplots(1,2,figsize=(16,3), dpi= 100)
 plot_acf(df['Number of Passengers'].tolist(), lags=50, ax=axes[0])
 plot_pacf(df['Number of Passengers'].tolist(), lags=50, ax=axes[1])
 ````
+* Granger Causality Test
+
+````
+from statsmodels.tsa.stattools import grangercausalitytests
+data = pd.read_csv('/kaggle/input/dataset/dataset.txt')
+data['date'] = pd.to_datetime(data['date'])
+data['month'] = data.date.dt.month
+grangercausalitytests(data[['value', 'month']], maxlag=2)
+````
+* KPSS & ADF
+
+````
+from statsmodels.tsa.stattools import adfuller, kpss
+df = pd.read_csv('https://raw.githubusercontent.com/selva86/datasets/master/a10.csv', parse_dates=['date'])
+
+# ADF Test
+result = adfuller(df.value.values, autolag='AIC')
+print(f'ADF Statistic: {result[0]}')
+print(f'p-value: {result[1]}')
+for key, value in result[4].items():
+    print('Critial Values:')
+    print(f'   {key}, {value}')
+
+# KPSS Test
+result = kpss(df.value.values, regression='c')
+print('\nKPSS Statistic: %f' % result[0])
+print('p-value: %f' % result[1])
+for key, value in result[3].items():
+    print('Critial Values:')
+    print(f'   {key}, {value}')
+````
+
+
+* [Facebook Prophet](https://facebook.github.io/prophet/docs/quick_start.html) 
 
 * [PyTorch Forecasting Documentation](https://pytorch-forecasting.readthedocs.io/en/stable/index.html) - PyTorch Forecasting aims to ease state-of-the-art timeseries forecasting with neural networks for both real-world cases and research alike. 
 
@@ -186,3 +286,10 @@ plot_pacf(df['Number of Passengers'].tolist(), lags=50, ax=axes[1])
 	* Python
 		* Book - https://www.methsoft.ac.cn/scipaper_files/document_files/Manning.Time.Series.Forecasting.in.Python.pdf
  		* Github https://github.com/marcopeix/TimeSeriesForecastingInPython
+
+-----------------
+
+## References
+
+* https://www.machinelearningplus.com/time-series/time-series-analysis-python/?source=post_page-----8c3b0bac97be--------------------------------
+* https://www.kaggle.com/code/satishgunjal/tutorial-time-series-analysis-and-forecasting
