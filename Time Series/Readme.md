@@ -18,25 +18,28 @@
 * Terminology
 	* **Dependence**
  	* ****Stationarity**** - **mean value, variance and autocorrelation** of the series that **remains constant** over the time period. If past effects accumulate and the values increase towards infinity then stationarity is not met.
-  
-  	  > the values are independent of time and seasonal effects as well.
-           ![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/3c0f8c1d-2af4-4552-8415-df1543433351)
-          > 
-	  > Make Time Series stationary
-          >  1. Differencing the Series (once or more)
-     	  >  2. Take the log of the series
-          >  3. Take the nth root of the series
-     >
-     > Test for stationary also there
+
+  	> The values should be independent of time and seasonal effects as well.
+	>
+   	> ![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/3c0f8c1d-2af4-4552-8415-df1543433351)
+
+   	> Make Time Series stationary using following:
+   	> 1. Differencing the Series (once or more)
+   	> 2. Take the log of the series
+   	> 3. Take the nth root of the series
+   	> Test for stationary also there
+
  
  	* **Specification** - **testing of the linear or non-linear relationships** of dependent variables by using time series models such as ARIMA models.
   
   	* **Differencing** - Differencing is used to **make the series stationary** and to control the auto-correlations
-  	  > differencing the series is nothing but subtracting the next value by the current value.
+  	  > Differencing the series is nothing but subtracting the next value by the current value.
   	  > 
   	* **Exponential Smoothing** -  time series analysis predicts the one next period value based on the past and current value.
   
-  	  > It involves **averaging of data** such that the non-systematic components of each individual case or observation cancel out each other. The exponential smoothing method is used to predict the short term prediction.
+  	  > It involves **averaging of data** such that the non-systematic components of each individual case or observation cancel out each other.
+  	  > The exponential smoothing method is used to predict the short term prediction.
+  	  > 
   	* **Curve fitting** - is used **when data is in a non-linear relationship**.
   	* **ARIMA** -  **Auto Regressive Integrated Moving Average**
 
@@ -47,17 +50,21 @@
 
 * Test for Stationarity
 	1. **Augmented Dickey Fuller test** (ADF Test)
+        >
+        > ADF test will return 'p-value' and 'Test Statistics' output values.
+        >
+        > * p-value > 0.05: non-stationary.
+        >
+        > * p-value <= 0.05: stationary.
+        >
+        > * **Test statistics**: More negative this value more likely we have stationary series. Also, this value should be smaller than critical values(1%, 5%, 10%).
+        > 
+        > For e.g. If test statistic is smaller than the 5% critical values, then we can say with 95% confidence that this is a stationary series.
+	3. **Kwiatkowski-Phillips-Schmidt-Shin – KPSS test** (trend stationary)
 
-
-	> ADF test will return 'p-value' and 'Test Statistics' output values.
-	> p-value > 0.05: non-stationary.
-	> p-value <= 0.05: stationary.
- 	> Test statistics: More negative this value more likely we have stationary series. Also, this value should be smaller than critical values(1%, 5%, 10%). For e.g. If test statistic is smaller than the 5% critical values, then we can say with 95% confidence that this is a stationary series.
-
-	2. **Kwiatkowski-Phillips-Schmidt-Shin – KPSS test** (trend stationary)
-
-
-	> The KPSS test, on the other hand, is used to test for trend stationarity. The null hypothesis and the P-Value interpretation is just the opposite of ADH test.
+        > The KPSS test, on the other hand, is used to test for trend stationarity.
+        >
+        > The null hypothesis and the P-Value interpretation is just the opposite of ADH test.
  	>
  
 	3. **Philips Perron test (PP Test)**
@@ -84,15 +91,15 @@
 	* Granger Causality test is a statistical test that is used to determine if a given time series and it’s lags is helpful in explaining the value of another series. 
 
 * White noise
-        * Have following features:
-                  * Constant mean
-                  * Constant Variance
-                  * No auto correlation
-        * How to identify:
-                  * Visual Inspection
-                  * Global and local checks
-                  * Auto Corelation plots
-                  * Statistical tests          
+	* Have following features:
+ 		* Constant mean
+   		* Constant Variance
+     		* No auto correlation
+         * How to identify:
+           	* Visual Inspection
+           	* Global and local checks
+           	* Auto Corelation plots
+           	* Statistical tests          
  
 * Treat missing values in a time series
 	* Backward Fill
