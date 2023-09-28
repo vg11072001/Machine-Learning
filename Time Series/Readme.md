@@ -84,9 +84,16 @@
 	* Granger Causality test is a statistical test that is used to determine if a given time series and it’s lags is helpful in explaining the value of another series. 
 
 * White noise
-  ![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/588391c1-e07c-4250-b2f6-4d4aef008e8f)
-  ![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/31a480ed-0192-4069-8997-6f9a5db8248c)
-
+        * Have following features:
+                  * Constant mean
+                  * Constant Variance
+                  * No auto correlation
+        * How to identify:
+                  * Visual Inspection
+                  * Global and local checks
+                  * Auto Corelation plots
+                  * Statistical tests          
+ 
 * Treat missing values in a time series
 	* Backward Fill
  	* Linear Interpolation
