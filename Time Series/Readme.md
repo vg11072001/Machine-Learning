@@ -302,6 +302,12 @@ for key, value in result[3].items():
 		* Book - https://www.methsoft.ac.cn/scipaper_files/document_files/Manning.Time.Series.Forecasting.in.Python.pdf
  		* Github https://github.com/marcopeix/TimeSeriesForecastingInPython
 
+## Advances on Time Series
+
+* Explore **N-Hits, N-Beats** and **Amazon forecasts** and benchmark them against **simple stat, ml models**
+* Also **look for models** which provide accuracy and explainability, both not just one example - **GAM, Prophet** provide both meaning individual contribution to overall forecasts by other drivers
+
+
 -----------------
 
 ## References
