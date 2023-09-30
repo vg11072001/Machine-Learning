@@ -367,6 +367,8 @@ POS- Point of Sale
 
 Extra inform by [Guide to Amazon Forecast for FBA Sellers](https://www.fbamasterclass.io/post/amazon-forecast)
 
+
+
 ### N-BEATS
 Nueral Basis Expansion Analysis for Interpretable Time series forecasting
 
