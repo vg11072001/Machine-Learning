@@ -368,25 +368,54 @@ POS- Point of Sale
 Extra inform by [Guide to Amazon Forecast for FBA Sellers](https://www.fbamasterclass.io/post/amazon-forecast)
 
 ### N-BEATS
+Nueral Basis Expansion Analysis for Interpretable Time series forecasting
+
 ![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/618384f7-d608-4687-b5fa-95d163ac158b)
 
+It focus on **univariate time series point** forecasting problem. Propose a deep neural architecture based on Backward and forward residual links and a very deep stack of fully-connected layers.
+It has properties as **interpretable**, aplicable** without modification** to a wide array of targte domain and **fast** to train.
+SUMMARY OF CONTRIBUTIONS :
+  1. Deep Neural Architecture - Dmonstrate that pure DL using time series specific components outperforms well-established statistical approaches. (Consist of 1,2)
+  2. Interpretable DL for Time Series - Feasible to design an architecture with interpretable outputs that can be used by practitioners in very much the same way as traditional decomposition techniques such as the "seasonality-trend-level" approach. (Consist of 3,4)
 
 * Achitechture
 
 It is pure DL architectures.
 
   1. Basic Block
+
+![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/bb06c972-7d58-489f-8187-107eb078dbc5)
+
+
   2. Double Residual Stacking of block
 
+![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/b8c0d9c6-dd92-4235-a811-6e7980fbd05e)
 
-Each branch has one more fully connected layer without activation, and then a linear basis layer that can be either learned or instead engineered to account for different effects such as trend and seasonality.
+
+  * Each branch has one more fully connected layer without activation, and then a linear basis layer that can be either learned or instead engineered to account for different effects such as trend and seasonality.
+  * Since the overall global output is a simple sum of partial outputs of each block, knowing the nature of each basis layer allows the user to estimate the contribution of each component, thus providing interpretability.
+  * Essentially, M identical stacks with K blocks in each, as in the suggested model, could be represented by a simple MxK block sequence. However, when separated into stacks, all blocks within each stack can share learnable parameters, resulting in better performance. In addition, each stack can be structured in a given way (e.g. a trend block followed by a seasonality block), both for interpretability and better forecasting.
+
+![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/c96a8e38-e810-4d02-b167-200e1e464f57)
+
+
   3. Learning Trend
+
+![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/51fbfc7c-f23a-47e7-a187-a506a64c6bba)
+
+ 
   4. Learning Seasonality
 
+![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/84fac699-5db7-4b8a-9825-60f6ee4ad463)
 
 
-
-
+* Ensembling
+  * Much more powerful regularization technique than the popular altematives, e.g. **dropout or L2-norm penalty**.
+  * Fit on three different metrics:** sMAPE, MASE and MAPE**
+  * For every horizon H, individual models are trained on **input windows of different length: 2H, 3H,....7H**. The overall ensemble exhibits a multi-scale aspect
+      - use 180 total models to report results on the test set.
+      - use the median as ensemble aggregation function.
+      - perform a bagging procedure by induding models trained with different random initializations.
 
 
 -----------------
