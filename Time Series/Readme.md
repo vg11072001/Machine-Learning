@@ -370,6 +370,9 @@ Extra inform by [Guide to Amazon Forecast for FBA Sellers](https://www.fbamaster
 ### N-BEATS
 Nueral Basis Expansion Analysis for Interpretable Time series forecasting
 
+[N-BEATS_Official_Paper.pdf](https://github.com/vg11072001/Machine-Learning/files/12775592/N-BEATS_Neural_basis_expansion_analysis_for_interp.pdf) | [Short Guide](https://ms.unimelb.edu.au/__data/assets/pdf_file/0009/4524228/Duy_Ngoc_Tran_-_Multivariate_time_series_forecasting_with_N-beats_architecture1.pdf) | [N-BEATS Video](https://www.youtube.com/watch?v=p3Xc_TJU8SI)
+
+
 ![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/618384f7-d608-4687-b5fa-95d163ac158b)
 
 It focus on **univariate time series point** forecasting problem. Propose a deep neural architecture based on Backward and forward residual links and a very deep stack of fully-connected layers.
