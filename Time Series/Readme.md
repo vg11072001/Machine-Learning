@@ -367,7 +367,21 @@ POS- Point of Sale
 
 Extra inform by [Guide to Amazon Forecast for FBA Sellers](https://www.fbamasterclass.io/post/amazon-forecast)
 
+### N-BEATS
+![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/618384f7-d608-4687-b5fa-95d163ac158b)
 
+
+* Achitechture
+
+It is pure DL architectures.
+
+  1. Basic Block
+  2. Double Residual Stacking of block
+
+
+Each branch has one more fully connected layer without activation, and then a linear basis layer that can be either learned or instead engineered to account for different effects such as trend and seasonality.
+  3. Learning Trend
+  4. Learning Seasonality
 
 
 
