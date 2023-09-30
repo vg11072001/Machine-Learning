@@ -441,6 +441,43 @@ It is pure DL architectures.
   * https://unit8co.github.io/darts/examples/07-NBEATS-examples.html
   * https://pytorch-forecasting.readthedocs.io/en/stable/tutorials/ar.html#Interpretable-forecasting-with-N-Beats
 
+### N-HiTS
+**N**eural **H**ierarchical **I**nterpolation for **T**ime **S**eries Forecasting
+[N-hiTS Official Paper.pdf](https://github.com/vg11072001/Machine-Learning/files/12775692/N-hiTS.pdf)| [GitHub](https://github.com/cchallu/n-hits) | [Implementation Guide](https://nixtla.github.io/neuralforecast/models.nhits.html)
+
+
+![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/4aaa342e-5261-4ff2-ae2b-96d4df6d61e1)
+
+
+  * It is an MLP-based deep neural architecture with backward and forward residual linksoption.
+  * NHITS tackles volatility and memory complexity challenges, by locally specializing its sequential predictions into the signals frequencies with hierarchical interpolation and pooling.
+  * improves the treatment of the input, and the construction of the output, resulting in better accuracy and lower computational costs.
+
+* Architecture
+  * At the block-level, we notice the addition of a MaxPool layer. This is how the model achieves multi-rate sampling.
+  * Recall that maxpooling simply takes the largest value in a given set of values.
+  * Each stack has its own kernel size, and the length of the kernel size determines the rate of sampling.
+  * A large kernel size means that the stack focuses on long-term effects in the time series. Alternatively, a small kernel size emphasizes short-term effects in the series. This is visualized in the figure below.
+
+![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/e7e9ae20-6b3f-46fe-a17b-468964a3aa5b)
+
+  *  Thus, it is the MaxPool layer that allows each stack to focus on a specific signal scale, either short-term or long-term. This is also what allows N-HiTS to perform better on long horizon forecasting, because there is a stack that specializes in learning and predicting long-term effects in the series.
+  *  Regression
+    * Once the input signal passes the MaxPool layer, the block uses fully-connected networks to perform a regression and output a forecast and a backcast.
+  * Hierarchical interpolation
+    *  To combat that, N-HiTS uses hierarchical interpolation, where each stack has what they call an expressiveness ratio. This is simply the number of predictions per unit of time. In turn, this relates to the fact that each stack specializes in treating the series at a different rate, because the MaxPool layer subsamples the series.
+    *  The fact of combining predictions at different time scales is what defines hierarchical interpolation
+
+
+![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/9bc39a0a-669b-4fb6-adb9-279e02190bfa)
+![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/3b677a43-53ad-4b9e-98d4-c57e62abcfe9)
+
+
+* Blogs
+  * [All About N-HiTS: The Latest Breakthrough in Time Series Forecasting](https://www.datasciencewithmarco.com/blog/all-about-n-hits-the-latest-breakthrough-in-time-series-forecasting) 
+
+
+
 
 -----------------
 
