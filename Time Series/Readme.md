@@ -370,7 +370,7 @@ Extra inform by [Guide to Amazon Forecast for FBA Sellers](https://www.fbamaster
 ### N-BEATS
 Nueral Basis Expansion Analysis for Interpretable Time series forecasting
 
-[N-BEATS_Official_Paper.pdf](https://github.com/vg11072001/Machine-Learning/files/12775592/N-BEATS_Neural_basis_expansion_analysis_for_interp.pdf) | [Short Guide](https://ms.unimelb.edu.au/__data/assets/pdf_file/0009/4524228/Duy_Ngoc_Tran_-_Multivariate_time_series_forecasting_with_N-beats_architecture1.pdf) | [N-BEATS Video](https://www.youtube.com/watch?v=p3Xc_TJU8SI)
+[N-BEATS_Official_Paper.pdf](https://github.com/vg11072001/Machine-Learning/files/12775592/N-BEATS_Neural_basis_expansion_analysis_for_interp.pdf) | [Short Guide](https://ms.unimelb.edu.au/__data/assets/pdf_file/0009/4524228/Duy_Ngoc_Tran_-_Multivariate_time_series_forecasting_with_N-beats_architecture1.pdf) | [N-BEATS Video](https://www.youtube.com/watch?v=p3Xc_TJU8SI) | [GitHub](https://github.com/ServiceNow/N-BEATS/tree/master)
 
 
 ![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/618384f7-d608-4687-b5fa-95d163ac158b)
@@ -430,7 +430,10 @@ It is pure DL architectures.
   * [DL reviws: N-BEATS: Neural Basis Expansion Analysis For Interpretable Time Series Forecasting](https://www.dl.reviews/2020/02/23/n-beats/)
   * [N-BEATS: NEURAL BASIS EXPANSION ANALYSIS FOR INTERPRETABLE TIME SERIES FORECASTING](https://kshavg.medium.com/n-beats-neural-basis-expansion-analysis-for-interpretable-time-series-forecasting-91e94c830393)
   * [Unveiling the Untold: Exploring the Depths of N-BEATS for Stock Price Prediction](https://khofifah.medium.com/unveiling-the-untold-exploring-the-depths-of-n-beats-for-stock-price-prediction-2e3a03c0bf57)
-  * https://unit8co.github.io/darts/examples/07-NBEATS-examples.html 
+  * [Multiple Time Series Forecasting With N-BEATS In Python](https://forecastegy.com/posts/multiple-time-series-forecasting-nbeats-python/#how-to-prepare-time-series-data-for-n-beats-in-python)
+  * [Time Series with TensorFlow: Replicating the N-BEATS Algorithm](https://www.mlq.ai/time-series-with-tensorflow-n-beats-algorithm/)
+  * https://unit8co.github.io/darts/examples/07-NBEATS-examples.html
+  * https://pytorch-forecasting.readthedocs.io/en/stable/tutorials/ar.html#Interpretable-forecasting-with-N-Beats
 
 
 -----------------
