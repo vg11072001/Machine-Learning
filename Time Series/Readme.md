@@ -417,6 +417,18 @@ It is pure DL architectures.
       - use the median as ensemble aggregation function.
       - perform a bagging procedure by induding models trained with different random initializations.
 
+  * N-BEATS-G (generic)
+  * N-BEATS-I (interpretable)
+  * N-BEATS-l+G(ensemble of all models from N-BEATS-G and N-BEATS-I)
+  * ![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/98850aab-083b-44a8-9bfb-ea625912f468)
+
+
+* Blogs
+  * [DL reviws: N-BEATS: Neural Basis Expansion Analysis For Interpretable Time Series Forecasting](https://www.dl.reviews/2020/02/23/n-beats/)
+  * [N-BEATS: NEURAL BASIS EXPANSION ANALYSIS FOR INTERPRETABLE TIME SERIES FORECASTING](https://kshavg.medium.com/n-beats-neural-basis-expansion-analysis-for-interpretable-time-series-forecasting-91e94c830393)
+  * [Unveiling the Untold: Exploring the Depths of N-BEATS for Stock Price Prediction](https://khofifah.medium.com/unveiling-the-untold-exploring-the-depths-of-n-beats-for-stock-price-prediction-2e3a03c0bf57)
+  * https://unit8co.github.io/darts/examples/07-NBEATS-examples.html 
+
 
 -----------------
 
