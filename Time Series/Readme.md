@@ -1,4 +1,8 @@
 # Time Series Forecasting
+
+![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/87d8d660-f036-4f65-acdb-8f7f4a5501b8)
+
+
 ## Theory
 
 ### Concepts
@@ -444,7 +448,7 @@ It is pure DL architectures.
 
 * https://www.machinelearningplus.com/time-series/time-series-analysis-python/?source=post_page-----8c3b0bac97be--------------------------------
 * https://www.kaggle.com/code/satishgunjal/tutorial-time-series-analysis-and-forecasting
-
-### Amaozon Forecast
 * https://www.geeksforgeeks.org/what-is-amazon-forecast/
-* 
+
+
+Credits of image to [Pinterest](https://in.pinterest.com/pin/676314069058069994/)
