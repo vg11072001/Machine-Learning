@@ -277,13 +277,6 @@ for key, value in result[3].items():
 ````
 
 
-* [Facebook Prophet](https://facebook.github.io/prophet/docs/quick_start.html) 
-
-* [PyTorch Forecasting Documentation](https://pytorch-forecasting.readthedocs.io/en/stable/index.html) - PyTorch Forecasting aims to ease state-of-the-art timeseries forecasting with neural networks for both real-world cases and research alike. 
-
-* Guide to use [Darts](https://unit8co.github.io/darts/quickstart/00-quickstart.html) - Darts is a Python library for user-friendly forecasting and anomaly detection on time series.
-
-
 ----------------
 * Pandas
 	* https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#
@@ -302,6 +295,13 @@ for key, value in result[3].items():
 		* Book - https://www.methsoft.ac.cn/scipaper_files/document_files/Manning.Time.Series.Forecasting.in.Python.pdf
  		* Github https://github.com/marcopeix/TimeSeriesForecastingInPython
 
+* [Facebook Prophet](https://facebook.github.io/prophet/docs/quick_start.html) 
+
+* [PyTorch Forecasting Documentation](https://pytorch-forecasting.readthedocs.io/en/stable/index.html) - PyTorch Forecasting aims to ease state-of-the-art timeseries forecasting with neural networks for both real-world cases and research alike. 
+
+* Guide to use [Darts](https://unit8co.github.io/darts/quickstart/00-quickstart.html) - Darts is a Python library for user-friendly forecasting and anomaly detection on time series.
+
+
 ## Advances on Time Series
 
 * Explore **N-Hits, N-Beats** and **Amazon forecasts** and benchmark them against **simple stat, ml models**
@@ -313,7 +313,7 @@ for key, value in result[3].items():
 
 ### Amazon Forecast [Link](https://aws.amazon.com/forecast/)
 
-[Guide](https://docs.aws.amazon.com/pdfs/forecast/latest/dg/forecast.dg.pdf) | [Time Series Forecasting Principles with Amazon Forecast](https://d1.awsstatic.com/whitepapers/time-series-forecasting-principles-amazon-forecast.pdf) | [Guide](https://github.com/aws-samples/amazon-forecast-samples)
+[Guide](https://docs.aws.amazon.com/pdfs/forecast/latest/dg/forecast.dg.pdf) | [Time Series Forecasting Principles with Amazon Forecast](https://d1.awsstatic.com/whitepapers/time-series-forecasting-principles-amazon-forecast.pdf) | [Github](https://github.com/aws-samples/amazon-forecast-samples)
 
 * It is fully managed service that uses machine learning to produce incredibly accurate forecasts. 
 Benefits of Amazon Forecast provide Explainability report. Integration of Amazon forecast with other services: S3, Athena, Glue, Sagemaker, Lambda.
@@ -333,6 +333,7 @@ Hyperparameter tuning is supported only by CNN-QR and DeepAR+.
 For the target, metadata, and related time series datasets, only 13, 10, and 25 features are allowed. If there are more, you might have to choose between features.
 The Forecast horizon should be the lesser value of between 500 and ⅓ the size of the target dataset.
 DeepAR+ which offers the best estimates will only work when the number of observations is > 300.
+
 ![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/95ec7308-9f4f-4630-8374-4964349ecee6)
 
 * [**Taco Bell Case Study**](https://aws.amazon.com/forecast/resources/?amazon-forecast-whats-new.sort-by=item.additionalFields.postDateTime&amazon-forecast-whats-new.sort-order=desc) - How it help in improving digital availability with ML Forecast
@@ -346,21 +347,23 @@ POS- Point of Sale
 
 * **More Blogs:**
 1. [From forecasting demand to ordering – An automated machine learning approach with Amazon Forecast to decrease stockouts, excess inventory, and costs](https://aws.amazon.com/blogs/machine-learning/from-forecasting-demand-to-ordering-an-automated-machine-learning-approach-with-amazon-forecast-to-decrease-stock-outs-excess-inventory-and-costs/)
+
 ![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/ea32b57a-8839-4b01-a22b-6b016cc1674f)
 
 2. [Part 2: How Retailers are Leveraging Cloud Technologies to Transform their Supply Chains](https://aws.amazon.com/blogs/industries/how-retailers-leverage-cloud-to-transform-supply-chains/)
 
 3. [A Guide to Predicting Future Outcomes with Amazon Forecast](https://onica.com/blog/ai-machine-learning/a-guide-to-predicting-future-outcomes-with-amazon-forecast/)
 
-4. Improving Forecast Accuracy with Machine Learning](https://aws.amazon.com/solutions/implementations/improving-forecast-accuracy-with-machine-learning/)
+4. [Improving Forecast Accuracy with Machine Learning](https://aws.amazon.com/solutions/implementations/improving-forecast-accuracy-with-machine-learning/)
 
 5. [Sales Demand Forecasting with Amazon Forecast](https://samuelabiodun.medium.com/sales-demand-forecasting-with-amazon-forecast-4ff81e6db807)
 [Dataset](https://github.com/abiodunjames/Predicting-ecommerce-sales-forecast/tree/master/data) - [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
-1. Pre-processed dataset and upload to an s3
-2. Import training data
-3. Create a predictor or choose algorithm - Dataset group, A featurization configuration, A forecast horizon or prediction length, Evaluation parameters and Algorithm or AutoML
-4. Create a forecast
-5. Retrieve forecast
+
+	1. Pre-processed dataset and upload to an s3
+	2. Import training data
+	3. Create a predictor or choose algorithm - Dataset group, A featurization configuration, A forecast horizon or prediction length, Evaluation parameters and Algorithm or AutoML
+	4. Create a forecast
+	5. Retrieve forecast
 
 Extra inform by [Guide to Amazon Forecast for FBA Sellers](https://www.fbamasterclass.io/post/amazon-forecast)
 
