@@ -304,7 +304,10 @@ for key, value in result[3].items():
 
 * [Facebook Prophet](https://facebook.github.io/prophet/docs/quick_start.html) 
 
-* [PyTorch Forecasting Documentation](https://pytorch-forecasting.readthedocs.io/en/stable/index.html) - PyTorch Forecasting aims to ease state-of-the-art timeseries forecasting with neural networks for both real-world cases and research alike. 
+### [PyTorch Forecasting Documentation](https://pytorch-forecasting.readthedocs.io/en/stable/index.html) - PyTorch Forecasting aims to ease state-of-the-art timeseries forecasting with neural networks for both real-world cases and research alike.
+
+  ![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/c1af3e09-aad9-4578-91cd-32652b1ff7c1)
+
 
 * Guide to use [Darts](https://unit8co.github.io/darts/quickstart/00-quickstart.html) - Darts is a Python library for user-friendly forecasting and anomaly detection on time series.
 
@@ -492,3 +495,10 @@ It is pure DL architectures.
 
 
 Credits of image to [Pinterest](https://in.pinterest.com/pin/676314069058069994/)
+
+
+## Explore
+
+* [Highly comparative time-series analysis: the empirical structure of time series and their methods](https://www.semanticscholar.org/paper/Highly-comparative-time-series-analysis%3A-the-of-and-Fulcher-Little/ee4fba9dbfd571d15d3ea23c3f274be829648825)
+
+* 
