@@ -302,14 +302,18 @@ for key, value in result[3].items():
 		* Book - https://www.methsoft.ac.cn/scipaper_files/document_files/Manning.Time.Series.Forecasting.in.Python.pdf
  		* Github https://github.com/marcopeix/TimeSeriesForecastingInPython
 
-* [Facebook Prophet](https://facebook.github.io/prophet/docs/quick_start.html) 
+### [Facebook Prophet](https://facebook.github.io/prophet/docs/quick_start.html) 
 
-### [PyTorch Forecasting Documentation](https://pytorch-forecasting.readthedocs.io/en/stable/index.html) - PyTorch Forecasting aims to ease state-of-the-art timeseries forecasting with neural networks for both real-world cases and research alike.
+### [PyTorch Forecasting Documentation](https://pytorch-forecasting.readthedocs.io/en/stable/index.html) 
+	
+ PyTorch Forecasting aims to ease state-of-the-art timeseries forecasting with neural networks for both real-world cases and research alike.
 
   ![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/c1af3e09-aad9-4578-91cd-32652b1ff7c1)
 
 
-* Guide to use [Darts](https://unit8co.github.io/darts/quickstart/00-quickstart.html) - Darts is a Python library for user-friendly forecasting and anomaly detection on time series.
+### [Darts](https://unit8co.github.io/darts/quickstart/00-quickstart.html) 
+
+Darts is a Python library for user-friendly forecasting and anomaly detection on time series.
 
 
 ## Advances on Time Series
