@@ -10,21 +10,24 @@ All Resources, codes and problems
    * [CS 230 ― Deep Learning Cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/)
 
  ## Deep Learning 
-   * DL Playlist https://www.youtube.com/playlist?list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi 
-     * https://github.com/krishnaik06/Complete-Deep-Learning-With-Materials
-   * DL Stanford CS230:https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb 
-   * MIT 6.S191: Introduction to DL https://www.youtube.com/playlist?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI
-   * MIT 6.S192: Deep Learning for Art, Aesthetics, and Creativity: https://www.youtube.com/playlist?list=PLCpMvp7ftsnIbNwRnQJbDNRqO6qiN3EyH 
-   * Convolutional Neural Networks for Visual Recognition: https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv
+   * [Complete Deep Learning by Krish Naik](https://www.youtube.com/playlist?list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi) | [Notes](https://github.com/krishnaik06/Complete-Deep-Learning-With-Materials)
+   * [DL Stanford CS230: 2018 Lectures from Stanford graduate course CS230 taught by Andrew Ng](https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb)
+   * [MIT 6.S191: Introduction to DL](https://www.youtube.com/playlist?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI)
+   * [MIT 6.S192: Deep Learning for Art, Aesthetics, and Creativity](https://www.youtube.com/playlist?list=PLCpMvp7ftsnIbNwRnQJbDNRqO6qiN3EyH)
+   * [Convolutional Neural Networks for Visual Recognition](https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv)
    * [Deep Learning Architectures Comparative Analysis](https://aman.ai/primers/ai/dl-comp/)
    * [Deep Learning Specialization on Coursera (offered by deeplearning.ai)](https://aman.ai/coursera-dl/)
       * https://github.com/ashishpatel26/Andrew-NG-Notes
       * https://github.com/SHANK885/Machine-Learning-Andrew-Ng
+   * http://introtodeeplearning.com/2021/index.html
+   * https://d2l.ai/chapter_preface/index.html#about-this-book
+   * https://www.deeplearningbook.org/front_matter.pdf
 
 ### Pytorch
  * [Project: generate your data in parallel with PyTorch](https://stanford.edu/~shervine/blog/pytorch-how-to-generate-data-parallel)
  * [Zero to Mastery Learn PyTorch for Deep Learning](https://www.learnpytorch.io/pytorch_extra_resources/)
  * [git: the-incredible-pytorch](https://github.com/ritchieng/the-incredible-pytorch)
+ * [PyTorch Tutorial: How to Develop Deep Learning Models with Python](https://machinelearningmastery.com/pytorch-tutorial-develop-deep-learning-models/)
 
 ### Tensorflow
  *
@@ -39,8 +42,9 @@ All Resources, codes and problems
 
 ## Learning Material
 * https://github.com/vg11072001/applied-ml
+* https://imisra.github.io/
 
-## Resources
+## Extra Resources
 * [GAN - Generative Adversarial Networks](https://drive.google.com/file/d/1Gm4hNSXY03DrYDU4rh0NRlDcXo20a3pL/view)
 * [Swiggy- Data Science blogs](https://bytes.swiggy.com/tagged/swiggy-data-science)
 * [Amazon Science blogs](https://www.amazon.science/blog?q=&f0=0000016e-2ff1-d205-a5ef-aff9651e0000&f1=0000016e-4373-de2e-a76e-cff717cf0000&f1=0000016e-39f9-d205-a5ef-bff9944b0000&s=0&expandedFilters=Research%2520area%2CTag%2CConference%2CAuthor%2CDate%2C)
@@ -60,18 +64,13 @@ All Resources, codes and problems
 * [Structure of Data Science Projects](https://www.linkedin.com/posts/dhananjai-singh-852351142_structure-of-data-science-project-activity-7026032488997105664-Z_Qf?utm_source=share&utm_medium=member_desktop)
 * [How a machine learning project pipeline is build](https://youtu.be/0iQT5XfbadE)
 
-## Kaggle Dataset
-* [Anime Face Dataset](https://www.kaggle.com/datasets/splcher/animefacedataset/code?datasetId=379764&sortBy=voteCount)
-
 
 ## Kaggle projects
 * [Introduction to GANIME](https://www.kaggle.com/code/mrigendraagrawal/introduction-to-ganime)
 * [Image Colorization Process / Auto-Encoder](https://www.kaggle.com/code/brsdincer/image-colorization-process-auto-encoder)
 
-## DL
+## Extra
 * https://cs231n.github.io/python-numpy-tutorial/
 * http://cs231n.stanford.edu/
 * https://www.deeplearning.ai/about/
-* http://introtodeeplearning.com/2021/index.html
-* https://d2l.ai/chapter_preface/index.html#about-this-book
-* https://www.deeplearningbook.org/front_matter.pdf
+
