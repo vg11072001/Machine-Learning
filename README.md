@@ -3,13 +3,13 @@
 
 All Resources, codes and problems
 
- ### Machine Learning
+ ## Machine Learning
    * CS229: Machine Learning: https://aman.ai/cs229/
    * Machine Learning Specialization on Coursera (offered by deeplearning.ai): https://aman.ai/coursera-ml/
    * [CS 229 ― Machine Learning Cheatsheet](https://stanford.edu/~shervine/teaching/cs-229/)
    * [CS 230 ― Deep Learning Cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/)
 
- ### Deep Learning 
+ ## Deep Learning 
    * DL Playlist https://www.youtube.com/playlist?list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi 
      * https://github.com/krishnaik06/Complete-Deep-Learning-With-Materials
    * DL Stanford CS230:https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb 
@@ -20,6 +20,17 @@ All Resources, codes and problems
    * [Deep Learning Specialization on Coursera (offered by deeplearning.ai)](https://aman.ai/coursera-dl/)
       * https://github.com/ashishpatel26/Andrew-NG-Notes
       * https://github.com/SHANK885/Machine-Learning-Andrew-Ng
+
+### Pytorch
+ * [Project: generate your data in parallel with PyTorch](https://stanford.edu/~shervine/blog/pytorch-how-to-generate-data-parallel)
+
+### Tensorflow
+ *
+ 
+ ## Data Science
+ * [Data Science Tools Standford student](https://www.mit.edu/~amidi/teaching/data-science-tools/)
+
+
 
 ## Reasearch Papers
 * https://aman.ai/papers/
