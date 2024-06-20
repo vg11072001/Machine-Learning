@@ -23,6 +23,8 @@ All Resources, codes and problems
 
 ### Pytorch
  * [Project: generate your data in parallel with PyTorch](https://stanford.edu/~shervine/blog/pytorch-how-to-generate-data-parallel)
+ * [Zero to Mastery Learn PyTorch for Deep Learning](https://www.learnpytorch.io/pytorch_extra_resources/)
+ * [git: the-incredible-pytorch](https://github.com/ritchieng/the-incredible-pytorch)
 
 ### Tensorflow
  *
