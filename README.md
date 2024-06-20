@@ -3,15 +3,11 @@
 
 All Resources, codes and problems
 
-## Data Science 
-* [Structure of Data Science Projects](https://www.linkedin.com/posts/dhananjai-singh-852351142_structure-of-data-science-project-activity-7026032488997105664-Z_Qf?utm_source=share&utm_medium=member_desktop)
-* [How a machine learning project pipeline is build](https://youtu.be/0iQT5XfbadE)
-
-## Reasearch Papers
-* https://aman.ai/papers/
-
-## Learning Material
-* https://github.com/vg11072001/applied-ml
+ ### Machine Learning
+   * CS229: Machine Learning: https://aman.ai/cs229/
+   * Machine Learning Specialization on Coursera (offered by deeplearning.ai): https://aman.ai/coursera-ml/
+   * [CS 229 ― Machine Learning Cheatsheet](https://stanford.edu/~shervine/teaching/cs-229/)
+   * [CS 230 ― Deep Learning Cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/)
 
  ### Deep Learning 
    * DL Playlist https://www.youtube.com/playlist?list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi 
@@ -25,10 +21,11 @@ All Resources, codes and problems
       * https://github.com/ashishpatel26/Andrew-NG-Notes
       * https://github.com/SHANK885/Machine-Learning-Andrew-Ng
 
- ### Machine Learning
-   * CS229: Machine Learning: https://aman.ai/cs229/
-   * Machine Learning Specialization on Coursera (offered by deeplearning.ai): https://aman.ai/coursera-ml/
- 
+## Reasearch Papers
+* https://aman.ai/papers/
+
+## Learning Material
+* https://github.com/vg11072001/applied-ml
 
 ## Resources
 * [GAN - Generative Adversarial Networks](https://drive.google.com/file/d/1Gm4hNSXY03DrYDU4rh0NRlDcXo20a3pL/view)
@@ -47,6 +44,9 @@ All Resources, codes and problems
 * [Breaking it Down: Logistic Regression](https://towardsdatascience.com/breaking-it-down-logistic-regression-e5c3f1450bd)
 * [ML Collaboration: Best Practices From 4 ML Teams](https://neptune.ai/blog/ml-collaboration-best-practices-from-ml-teams)
 * [An ML approach for routing payment transactions](https://bytes.swiggy.com/an-ml-approach-for-routing-payment-transactions-5a14efb643a8)
+* [Structure of Data Science Projects](https://www.linkedin.com/posts/dhananjai-singh-852351142_structure-of-data-science-project-activity-7026032488997105664-Z_Qf?utm_source=share&utm_medium=member_desktop)
+* [How a machine learning project pipeline is build](https://youtu.be/0iQT5XfbadE)
+
 ## Kaggle Dataset
 * [Anime Face Dataset](https://www.kaggle.com/datasets/splcher/animefacedataset/code?datasetId=379764&sortBy=voteCount)
 
