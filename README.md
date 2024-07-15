@@ -63,6 +63,7 @@ All Resources, codes and problems
 * [An ML approach for routing payment transactions](https://bytes.swiggy.com/an-ml-approach-for-routing-payment-transactions-5a14efb643a8)
 * [Structure of Data Science Projects](https://www.linkedin.com/posts/dhananjai-singh-852351142_structure-of-data-science-project-activity-7026032488997105664-Z_Qf?utm_source=share&utm_medium=member_desktop)
 * [How a machine learning project pipeline is build](https://youtu.be/0iQT5XfbadE)
+* [A visual introduction to machine learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1)
 
 
 ## Kaggle projects
