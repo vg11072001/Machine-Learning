@@ -3,6 +3,13 @@
 ![image](https://github.com/vg11072001/Machine-Learning/assets/67424390/87d8d660-f036-4f65-acdb-8f7f4a5501b8)
 
 
+## Explore
+
+* [Highly comparative time-series analysis: the empirical structure of time series and their methods](https://www.semanticscholar.org/paper/Highly-comparative-time-series-analysis%3A-the-of-and-Fulcher-Little/ee4fba9dbfd571d15d3ea23c3f274be829648825)
+* [How to MLForecast your Time Series Data!](https://levelup.gitconnected.com/how-to-mlforecast-your-time-series-data-c583283e0c28)
+* [Can Machine Learning Outperform Statistical Models for Time Series Forecasting?
+](https://pub.towardsai.net/can-machine-learning-outperform-statistical-models-for-time-series-forecasting-73dc2045a9c5)
+
 ## Theory
 
 ### Concepts
@@ -500,9 +507,3 @@ It is pure DL architectures.
 
 Credits of image to [Pinterest](https://in.pinterest.com/pin/676314069058069994/)
 
-
-## Explore
-
-* [Highly comparative time-series analysis: the empirical structure of time series and their methods](https://www.semanticscholar.org/paper/Highly-comparative-time-series-analysis%3A-the-of-and-Fulcher-Little/ee4fba9dbfd571d15d3ea23c3f274be829648825)
-
-* 
