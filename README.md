@@ -1,7 +1,12 @@
 # Machine-Learning
-[![image-removebg-preview](https://user-images.githubusercontent.com/67424390/207838604-7743996b-f01f-4537-9f2c-17257309d00e.png)](https://chart-studio.plotly.com/create/?fid=SolClover:53#/)
 
-All Resources, codes and problems
+<div>
+    <a href="https://plotly.com/~vg11072001/3/?share_key=DmAKGUnGwLWyctdNu5VIIu" target="_blank" title="ML Structure" style="display: block; text-align: center;"><img src="https://plotly.com/~vg11072001/3.png?share_key=DmAKGUnGwLWyctdNu5VIIu" alt="Plot 3" style="max-width: 50%;width: 900px;"  width="900" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+    <script data-plotly="vg11072001:3" sharekey-plotly="DmAKGUnGwLWyctdNu5VIIu" src="https://plotly.com/embed.js" async></script>
+</div>
+
+[View Interactive Plot](https://plotly.com/~vg11072001/3/)
+
 
  ## Machine Learning
    * CS229: Machine Learning: https://aman.ai/cs229/
@@ -30,7 +35,8 @@ All Resources, codes and problems
  * [PyTorch Tutorial: How to Develop Deep Learning Models with Python](https://machinelearningmastery.com/pytorch-tutorial-develop-deep-learning-models/)
 
 ### Tensorflow
- *
+  [![PDF Preview](images/tensorlfow1.png)](Reading/TensorFlow2Cheatsheet.pdf)
+ * [View PDF](Reading/TensorFlow2Cheatsheet.pdf)
  
  ## Data Science
  * [Data Science Tools Standford student](https://www.mit.edu/~amidi/teaching/data-science-tools/)
