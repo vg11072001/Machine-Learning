@@ -2,7 +2,6 @@
 
 <div>
     <a href="https://plotly.com/~vg11072001/3/?share_key=DmAKGUnGwLWyctdNu5VIIu" target="_blank" title="ML Structure" style="display: block; text-align: center;"><img src="https://plotly.com/~vg11072001/3.png?share_key=DmAKGUnGwLWyctdNu5VIIu" alt="Plot 3" style="max-width: 50%;width: 900px;"  width="900" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
-    <script data-plotly="vg11072001:3" sharekey-plotly="DmAKGUnGwLWyctdNu5VIIu" src="https://plotly.com/embed.js" async></script>
 </div>
 
 [View Interactive Plot](https://plotly.com/~vg11072001/3/)
