@@ -1,0 +1,217 @@
+{
+  "main": {
+    "id": "5e53a3f62c0999ce",
+    "type": "split",
+    "children": [
+      {
+        "id": "d3105a46a5a38c3c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "afd56cbd9eb5860f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Book 100 Page/100 Page ML Book.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "38f6f821c447e807",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Book 100 Page/Reinforcement Learning.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7cdd59edc4f8cbac",
+    "type": "split",
+    "children": [
+      {
+        "id": "c852067fda2f0427",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7a1d457e78292d53",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTime"
+              }
+            }
+          },
+          {
+            "id": "d9778cccbf207140",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "[\"cssclasses\"]",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3397c410043b32e1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "08b39a69fb4db51f",
+    "type": "split",
+    "children": [
+      {
+        "id": "c8542c45b5996759",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "070ea59c6e928f2c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Book 100 Page/100 Page ML Book.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "f6155051b3847f13",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Book 100 Page/100 Page ML Book.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "53132942056b9cbf",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f5cf5abf32e34f30",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Book 100 Page/100 Page ML Book.md"
+              }
+            }
+          },
+          {
+            "id": "631c361c71e3bf17",
+            "type": "leaf",
+            "state": {
+              "type": "timeline",
+              "state": {}
+            }
+          },
+          {
+            "id": "82156fc7dc348506",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "ebaa57c9633d2fe0",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 717.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "zk-prefixer:Create new unique note": false,
+      "graph:Open graph view": false,
+      "audio-recorder:Start/stop recording": false,
+      "workspaces:Manage workspace layouts": false,
+      "switcher:Open quick switcher": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-day-planner:Timeline": false,
+      "obsidian-importer:Open Importer": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-git:Open Git source control": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "ebaa57c9633d2fe0",
+  "lastOpenFiles": [
+    "Book 100 Page/Supervised Learning.md",
+    "Book 100 Page/100 Page ML Book.md",
+    "Book 100 Page/Reinforcement Learning.md",
+    "Book 100 Page/Unsupervised Learning.md",
+    "ML with Pytorch and Sklearn",
+    "Book 100 Page",
+    "202410020105.md",
+    "202410020040.md",
+    "202410012355.md",
+    "Pasted image 20240926021048.png",
+    "Notion",
+    "202409290309.md",
+    "Untitled.canvas",
+    "2024-09-25.md",
+    "Untitled 1.canvas",
+    "Untitled 2.canvas",
+    "Welcome.md"
+  ]
+}
