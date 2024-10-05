@@ -8,9 +8,6 @@ The reader interested in knowing more about the *learnability* and understanding
 - [Overview of the Probably Approximately Correct (PAC) Framework](https://bpb-us-e1.wpmucdn.com/sites.ucsc.edu/dist/4/821/files/2017/08/smo_0.pdf) by David Haussler
 - Chapter 7 of [Machine Learning](http://www.cs.cmu.edu/~tom/mlbook.html) by Tom Mitchell (1997)
 
-<div>
-<iframe src="http://www.cs.cmu.edu/~tom/mlbook.html" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
-</div>
 
 Recommended Watching
 - [PAC Learning](https://www.youtube.com/watch?v=e37nlms7Zi0) by Georgia Tech/Udacity (2015).
@@ -20,8 +17,8 @@ Recommended Watching
 2. [[Unsupervised Learning]]
 3. [[Reinforcement Learning]]
 4. [[Topic Not Covered Image, Text, NN]]
-## Resources
 
+## Resources
 * [Book PDF](http://ema.cri-info.cm/wp-content/uploads/2019/07/2019BurkovTheHundred-pageMachineLearning.pdf)
 * [Online Links](https://themlbook.com/wiki/doku.php) for reading used in this book 
 * [Sitemap](https://themlbook.com/wiki/doku.php?id=start&do=index) shows detail on word bold in Book
