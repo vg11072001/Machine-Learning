@@ -1,5 +1,4 @@
 [
-  "obsidian-day-planner",
   "obsidian-importer",
   "note-refactor-obsidian",
   "obsidian-enhancing-mindmap",
@@ -11,5 +10,6 @@
   "templater-obsidian",
   "obsidian-git",
   "url-into-selection",
-  "highlightr-plugin"
+  "highlightr-plugin",
+  "convert-url-to-iframe"
 ]

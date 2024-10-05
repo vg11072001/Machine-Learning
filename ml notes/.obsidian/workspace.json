@@ -4,34 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "d3105a46a5a38c3c",
+        "id": "8d9d23fdeff20ea4",
         "type": "tabs",
         "children": [
           {
-            "id": "afd56cbd9eb5860f",
+            "id": "61ff2f04838c5115",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "diff-view",
               "state": {
-                "file": "Book 100 Page/100 Page ML Book.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "38f6f821c447e807",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Book 100 Page/Reinforcement Learning.md",
-                "mode": "source",
-                "source": false
+                "file": "ml notes/Book 100 Page/Reinforcement Learning.md",
+                "staged": false
               }
             }
           }
-        ]
+        ],
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -50,7 +38,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byModifiedTime"
+                "sortOrder": "byCreatedTimeReverse"
               }
             }
           },
@@ -81,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 236.5047149658203
   },
   "right": {
     "id": "08b39a69fb4db51f",
@@ -97,7 +85,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Book 100 Page/100 Page ML Book.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +101,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Book 100 Page/100 Page ML Book.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -136,16 +122,6 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Book 100 Page/100 Page ML Book.md"
-              }
-            }
-          },
-          {
-            "id": "631c361c71e3bf17",
-            "type": "leaf",
-            "state": {
-              "type": "timeline",
               "state": {}
             }
           },
@@ -170,11 +146,41 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
+      },
+      {
+        "id": "9fb04ceeb2d48c20",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "418755fd28b56dfb",
+            "type": "leaf",
+            "state": {
+              "type": "mindmap",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "642997d7c735803a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dcd44884ce76162a",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "graph",
+              "state": {},
+              "pinned": true
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 717.5
+    "width": 729.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -187,19 +193,33 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-day-planner:Timeline": false,
       "obsidian-importer:Open Importer": false,
       "templater-obsidian:Templater": false,
       "obsidian-git:Open Git source control": false,
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "ebaa57c9633d2fe0",
+  "active": "61ff2f04838c5115",
   "lastOpenFiles": [
-    "Book 100 Page/Supervised Learning.md",
+    "Readme.md",
+    "ML with Pytorch and Sklearn/Machine Learning using PyTorch and Scikit-Learn.md",
+    "RoadMap.md",
+    "ML specialization  Course/Course Notes.md",
     "Book 100 Page/100 Page ML Book.md",
+    "Untitled 1.canvas",
+    "Untitled.canvas",
+    "Trial on obsidians.md",
+    "Pasted image 20241002045700.png",
     "Book 100 Page/Reinforcement Learning.md",
+    "Pasted image 20241002045254.png.md",
+    "Pasted image 20241002045254.png",
+    "Book 100 Page/Supervised Learning.md",
     "Book 100 Page/Unsupervised Learning.md",
+    "Internal link.md",
+    "Book 100 Page/Topic Not Covered Image, Text, NN.md",
+    "ML specialization  Course",
+    "2024-10-02.md",
+    "2024-10-01.md",
     "ML with Pytorch and Sklearn",
     "Book 100 Page",
     "202410020105.md",
@@ -208,9 +228,7 @@
     "Pasted image 20240926021048.png",
     "Notion",
     "202409290309.md",
-    "Untitled.canvas",
     "2024-09-25.md",
-    "Untitled 1.canvas",
     "Untitled 2.canvas",
     "Welcome.md"
   ]
