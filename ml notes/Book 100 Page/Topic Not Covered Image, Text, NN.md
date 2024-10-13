@@ -16,4 +16,4 @@
 
 - [PEFT: State-of-the-art Parameter-Efficient Fine-Tuning methods](https://github.com/huggingface/peft "https://github.com/huggingface/peft") by Hugging Face
 - [How to Fine-Tune LLMs in 2024 with Hugging Face](https://www.philschmid.de/fine-tune-llms-in-2024-with-trl) by Philipp Schmid (2024)
-- [Merge Large Language Models with mergekit](https://towardsdatascience.com/merge-large-language-models-with-mergekit-2118fb392b54 "https://towardsdatascience.com/merge-large-language-models-with-mergekit-2118fb392b54") by Maxime Labonne (2024)
+-  [Merge Large Language Models with mergekit](https://towardsdatascience.com/merge-large-language-models-with-mergekit-2118fb392b54 "https://towardsdatascience.com/merge-large-language-models-with-mergekit-2118fb392b54") by Maxime Labonne (2024)

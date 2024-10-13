@@ -11,9 +11,9 @@
    * CS229: Machine Learning: https://aman.ai/cs229/
    * Machine Learning Specialization on Coursera (offered by deeplearning.ai): https://aman.ai/coursera-ml/
    * [CS 229 ― Machine Learning Cheatsheet](https://stanford.edu/~shervine/teaching/cs-229/)
-   * [CS 230 ― Deep Learning Cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/)
 
  ## Deep Learning 
+   * [CS 230 ― Deep Learning Cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/)
    * [Complete Deep Learning by Krish Naik](https://www.youtube.com/playlist?list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi) | [Notes](https://github.com/krishnaik06/Complete-Deep-Learning-With-Materials)
    * [DL Stanford CS230: 2018 Lectures from Stanford graduate course CS230 taught by Andrew Ng](https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb)
    * [MIT 6.S191: Introduction to DL](https://www.youtube.com/playlist?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI)
@@ -37,6 +37,10 @@
   [![PDF Preview](images/tensorlfow1.png)](Reading/TensorFlow2Cheatsheet.pdf)
  * [View PDF](Reading/TensorFlow2Cheatsheet.pdf)
  
+## NLP/LLM
+* [Understanding Large Language Models](https://magazine.sebastianraschka.com/p/understanding-large-language-models)
+* [Stanford CS224D: Natural Language Processing with Deep Learning](https://web.stanford.edu/class/cs224n/)
+
  ## Data Science
  * [Data Science Tools Standford student](https://www.mit.edu/~amidi/teaching/data-science-tools/)
 
