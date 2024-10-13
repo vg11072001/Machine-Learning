@@ -7,10 +7,7 @@
 [View Interactive Plot](https://plotly.com/~vg11072001/3/)
 
 
- ## Machine Learning
-   * CS229: Machine Learning: https://aman.ai/cs229/
-   * Machine Learning Specialization on Coursera (offered by deeplearning.ai): https://aman.ai/coursera-ml/
-   * [CS 229 ― Machine Learning Cheatsheet](https://stanford.edu/~shervine/teaching/cs-229/)
+
 
  ## Deep Learning 
    * [CS 230 ― Deep Learning Cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/)
