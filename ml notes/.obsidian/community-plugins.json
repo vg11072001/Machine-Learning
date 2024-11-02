@@ -11,5 +11,11 @@
   "obsidian-git",
   "url-into-selection",
   "highlightr-plugin",
-  "convert-url-to-iframe"
+  "convert-url-to-iframe",
+  "obsidian-reading-time",
+  "obsidian-extract-pdf-highlights",
+  "obsidian-annotator",
+  "omnisearch",
+  "webpage-html-export",
+  "pdf-plus"
 ]

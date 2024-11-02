@@ -1,21 +1,25 @@
 {
   "main": {
-    "id": "5e53a3f62c0999ce",
+    "id": "295c1374a8ebbe36",
     "type": "split",
     "children": [
       {
-        "id": "8d9d23fdeff20ea4",
+        "id": "eccec2cf726dedd9",
         "type": "tabs",
         "children": [
           {
-            "id": "61ff2f04838c5115",
+            "id": "03c017ddc53179bd",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
-                "file": "ml notes/Book 100 Page/Reinforcement Learning.md",
-                "staged": false
-              }
+                "file": "Theory/ML with Pytorch and Sklearn/Readme.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Readme"
             }
           }
         ],
@@ -25,108 +29,114 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "7cdd59edc4f8cbac",
+    "id": "047e2f267dff1a33",
     "type": "split",
     "children": [
       {
-        "id": "c852067fda2f0427",
+        "id": "0e7482f24295af58",
         "type": "tabs",
         "children": [
           {
-            "id": "7a1d457e78292d53",
+            "id": "826ae304221a96d2",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byCreatedTimeReverse"
-              }
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
-            "id": "d9778cccbf207140",
+            "id": "c1b75b57e0b8de66",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "[\"cssclasses\"]",
+                "query": "tag:#Theory",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
-            "id": "3397c410043b32e1",
+            "id": "e613981abf01166b",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 236.5047149658203
+    "width": 337.5018844604492
   },
   "right": {
-    "id": "08b39a69fb4db51f",
+    "id": "a2ef2caaab3f935e",
     "type": "split",
     "children": [
       {
-        "id": "c8542c45b5996759",
+        "id": "ff7e5bcb39909171",
         "type": "tabs",
         "children": [
           {
-            "id": "070ea59c6e928f2c",
+            "id": "7dd8b98f5bfbf602",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "collapseAll": true,
+                "file": "Book 100 Page/4. Best Practice.md",
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
-              }
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 4. Best Practice"
             }
           },
           {
-            "id": "f6155051b3847f13",
+            "id": "e3e574581a942fc0",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Book 100 Page/4. Best Practice.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": false
-              }
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 4. Best Practice"
             }
           },
           {
-            "id": "53132942056b9cbf",
+            "id": "21f7bed3d23911af",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
-            "id": "f5cf5abf32e34f30",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {}
-            }
-          },
-          {
-            "id": "82156fc7dc348506",
+            "id": "6eb9df18cbff93c9",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -134,102 +144,133 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           },
           {
-            "id": "ebaa57c9633d2fe0",
+            "id": "6fe4cb922d8fdc05",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Theory/ML with Pytorch and Sklearn/Readme.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Readme"
+            }
+          },
+          {
+            "id": "f985ec9dffe1cf20",
             "type": "leaf",
             "state": {
               "type": "git-view",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       },
       {
-        "id": "9fb04ceeb2d48c20",
+        "id": "6b9edabced3533d7",
         "type": "tabs",
         "children": [
           {
-            "id": "418755fd28b56dfb",
+            "id": "e7842e1631bed8de",
             "type": "leaf",
             "state": {
               "type": "mindmap",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ]
       },
       {
-        "id": "642997d7c735803a",
+        "id": "0b4ac8e8d34df828",
         "type": "tabs",
         "children": [
           {
-            "id": "dcd44884ce76162a",
+            "id": "3d2d61df169e967b",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "graph",
               "state": {},
-              "pinned": true
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 729.5
+    "width": 281.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "zk-prefixer:Create new unique note": false,
-      "graph:Open graph view": false,
-      "audio-recorder:Start/stop recording": false,
-      "workspaces:Manage workspace layouts": false,
       "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-importer:Open Importer": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-git:Open Git source control": false,
-      "markdown-importer:Open format converter": false
+      "markdown-importer:Open format converter": false,
+      "zk-prefixer:Create new unique note": false,
+      "audio-recorder:Start/stop recording": false,
+      "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "61ff2f04838c5115",
+  "active": "03c017ddc53179bd",
   "lastOpenFiles": [
+    "Theory/ML with Pytorch and Sklearn/ch12/appendix_h_cloud-computing.pdf",
+    "Theory/ML with Pytorch and Sklearn/ch12/appendix_h_cloud-computing.pdf.crdownload",
+    "Theory/ML with Pytorch and Sklearn/__pycache__/python_environment_check.cpython-39.pyc",
+    "Theory/ML with Pytorch and Sklearn/__pycache__",
+    "Theory/Readme.md",
+    "Theory/ML with Pytorch and Sklearn/Readme.md",
+    "Theory/ML with Pytorch and Sklearn/README_book.md",
     "Readme.md",
-    "ML with Pytorch and Sklearn/Machine Learning using PyTorch and Scikit-Learn.md",
-    "RoadMap.md",
-    "ML specialization  Course/Course Notes.md",
-    "Book 100 Page/100 Page ML Book.md",
-    "Untitled 1.canvas",
-    "Untitled.canvas",
-    "Trial on obsidians.md",
-    "Pasted image 20241002045700.png",
-    "Book 100 Page/Reinforcement Learning.md",
-    "Pasted image 20241002045254.png.md",
-    "Pasted image 20241002045254.png",
-    "Book 100 Page/Supervised Learning.md",
-    "Book 100 Page/Unsupervised Learning.md",
-    "Internal link.md",
-    "Book 100 Page/Topic Not Covered Image, Text, NN.md",
-    "ML specialization  Course",
-    "2024-10-02.md",
-    "2024-10-01.md",
-    "ML with Pytorch and Sklearn",
-    "Book 100 Page",
-    "202410020105.md",
-    "202410020040.md",
-    "202410012355.md",
-    "Pasted image 20240926021048.png",
-    "Notion",
-    "202409290309.md",
-    "2024-09-25.md",
-    "Untitled 2.canvas",
-    "Welcome.md"
+    "Theory/ML with Pytorch and Sklearn/ch12/12. Parallelizing Neural Network Training with PyTorch.md",
+    "Theory/ML with Pytorch and Sklearn/python_environment_check.py",
+    "Theory/ML with Pytorch and Sklearn/Makefile",
+    "Theory/ML with Pytorch and Sklearn/LICENSE.txt",
+    "Theory/ML with Pytorch and Sklearn/environment.yml",
+    "Theory/ML with Pytorch and Sklearn/supplementary/running-on-colab.pdf",
+    "Theory/ML with Pytorch and Sklearn/supplementary",
+    "Theory/ML with Pytorch and Sklearn/ERRATA/old-errata/images/38.png",
+    "Theory/ML with Pytorch and Sklearn/ERRATA/old-errata/images/242.png",
+    "Theory/ML with Pytorch and Sklearn/ERRATA/old-errata/images/366.png",
+    "Theory/ML with Pytorch and Sklearn/ERRATA/old-errata/README.md",
+    "Theory/ML with Pytorch and Sklearn/ERRATA/old-errata/images",
+    "Theory/ML with Pytorch and Sklearn/ERRATA/README.md",
+    "Theory/ML with Pytorch and Sklearn/ch19/figures/19_13.png",
+    "Theory/ML with Pytorch and Sklearn/ch19/figures/19_12.png",
+    "Theory/ML with Pytorch and Sklearn/ch19/figures/19_11.png",
+    "Theory/ML with Pytorch and Sklearn/ch19/figures/19_10.png",
+    "Theory/ML with Pytorch and Sklearn/ch19/figures/19_09.png",
+    "Theory/ML with Pytorch and Sklearn/ch19/figures/19_07.png",
+    "Theory/ML with Pytorch and Sklearn/ch19/figures/19_08.png",
+    "Theory/ML with Pytorch and Sklearn/ch19/README.md",
+    "Theory/ML with Pytorch and Sklearn/ch18/README.md",
+    "Theory/ML with Pytorch and Sklearn/ch17/README.md",
+    "Theory/ML with Pytorch and Sklearn/ch16/README.md",
+    "Theory/ML with Pytorch and Sklearn/ch15/README.md",
+    "Theory/ML with Pytorch and Sklearn/ch14/README.md",
+    "Theory/ML with Pytorch and Sklearn/ch13/README.md",
+    "Theory/ML with Pytorch and Sklearn/ch12/README.md",
+    "Theory/ML with Pytorch and Sklearn/ch11/README.md",
+    "Theory/ML with Pytorch and Sklearn/ch10/README.md",
+    "Theory/ML with Pytorch and Sklearn/ch09/README.md",
+    "Theory/ML with Pytorch and Sklearn/ch08/README.md",
+    "Theory/ML with Pytorch and Sklearn/ch07/README.md",
+    "Theory/ML with Pytorch and Sklearn/ch06/README.md",
+    "Theory/ML with Pytorch and Sklearn/ch05/README.md",
+    "Theory/ML with Pytorch and Sklearn/ch04/README.md",
+    "Theory/ML with Pytorch and Sklearn/ch03/README.md",
+    "Theory/ML with Pytorch and Sklearn/ch02/README.md"
   ]
 }

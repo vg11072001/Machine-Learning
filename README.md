@@ -7,8 +7,6 @@
 [View Interactive Plot](https://plotly.com/~vg11072001/3/)
 
 
-
-
  ## Deep Learning 
    * [CS 230 ― Deep Learning Cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/)
    * [Complete Deep Learning by Krish Naik](https://www.youtube.com/playlist?list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi) | [Notes](https://github.com/krishnaik06/Complete-Deep-Learning-With-Materials)
@@ -37,6 +35,7 @@
 ## NLP/LLM
 * [Understanding Large Language Models](https://magazine.sebastianraschka.com/p/understanding-large-language-models)
 * [Stanford CS224D: Natural Language Processing with Deep Learning](https://web.stanford.edu/class/cs224n/)
+* ![alt text](images/LLMModelRoadmap.png)
 
  ## Data Science
  * [Data Science Tools Standford student](https://www.mit.edu/~amidi/teaching/data-science-tools/)

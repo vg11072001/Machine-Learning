@@ -9,6 +9,7 @@
 * [How to MLForecast your Time Series Data!](https://levelup.gitconnected.com/how-to-mlforecast-your-time-series-data-c583283e0c28)
 * [Can Machine Learning Outperform Statistical Models for Time Series Forecasting?
 ](https://pub.towardsai.net/can-machine-learning-outperform-statistical-models-for-time-series-forecasting-73dc2045a9c5)
+* [About Time Series](https://www.linkedin.com/posts/danny-butvinik_artificialintelligence-machinelearning-datascience-activity-7252528796900216832-6pKe/?utm_source=share&utm_medium=member_desktop)
 
 ## Theory
 
