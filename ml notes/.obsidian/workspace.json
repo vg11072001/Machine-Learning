@@ -10,12 +10,108 @@
           {
             "id": "03c017ddc53179bd",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Theory/ML with Pytorch and Sklearn/Readme.md",
+                "file": "Readme.md",
                 "mode": "source",
                 "backlinks": false,
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Readme"
+            }
+          },
+          {
+            "id": "6f689fd2b0bc1e53",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Theory/Theory Readme.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Theory Readme"
+            }
+          },
+          {
+            "id": "56bd08af51c405ed",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MLCoding/MLCoding Readme.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "MLCoding Readme"
+            }
+          },
+          {
+            "id": "291854a52be9a94b",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Papers/Papers Readme.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Papers Readme"
+            }
+          },
+          {
+            "id": "a927a08cb6137e6c",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kaggle/Kaggle Readme.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Kaggle Readme"
+            }
+          },
+          {
+            "id": "8ceb9c4cc34b7030",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Portfolio/Portfolio Readme.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "Portfolio Readme"
+            }
+          },
+          {
+            "id": "65834a68a16a590a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Theory/NN ZerotoHero Series/Readme.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -23,7 +119,7 @@
             }
           }
         ],
-        "stacked": true
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -88,6 +184,7 @@
       {
         "id": "ff7e5bcb39909171",
         "type": "tabs",
+        "dimension": 74.4550408719346,
         "children": [
           {
             "id": "7dd8b98f5bfbf602",
@@ -155,44 +252,19 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Theory/ML with Pytorch and Sklearn/Readme.md"
+                "file": "Theory/NN ZerotoHero Series/Readme.md"
               },
               "icon": "lucide-list",
               "title": "Outline of Readme"
-            }
-          },
-          {
-            "id": "f985ec9dffe1cf20",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
             }
           }
         ],
         "currentTab": 4
       },
       {
-        "id": "6b9edabced3533d7",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "e7842e1631bed8de",
-            "type": "leaf",
-            "state": {
-              "type": "mindmap",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          }
-        ]
-      },
-      {
         "id": "0b4ac8e8d34df828",
         "type": "tabs",
+        "dimension": 25.544959128065393,
         "children": [
           {
             "id": "3d2d61df169e967b",
@@ -208,7 +280,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 281.5
+    "width": 301.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -224,53 +296,52 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "03c017ddc53179bd",
+  "active": "65834a68a16a590a",
   "lastOpenFiles": [
-    "Theory/ML with Pytorch and Sklearn/ch12/appendix_h_cloud-computing.pdf",
-    "Theory/ML with Pytorch and Sklearn/ch12/appendix_h_cloud-computing.pdf.crdownload",
-    "Theory/ML with Pytorch and Sklearn/__pycache__/python_environment_check.cpython-39.pyc",
-    "Theory/ML with Pytorch and Sklearn/__pycache__",
-    "Theory/Readme.md",
-    "Theory/ML with Pytorch and Sklearn/Readme.md",
-    "Theory/ML with Pytorch and Sklearn/README_book.md",
+    "Portfolio/Inspirations.md",
+    "Theory/NN ZerotoHero Series/Readme.md",
+    "Portfolio/Portfolio Readme.md",
+    "Kaggle/Kaggle Readme.md",
+    "Papers/Papers Readme.md",
+    "MLCoding/MLCoding Readme.md",
+    "Theory/Theory Readme.md",
     "Readme.md",
-    "Theory/ML with Pytorch and Sklearn/ch12/12. Parallelizing Neural Network Training with PyTorch.md",
-    "Theory/ML with Pytorch and Sklearn/python_environment_check.py",
-    "Theory/ML with Pytorch and Sklearn/Makefile",
-    "Theory/ML with Pytorch and Sklearn/LICENSE.txt",
-    "Theory/ML with Pytorch and Sklearn/environment.yml",
-    "Theory/ML with Pytorch and Sklearn/supplementary/running-on-colab.pdf",
-    "Theory/ML with Pytorch and Sklearn/supplementary",
-    "Theory/ML with Pytorch and Sklearn/ERRATA/old-errata/images/38.png",
-    "Theory/ML with Pytorch and Sklearn/ERRATA/old-errata/images/242.png",
-    "Theory/ML with Pytorch and Sklearn/ERRATA/old-errata/images/366.png",
-    "Theory/ML with Pytorch and Sklearn/ERRATA/old-errata/README.md",
-    "Theory/ML with Pytorch and Sklearn/ERRATA/old-errata/images",
-    "Theory/ML with Pytorch and Sklearn/ERRATA/README.md",
-    "Theory/ML with Pytorch and Sklearn/ch19/figures/19_13.png",
-    "Theory/ML with Pytorch and Sklearn/ch19/figures/19_12.png",
-    "Theory/ML with Pytorch and Sklearn/ch19/figures/19_11.png",
-    "Theory/ML with Pytorch and Sklearn/ch19/figures/19_10.png",
-    "Theory/ML with Pytorch and Sklearn/ch19/figures/19_09.png",
-    "Theory/ML with Pytorch and Sklearn/ch19/figures/19_07.png",
-    "Theory/ML with Pytorch and Sklearn/ch19/figures/19_08.png",
-    "Theory/ML with Pytorch and Sklearn/ch19/README.md",
-    "Theory/ML with Pytorch and Sklearn/ch18/README.md",
-    "Theory/ML with Pytorch and Sklearn/ch17/README.md",
-    "Theory/ML with Pytorch and Sklearn/ch16/README.md",
-    "Theory/ML with Pytorch and Sklearn/ch15/README.md",
-    "Theory/ML with Pytorch and Sklearn/ch14/README.md",
+    "Portfolio/Open source.md",
+    "assets/Pasted image 20241112083428.png",
+    "Theory/NN ZerotoHero Series/micrograd/setup.py",
+    "Theory/NN ZerotoHero Series/nn-zero-to-hero/README.md",
+    "Theory/NN ZerotoHero Series/nn-zero-to-hero/LICENSE",
+    "Theory/ML with PyTorch and Sklearn/ch12/README.md",
+    "Theory/ML with PyTorch and Sklearn/ch12/12. Parallelizing Neural Network Training with PyTorch.md",
+    "Theory/ML with PyTorch and Sklearn/Readme.md",
+    "Theory/NN ZerotoHero Series/micrograd/test/test_engine.py",
+    "Theory/NN ZerotoHero Series/micrograd/test",
+    "Theory/NN ZerotoHero Series/micrograd/micrograd/__init__.py",
+    "Theory/NN ZerotoHero Series/micrograd/micrograd/nn.py",
+    "Theory/NN ZerotoHero Series/micrograd/micrograd/engine.py",
+    "Theory/NN ZerotoHero Series/micrograd/micrograd",
+    "Theory/NN ZerotoHero Series/micrograd",
+    "Theory/NN ZerotoHero Series/nn-zero-to-hero/lectures/micrograd/micrograd_lecture_second_half_roughly.ipynb",
+    "Theory/Book 100 Page/2. Mathematics for Notation and Definitions.md",
+    "Papers/Extra.md",
+    "assets/Pasted image 20241110201951.png",
+    "assets/Pasted image 20241110202015.png",
+    "assets/Pasted image 20241110202047.png",
+    "assets/Pasted image 20241111143542.png",
     "Theory/ML with Pytorch and Sklearn/ch13/README.md",
-    "Theory/ML with Pytorch and Sklearn/ch12/README.md",
-    "Theory/ML with Pytorch and Sklearn/ch11/README.md",
-    "Theory/ML with Pytorch and Sklearn/ch10/README.md",
-    "Theory/ML with Pytorch and Sklearn/ch09/README.md",
-    "Theory/ML with Pytorch and Sklearn/ch08/README.md",
-    "Theory/ML with Pytorch and Sklearn/ch07/README.md",
-    "Theory/ML with Pytorch and Sklearn/ch06/README.md",
-    "Theory/ML with Pytorch and Sklearn/ch05/README.md",
-    "Theory/ML with Pytorch and Sklearn/ch04/README.md",
-    "Theory/ML with Pytorch and Sklearn/ch03/README.md",
-    "Theory/ML with Pytorch and Sklearn/ch02/README.md"
+    "Theory/ML with PyTorch and Sklearn/ch01/README.md",
+    "Theory/ML with PyTorch and Sklearn/README_book.md",
+    "Theory/Book 100 Page/1. 100 Page ML Book.md",
+    "assets/Pasted image 20241110201605.png",
+    "assets/Pasted image 20241110201249.png",
+    "Kaggle/Competitions Time Series or regression.md",
+    "202411040715.md",
+    "Theory/ML with Pytorch and Sklearn/ch12/celeba/img_align_celeba/img_align_celeba/005499.jpg",
+    "Theory/ML with Pytorch and Sklearn/ch12/celeba/img_align_celeba/img_align_celeba/005498.jpg",
+    "Theory/ML with Pytorch and Sklearn/ch12/celeba/img_align_celeba/img_align_celeba/005497.jpg",
+    "Theory/ML with Pytorch and Sklearn/ERRATA/old-errata/README.md",
+    "Theory/ML with Pytorch and Sklearn/ERRATA/README.md",
+    "Theory/ML with PyTorch and Sklearn/ch19/README.md",
+    "Theory/ML with PyTorch and Sklearn/ch18/README.md"
   ]
 }

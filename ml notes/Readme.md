@@ -1,21 +1,53 @@
-# Courses
-1. https://www.deeplearning.ai/courses/machine-learning-specialization/
-2. Mathematics for Machine Learning and Data Science [Specialization](https://www.coursera.org/specializations/mathematics-for-machine-learning-and-data-science) [Notes](https://github.com/greyhatguy007/Mathematics-for-Machine-Learning-and-Data-Science-Specialization-Coursera)
-3. https://www.coursera.org/specializations/deep-learning
 
+%% 
 # Status
-
-## **Daily**
-- [ ] Theory Coursera/ Book reading, [[Theory/Readme|Readme]]
+![[Pasted image 20241111143542.png]]
+ ## **Daily**
+- [ ] Theory Coursera/ Book reading, [[Theory Readme|Theory Readme]]
 - [ ] Leetcode 
 - [ ] Extra checks planning / Resource [[#Blog guide]]
 ## **Bi Weekly**
-- [ ] ML Coding [[MLCoding/Readme|Readme]]
+- [ ] ML Coding [[MLCoding Readme|MLCoding Readme]]
 ## **Weekend**
-- [ ] Portfolio [[Portfolio/Readme|Readme]], Kaggle[[Kaggle/Readme|Readme]], Papers [[Papers/Readme|Readme]]
+- [ ] Portfolio [[Portfolio Readme|Portfolio Readme]], Kaggle[[Kaggle Readme|Kaggle Readme]], Papers [[Papers Readme|Papers Readme]]
 
+> add calendar
+
+|                  |        | Knowledge Base              | Interview                |                    |
+| ---------------- | ------ | --------------------------- | ------------------------ | ------------------ |
+| 4-5days Daily    | 1-2hr  | Basic ml theory             | basic ML theory          |                    |
+|                  |        |                             |                          |                    |
+| 4-5days Daily    | 1-2hr  | LDSA                        | Leetcode DSA             |                    |
+|                  |        |                             |                          |                    |
+| Weeknd           |        | portfolio                   | 1-2 projects             |                    |
+|                  |        |                             |                          |                    |
+| weekly 2-3 times | 2hrs   | ML coding                   | all basic ML algo coding |                    |
+|                  |        |                             |                          |                    |
+| 1-2 a week       | 30min  | extra collections           |                          |                    |
+|                  |        |                             | **Reaserch Role**        | **Technical Role** |
+|                  |        | hard theory                 |                          |                    |
+|                  |        |                             | **Project**              |                    |
+|                  |        | Time series - o9 nikhil     |                          |                    |
+|                  |        | ML - o9 Recomm, LR          | 1 regression/recomm      |                    |
+| Weeknd           | 2 proj | DL 10 repos/Kaggle          | 1 DL                     |                    |
+|                  |        | DL 4-5 papers               |                          |                    |
+| Weeknd           | 2 proj | NLP 5repos/Kaggle           | 1 NLP                    |                    |
+|                  |        | NLP 10 papers /company blog |                          |                    |
+| 3rd week of nov  |        |                             | **LinkedIn active**      |                    |
+Portfolio: 
+1. papers(2-3) stream based
+2. project (ready chip Huyen how to add on resume)
+	1. kaggle
+	2. some blogs
+	3. companies ML
+	4. open source project ML
+	5. coding/debugging/SW
+ 
+ %%
+
+---
 # Resources
-Contain all kind Handwritten Resources: [Github](https://github.com/merveenoyan/my_notes)
+### Contain all kind Handwritten Resources: [Github](https://github.com/merveenoyan/my_notes)
 ```
 This repository contains my lecture notes from graduate school on following topics 👇🏼
 
@@ -26,8 +58,7 @@ This repository contains my lecture notes from graduate school on following topi
 - Image Processing (follows digital image processing book): 21 cheatsheets
 - Data Structures and Algorithms (follows this book by Goodrich): 26 cheatsheets
 ```
-## Select Interview Prep Resources used.
-
+### Select Interview Prep Resources used.
 - [Top 170 Machine Learning Interview Questions 2023 | Great Learning](https://www.mygreatlearning.com/blog/machine-learning-interview-questions/)
 - [50+ NLP Interview Questions and Answers in 2023](https://www.mygreatlearning.com/blog/nlp-interview-questions/)
 - [100+ Data Science Interview Questions and Answers in 2023](https://www.mygreatlearning.com/blog/data-science-interview-questions/)
@@ -44,14 +75,34 @@ This repository contains my lecture notes from graduate school on following topi
 ML Ques of Interview
 
 - [Github](https://github.com/Sindurav/CodingInterviews/tree/master/QuantumBlack%20Machine%20Learning%20Software%20Engineer%202019) 3 ques
+- 500 interview ML Q&A [LINK](https://www.google.co.in/books/edition/_/_w_zDwAAQBAJ?hl=en&gbpv=0)
+- chiphuyen - GITHUB https://github.com/chiphuyen/ml-interviews-book
+	- interview question of chiphuyen - https://github.com/Anirudh257/Solutions-to-Machine-Learning-Interviews-Book-By-Chip-Huyen
+	- https://github.com/egonos/Introduction-to-Machine-Learning-Interviews-Book-Solutions
+	
 
 Cheatsheets available 
 * https://github.com/TheSuranaverse/Resources
+
+---
+
 # Motivation
 
 > ```How to transition into an MLE? As someone who went through this transition back in school, I hate to discourage people, but it’s also no use being dishonest: Grasping machine learning theory and applying it to production systems takes years of study and experience. Anyone can copy & paste PyTorch code online, but only seasoned ML engineers can trouble-shoot a model that’s not performing as intended. ML engineering is somewhat like medicine in that neural networks are as much an enigma as the human body: Highly specialized knowledge is needed to diagnose a non-working system and prescribe remedies.``` -- yuan meng
 
+
+>**Q** - Any words of wisdom for Machine Learning students or practitioners starting out?  
+**A** - You learn the most by reinventing the wheel. Don't just read about Machine Learning algorithms and fall into trap of thinking you understand the concepts because everything you read sounds reasonable. Read it once and then re-implement it from scratch, yourself. And while you're at it, do it in Javascript ;)
+-- [Andrej Karpathy Interview](https://www.datascienceweekly.org/data-scientist-interviews/training-deep-learning-models-browser-andrej-karpathy-interview)
+---
+
+
 # Blog guide
+
+### Chip Huyen ML Interviews books- [Link](https://huyenchip.com/ml-interviews-book/)
+
+- [ ] Technical Interview skills [link](https://huyenchip.com/ml-interviews-book/contents/2.1.1.1-technical-skills.html)
+- [ ] What do's and don't [link](https://huyenchip.com/ml-interviews-book/contents/4.4.2-don%E2%80%99ts.html)
 
 ### ML Engineer Job hunting - [Link](https://www.yuan-meng.com/posts/mle_interviews/)
 
@@ -148,6 +199,53 @@ In the early stages of a career, being a generalist is often better than being a
 10) Make word documents and high-level workflows and decorate it in the README file in the github repo.
 11) If you just do this much enough, there are very very high probabilities that you will stand apart in this tough market.
 
+### How I’d learn Machine Learning & AI in 2024 (if I could start over) -- 7-step Roadmap [Link](https://www.youtube.com/watch?v=Uq8f1fkOGXs)
+
+- [Statistical Learning with Python](https://www.youtube.com/playlist?list=PLoROMvodv4rPP6braWoRt5UCXYZ71GZIQ) You tube playlist
+- The Math Skills that make Machine Learning easy (and how you can learn it) [Link](https://www.youtube.com/watch?v=wOTFGRSUQ6Q)
+
+**=== Math ===** 
+1. Stats & Probability: [https://www.khanacademy.org/math/stat...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbXdOZ1NRamVZWU83b3NhYnFsY0h0MlItcGgyQXxBQ3Jtc0ttSFlWT2c1SV9HVU4wTk1GbU5xMV9hbWNVbF8zUERuUUZucFV0Uy02bGF2YW1fb0h1VTUxZlVpdFBTUXQzcVpTRUdrWnVsb2lvUkxtZVNpSWlTdlZGY1JIUVRoM2FYMi1kcWV2bDZ2R01EQ1pRVmhvSQ&q=https%3A%2F%2Fwww.khanacademy.org%2Fmath%2Fstatistics-probability&v=Uq8f1fkOGXs)    [https://www.edx.org/learn/probability...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqblRfSWdTZ0dMYkdpMW1GZEhvcERCMWhHN0xHQXxBQ3Jtc0tuZERJRGZaTXo0dVNBOU5LZEc1Z0J2TS1tMkhOOU9vSkNXaUR4OEdIWXdBc3F1dEhBT19ycWNCVWdnQjJGaFRSblB6RmFaQW9sX3JpRExwZjVSdTVvcGdCTU1mOVNmSnJCT3RGXy1IUF9JZTlaX0Rhaw&q=https%3A%2F%2Fwww.edx.org%2Flearn%2Fprobability%2Fharvard-university-introduction-to-probability&v=Uq8f1fkOGXs) 
+2. Linear Algebra: [https://www.khanacademy.org/math/line...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbUhJWWYwN3BpYUxMcHpmM3E4aFhGYVZUNGpMQXxBQ3Jtc0ttLVlFMjdNX2pzMm04UGdMa1R3ckotUmJTNUw2Y3ctVDh2cWtzWlNmQkZCYjZyajUxSFNVNWtTSGhuR3hEMjNrX0VGSzE4R1AyY2h4X0xNYWtPclNoU1BEU05lN1drQXB6dlk2M0dLZWdoZTNJbVhNOA&q=https%3A%2F%2Fwww.khanacademy.org%2Fmath%2Flinear-algebra&v=Uq8f1fkOGXs) [https://www.edx.org/learn/linear-alge...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbkFzNG5ib2ktbElEVjBGeWJUV0F3bDdoaW5qZ3xBQ3Jtc0trZExMZ3lvUGUzTjlMTU15NnRPTldUOGs1WmtzekxpVVVWS0pmc1F2T05nUkgwQkRScjQ1czlvczlWT2c4YWxDY2xpRjJLNmJsMjVsYmIyc19KdTRxdkdicE0wdHlRVXl2bEdURGF0a0xyTEt3a1pVZw&q=https%3A%2F%2Fwww.edx.org%2Flearn%2Flinear-algebra%2Fthe-university-of-texas-at-austin-linear-algebra-foundations-to-frontiers&v=Uq8f1fkOGXs)
+3. 3Blue1brown (neat visuals)    [![](https://www.gstatic.com/youtube/img/watch/yt_favicon_ringo2.png) • Vectors | Chapter 1, Essence of linea...](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=1&t=0s)   
+4. Calculus: [https://www.khanacademy.org/math/diff...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa09pZHhFYVBBTE0yY3lOMk9LTXJENTZ5dTlMQXxBQ3Jtc0trTUVLYW5IdHZuVDVpVkhnUHkxaVloR2JyQ3lxRW9YdmJ2RDd1Y2c4cmZHbVM5MkU3bnJMYkcyUHBSS1JyOXZfS012dWRkblY4ektxb2VtM0pZdFBuUnBLckQ4bGRycjRoa1kyOE11UzI3eHFyUHctRQ&q=https%3A%2F%2Fwww.khanacademy.org%2Fmath%2Fdifferential-calculus&v=Uq8f1fkOGXs) 
+5. 3Blue1Brown (amazing visuals!)    [![](https://www.gstatic.com/youtube/img/watch/yt_favicon_ringo2.png) • The essence of calculus](https://www.youtube.com/watch?v=WUvTyaaNkzM&t=0s)   
+
+👇🏻 Khan Academy Statistics & Probability [https://www.khanacademy.org/math/stat...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbllNWW1ZTmFWVTBvYm5xVGdQT1ZrZ05nQmh5UXxBQ3Jtc0tuYklLMjNFX1JrbEtCajM0R3RYVVB5QXhBTTI0dU5rbVpNV04xc0dyVzJodGZLZFNDRE15d09nVXBwSzRfU3BNNkRabGQzM09yWUp0UzRfak1xSXFkX2tfYi1QYklYRXEwOGhMM0FVb0VoaGJGZ21oMA&q=https%3A%2F%2Fwww.khanacademy.org%2Fmath%2Fstatistics-probability&v=wOTFGRSUQ6Q) 
+Linear Algebra [https://www.khanacademy.org/math/line...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbExKZWZkT3ZYSjdrc2RtdVo3czl2dXFFdnRtQXxBQ3Jtc0tseVNJTUJfbEdIMXA1U3k1d2FYYkl3Z0l3NC1IMEJsYVVFVXRIMC1vU09nakxpM09FdzJ2TC14T1ZlSGVFcGV3cW5WMGw0RVJSOFJDZlQ4TV9JZk9nLXcwSkllOEdHV292cXVCa3IycjhBNmdVb3JhUQ&q=https%3A%2F%2Fwww.khanacademy.org%2Fmath%2Flinear-algebra&v=wOTFGRSUQ6Q) 
+Differential Calculus [https://www.khanacademy.org/math/diff...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbm9VdVdheU9sSlNZay12dTlxamVZT0ZnZW5UZ3xBQ3Jtc0ttTU5qUmFZdUFFS3lOeWdPZHFYMks0aEdacU5vQ1VBU1FwMGV4YkM2ZE9RY1V3ME1qYTdVekQ5bmY1R28yS3NqRVRkNll1TFVoT0pRRHBmYmM0eTJhOFVqWVZKR29uZFItWWNQTUhvXzYxNGZfN3d2Yw&q=https%3A%2F%2Fwww.khanacademy.org%2Fmath%2Fdifferential-calculus&v=wOTFGRSUQ6Q) 
+An Introduction to Statistical Learning (In R or Python) Book / PDF [https://www.statlearning.com/](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbWJQX2FZZHZmY0owaE9BVHlCenp0TkhOcGRUQXxBQ3Jtc0trbW1YZThUUGM4QkxFNzk5U1BOdkt3Qmo3MVdZM3ZQREpCLVNIcE51dlBSV2c0ZlNGTG1GazhhNnJBdm5qWGdtdDUzUkFJUmhibXV6c1RmbURqUFFCdFBuSXRYMWpjSjU0b0VQSEhPbEpGVjVoVWJsaw&q=https%3A%2F%2Fwww.statlearning.com%2F&v=wOTFGRSUQ6Q) Youtube Playlist:    [![](https://www.gstatic.com/youtube/img/watch/yt_favicon_ringo2.png) • StatsLearning Lecture 1 - part1](https://www.youtube.com/watch?v=5N9V07EIfIg&list=PLOg0ngHtcqbPTlZzRHA2ocQZqB1D_qZ5V&index=1&t=0s)   
+Python Specific Youtube Playlist:    [![](https://www.gstatic.com/youtube/img/watch/yt_favicon_ringo2.png) • Statistical Learning: 1.1 Opening Rem...](https://www.youtube.com/watch?v=LvySJGj-88U&list=PLoROMvodv4rPP6braWoRt5UCXYZ71GZIQ&index=1&t=0s)
+
+**=== Data Tools ===** 
+1. Jupyter: [https://jupyter.org/](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa0dHektOWkFpMW9YLVFtRk5MZVh6NjJ4a1JEZ3xBQ3Jtc0tsV1BoeFNRZGJEQmVmTExyaWM2QUgxMVd6ZEV5ZGZGekRkOGE5NlZTMWt3UXh0ejZfZ0ktLUtUNEQycmM5MUJTMm1neUJlMUNlelNHOWc2UlZYa2oyWUFOcU5qb0IwWkJjc3FwY19kdWhyM0RnbG82Yw&q=https%3A%2F%2Fjupyter.org%2F&v=Uq8f1fkOGXs) 
+2. Numpy: [https://numpy.org/doc/stable/user/qui...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbXdBbXJhTVV4cmxGNTRMajFWZ1dxX2hPc0tEQXxBQ3Jtc0tsbFFsa0NuRmpzWGtRV1NGZXFELTBHVC1NWEUyS0k5NFlUdmprb25KNEt5MG9IMUhYTnFfZlhJa3F1akVVSV9JRE1xQ3EwUjZjR0NvWEozYmQ4cGppdnFQSzZNWFRSLXkzRmxZazByRUI4SUt2TlBkbw&q=https%3A%2F%2Fnumpy.org%2Fdoc%2Fstable%2Fuser%2Fquickstart.html&v=Uq8f1fkOGXs) 
+3. Pandas: [https://pandas.pydata.org/docs/user_g...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbVI0dTdQeDlyckVUblRjOXBCNGtxQkNGM196QXxBQ3Jtc0tsTHM3SUswcUYyOWU1OU96YlA5ZHRsMjU0MWVqUjVlLTNVVFJjb1ZtaS1Ldy1hdGtPMGEwVktqVzBLME51UC1nVW9nQV9uNkxkNU9rVXh4WnVIOTlKYWVGYjh3d1BibnN5dFQ5V0U5Yzh2NUdGWU5JWQ&q=https%3A%2F%2Fpandas.pydata.org%2Fdocs%2Fuser_guide%2F10min.html&v=Uq8f1fkOGXs) 
+4. Matplotlib: [https://matplotlib.org/stable/tutoria...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbm1Xa3Y3c3BOTVRCMnVBVHl1QXNtMW5wOXFfZ3xBQ3Jtc0tuZ1VvX1dvcW9TYXpQQ09yamNDNUtja2U5Tno1UUhGN0xqVDJKaUZaZkhsd2gyRkt4cHplMHV0RUd1eHllWk02QUN6N1lXaTF3QlZFLXFyakpja1cyeU84cjQtcTkxT3VxaHk1ckVpQjI3V0FzYjdqUQ&q=https%3A%2F%2Fmatplotlib.org%2Fstable%2Ftutorials%2Findex.html&v=Uq8f1fkOGXs) 
+
+**=== ML Theory ===** 
+1. ISL (free PDF) [https://www.statlearning.com/](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa2RXdGFhMTFkNG9kNl9zSzhKT3Fsekt4UjZZd3xBQ3Jtc0tuX2VlSGxkZ05BRzFwSGpuZGJrWldXZEtpZnFTU1dMMTBqUF8xeTQ3dDNEOXg4TEZJcl9HM0U2V3NDYjVXc3BGR1BDTDg3Y2ZrQ0JSR0JEdzVnb0pEZy1KN0pUY2JCZFNhS0Z2X3BNa0hJZGJERDV0Yw&q=https%3A%2F%2Fwww.statlearning.com%2F&v=Uq8f1fkOGXs) 
+2. ISL Python Playlist:    [![](https://www.gstatic.com/youtube/img/watch/yt_favicon_ringo2.png) • Statistical Learning with Python](https://www.youtube.com/playlist?list=PLoROMvodv4rPP6braWoRt5UCXYZ71GZIQ)  
+3. Coursera ML introduction: [https://www.coursera.org/specializati...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbnRZUnoxQzJUOTJBZnhZS0ZXUktCWDN2a05sUXxBQ3Jtc0tuLXdTd2V6dmtJZEJqdDZueFlSdWVfdW1NaWFGVEtnZUcxbmNETGozeUxOYVZPTUtiSjcyQThqbi1LRFRhaFpVbDVnRUNTQS1BRHNlYW94Y291S3hmR2RkV2dUV3hNNTl0X1JHd0dBMG01RXBBT1ZkUQ&q=https%3A%2F%2Fwww.coursera.org%2Fspecializations%2Fmachine-learning-introduction%23courses&v=Uq8f1fkOGXs) 
+
+**=== ML tools ===** 
+1. SK Learn: [https://scikit-learn.org/stable/tutor...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa3ljTEdrbVp1blhkSlU2X2VZTFo5VkVTb0s5QXxBQ3Jtc0trbTdMTU1RbC1IN0Z0VEU2TDJHRm1CLVB0WGwtZ3pxMFZGbU5QanlzWUFvOVRMZjByR09QSWY0ZnZpLW9FN2hOZHZtT2dtVGR0Uk5ib21CNVNiNnphZVVqTlh6cGFVbGtLOVhyVUdqcmNFM3IxMkFhTQ&q=https%3A%2F%2Fscikit-learn.org%2Fstable%2Ftutorial%2Fbasic%2Ftutorial.html&v=Uq8f1fkOGXs) 
+2. SK Learn algorithm Cheat Sheet: [https://scikit-learn.org/stable/tutor...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbHJZNkhtRVhCdkxzdTc2bnNOa045T0VPNlE3UXxBQ3Jtc0tsTzdXeHZScnNPQnI1djZ1c0twLU5JdGVwTGFxX0RJR19oR1BMQXh0UFZ6UmplVmFPSkQ1b2RFYWxkNGxYOG1LQktwR1luWlgxeUtILU1EZWtwcm9VUk1RM2tVcXpxRGhyX2xNNVppMUZLdkI1bmNyVQ&q=https%3A%2F%2Fscikit-learn.org%2Fstable%2Ftutorial%2Fmachine_learning_map%2F&v=Uq8f1fkOGXs) 
+
+**=== Neural Networks / Deep Learning ===**   
+
+1. Coursera: [https://www.coursera.org/specializati...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbFc5RjVVa0tQNmNrVVZYOHozUndkc294OF9MUXxBQ3Jtc0tsdUt4bktBS1lfSTB1ZWgtdG9kR0FhUUNyWGc3d3h2cDQ4YWY0eHFzT1p0N1RoMElqVWlnWXlaOGxjQWx4UlM2dUtrRk1HRk5qNnZnOEZFZE85d2kwQVliT1BWeTB0MHk1R2E0cUhvbElqeGdoOTRvNA&q=https%3A%2F%2Fwww.coursera.org%2Fspecializations%2Fdeep-learning%3Firclickid%3Dx-U2gpTSJxyLTxPwUx0Mo3EoUkDXeu01jUFXWo0%26irgwc%3D1%23courses&v=Uq8f1fkOGXs) 
+2. 3Blue1Brown (amazing visuals!)    [![](https://www.gstatic.com/youtube/img/watch/yt_favicon_ringo2.png) • But what is a neural network? | Chapt...](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=1&t=0s)   
+3. Andrej Kaparthy    [![](https://www.gstatic.com/youtube/img/watch/yt_favicon_ringo2.png) • Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)   
+4. Hugging Face NLP course: [https://huggingface.co/learn/nlp-cour...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbks0SG9hQ0FLV2hLeFdHM21uc0gtNGVwdXJEd3xBQ3Jtc0trQzRyM0c5aUNtOWVBNXFkREdiaVBZckduSlhSbDZIb0o0VFRjR2JYVE9LS1RWYkJjazU2bmUtaUwzdkU2eUQtZEVpUXZ5S05MdW9zaDhmZFEySEljZUQ5YWtrY3RIVXJ5T0Rlc2RxSGlzSkVPLTJQbw&q=https%3A%2F%2Fhuggingface.co%2Flearn%2Fnlp-course%2Fchapter1%2F1&v=Uq8f1fkOGXs) 
+5. Keras [https://keras.io/getting_started/](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbnVoTWRoYmN4d0J3UHhSM1UtcVUwbkZ1MmhtZ3xBQ3Jtc0trd2FkcWRRYTRQWnlHeTJxUVV2cVJ6bWo5UWRDTTNqaERjNlN2eHRfajlYUVR6UFYxU1dmZ1hvc2RfS2JmckJOZlJoYjJlZ2JnTDhwUkMyQU1KZTFaTVFneTltNEVpbjJUeVlpX3J2VFAxN3BHQUpEaw&q=https%3A%2F%2Fkeras.io%2Fgetting_started%2F&v=Uq8f1fkOGXs) 
+
+**=== Real Projects ===**
+
+[https://www.kaggle.com/](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbks1RGJYY3Zla3NMQ3VWZDBYT2JHTldYS01RZ3xBQ3Jtc0tscy1zTnFYY2hhMVpETm5hWXlFWDZZQnUtNFdKZWxQcUFOZHRDMURoVXAwRUxGZUk0MlQtWm9hUnhJb3Bwa2xfVlRiUFlkamlvRDU4ckVYT1lzY0wteUtxZjBHMEJrRDVPY1FtVi1MUnFUZHZsWXBXVQ&q=https%3A%2F%2Fwww.kaggle.com%2F&v=Uq8f1fkOGXs) [https://github.com/](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbHlOd2ZpTkVoZmlnR3gzMVdQeUlzNTVMTFJGZ3xBQ3Jtc0trTTNYRjNJTzRkVTMtUGZVazA1VkhuNWFDOFFrTE1HOGNlZ3dnVzcwWXF3a1JOMENybnFjVGt2TW82VzJxSDY0Skw3RzdkY1dUSlhkSk9QdFVEOGRva1B0T0NFSUpWZlVNZVVxQURSbGtIVTBXVUlTVQ&q=https%3A%2F%2Fgithub.com%2F&v=Uq8f1fkOGXs)
+
+
+[channel @InifinteCodes](https://www.youtube.com/@InfiniteCodes_)
 
 ### How to ace Machine Learning Interviews: My Personal Playbook - [Link](https://mlengineerinsights.substack.com/p/how-i-aced-machine-learning-interviews)
 
@@ -360,7 +458,7 @@ Good luck with your interview preparation, and keep pushing forward!
 
 - **Books**
 - [Naked Statistics](https://www.google.co.uk/books/edition/Naked_Statistics_Stripping_the_Dread_fro/BgFJfC_CrTAC?hl=en&gbpv=1&printsec=frontcover) is a good book to start
-- [Mathematics for Machine Learning](https://www.google.co.uk/books/edition/Mathematics_for_Machine_Learning/pFjPDwAAQBAJ?hl=en&gbpv=1&printsec=frontcover)
+- [Mathematics for Machine Learning](https://www.google.co.uk/books/edition/Mathematics_for_Machine_Learning/pFjPDwAAQBAJ?hl=en&gbpv=1&printsec=frontcover)   https://mml-book.github.io/book/mml-book.pdf
 - **Videos**
 - [Khan Academy](https://www.youtube.com/@khanacademy/playlists)
 - [MIT](https://www.youtube.com/@mitocw/playlists)
@@ -432,7 +530,8 @@ Also, from now on, Kaggle and Huggingface are where you’re going to spend time
 Thanks to [Güldeniz Bektaş](https://medium.com/u/33d5f46322cb?source=post_page-----6cf5e9e0e7af--------------------------------), [Muhammet Nusret Özateş](https://medium.com/u/af00de1b9dfb?source=post_page-----6cf5e9e0e7af--------------------------------), and [Yavuz Kömeçoğlu](https://medium.com/u/3800cff712ab?source=post_page-----6cf5e9e0e7af--------------------------------) for their contributions to this blog post.
 
 
-### How I learned web development, software engineering, & ML
+### How I learned web development, software engineering, & ML- [Link](https://jasonbenn.com/how-i-went-from-finance-ai/how-i-learned-web-development-software-engineering-ml)
+
 
 Ever since Cal Newport wrote about how I learned how to code in [Deep Work](https://amzn.to/2OKq68X) by reading books and going to a bootcamp (which thousands of people do every year - I'm not special), I've been getting a few emails a week asking for more details. Most often, people ask for the specific books I read as I was preparing, or general advice on breaking into the field. Below is a representative sample. If I sent you this link to you, I hope it's helpful! If you have any further questions, please [email me](mailto:jasoncbenn@gmail.com), and I'll use them to improve this guide.
 
@@ -620,7 +719,7 @@ To learn ground floor machine learning skills, I'd go through:
 
  **Level 1 Deep Learning**
 
-### The fundamentals
+#### The fundamentals
 
 Now you've got experience writing machine learning code, it's time to move on to deep learning.
 
@@ -633,7 +732,7 @@ Start with these two foundation courses to get an overview of what deep learning
 
  **Level 2 Deep Learning**
 
-### Coding and training models
+#### Coding and training models
 
 Now you've got an idea of what deep learning is, now it's time to put it into practice and start writing code to run deep learning algorithms.
 
@@ -646,7 +745,7 @@ If you've done the previous courses and steps, you'll have more than enough prer
  
  **Level 3 Deep Learning**
 
-### Getting your models into the hands of others
+#### Getting your models into the hands of others
 
 Alright, you've written some deep learning code and you've got an idea of where machine learning can be used in the world.
 
@@ -694,7 +793,7 @@ But even better than a job (and I’m _very_ biased here), start a business. O
 
 The world needs more people who bet on themselves.
 
-## "What about books?"
+#### "What about books?"
 
 ![my favourite machine learning books (stacked on my desk)](https://www.mrdbourke.com/content/images/2021/10/2021-10-12-ml-books.png)
 
@@ -736,7 +835,7 @@ https://www.youtube.com/watch?v=pHiMN_gy9mk
 https://whimsical.com/machine-learning-roadmap-2020-CA7f3ykvXpnJ9Az32vYXva
 https://github.com/mrdbourke/zero-to-mastery-ml
 
-
+### Advanced Machine Learning Engineer Roadmap [Link](https://github.com/farukalamai/advanced-machine-learning-engineer-roadmap-2024)
 # My Thinking Space
 Topics:
 
