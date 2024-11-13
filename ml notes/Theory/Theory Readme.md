@@ -1,19 +1,3 @@
-%%
-## Status 
-
-- Rough overview of 100 page ML complete
-	- [x] Need to revise from Neural networks
-- PyTorch: 12 Chapter and notebooks
-	- [x] Next chapter  
-	- [ ] Hands on PyTorch Tutorial [YouTube link](https://www.youtube.com/playlist?list=PLXsFtK46HZxWKgwYZzh_c2MmGxIDnRGUT)
-- Neural networks from depth and PyTorch hands On by Andrej Karpathy:
-	- [x] 1st YouTube video from NN: zero to Hero 
-	- [ ] 3rd Video
-	
-	- Output: all theory on NN and LLM parts
-	- CNN architectures not here (use book first)
-%%
-
 # Theory sequence
 
 ### Mathematics cover 
