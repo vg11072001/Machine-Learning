@@ -1,11 +1,3 @@
-%%
-
-# Coding Sequence
-
-- [ ] start with neural networks
-- [ ] go for deep neural network
-%%
-
 # Resources
 
 ### Basic ML from scratch
