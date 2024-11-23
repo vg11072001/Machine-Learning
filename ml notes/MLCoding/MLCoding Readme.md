@@ -1,3 +1,35 @@
+%%
+
+# Coding Sequence
+
+- [ ] start with neural networks
+- [ ] go for deep neural network
+
+Inspired from GPT Learning Hub:
+- Generative LLMs: Basic ML to Implementation of Attention All you need and training own mini LLM
+	- start with neural networks/deep neural networks
+		- [x] NN
+		- [ ] CNN
+			- [ ] Image processing [github](https://github.com/BhanuPrakashNani/Image_Processing?tab=readme-ov-file) [Tutorial](https://github.com/askitlouder/Image-Processing-Tutorials)
+		- [ ] Some complex mode
+	- go for already implemented PyTorch papers/CNN or NN based
+		- [ ] VIT - CNN + Transformer
+		- [ ] Car project decode it
+		- [ ] idea from GTP Hub YouTube
+		- [ ] Kaggle already implemented comp. winning code-> decode.
+		- [ ] training your own mini LLM [link](https://www.google.com/search?sca_esv=a88b1582b82b9395&rlz=1C1UEAD_en-GBIN1073IN1073&biw=1920&bih=869&sxsrf=ADLYWILY5Ox0diBU79ZdAMV8bmIN8LO2pA:1731785005592&q=training+your+own+mini+LLM&tbm=vid&source=lnms&fbs=AEQNm0CvspUPonaF8UH5s_LBD3JPX4RSeMPt9v8oIaeGMh2T2PRrsfVPlQRxSTpQ4UUI6wfsFlEVaMALnJjEZtYpSTLmUV5oGF4fnHSG0LbvLjVKUV0IWX-9yHknaXpsINbxRPK_rD0aGBXyqo-cUa2T6ZySNg4d875n-vXkSutq7bWvEyjXRQuBfWktFSUkoyoeiqhKHNE-BZiSEnsk93CG_Dl8i5jDTw&sa=X&ved=2ahUKEwiwutfwyeGJAxXhUWwGHR4PNSwQ0pQJegQIERAB)
+		- [ ] implementation of attention all you need [link](https://www.google.com/search?sca_esv=a88b1582b82b9395&rlz=1C1UEAD_en-GBIN1073IN1073&sxsrf=ADLYWILDKywN5vMXyR9_XxXcJJIjI3cwKg:1731784949211&q=implementing+Attention+Is+All+You+Need&tbm=vid&source=lnms&fbs=AEQNm0CvJOjjOlYGHpeb6_mX0N9Pz_0vXmyFV6JRst0G88bAGyAKbn3N-PJtAQ9FF1FHZrb3Vxmn8XVEU7WdIN3ev85T-c9yjSuUQM7DyejoPmLMLBxzIHnbdRCYBmryCtnMt_A6w4k9cULSoBpLrQj8FRnSr6R4dg1dQPiX7wbTGa4jNRr-1EsMaELCwmIPmbwPfYZhNgPaqfijDAjpxqO9DWXY4bKmNw&sa=X&ved=2ahUKEwjunebVyeGJAxU_UGcHHaWABCMQ0pQJegQIEhAB&biw=1920&bih=869&dpr=1)
+
+- Fine tunning LLMs using open source like Llama from Meta [link](https://www.google.com/search?q=fine+tune+open+source+models+like+Llama+from+Meta+(without+an+expensive+GPU).&rlz=1C1UEAD_en-GBIN1073IN1073&sourceid=chrome&ie=UTF-8)
+	- [ ] take some hugging face models
+
+- to build Multimodal AI - PyTorch and transformer [link](https://www.google.com/search?q=how+to+build+multimodal+AI+pytorch+transformers&sca_esv=a88b1582b82b9395&rlz=1C1UEAD_en-GBIN1073IN1073&sxsrf=ADLYWIK2BnE1C7csUJqtna1ks5vQGcp-Jg%3A1731785123846&ei=o_E4Z-uvM_qhnesPxo_DmAQ&ved=0ahUKEwirjYmpyuGJAxX6UGcHHcbHEEMQ4dUDCA8&uact=5&oq=how+to+build+multimodal+AI+pytorch+transformers&gs_lp=Egxnd3Mtd2l6LXNlcnAiL2hvdyB0byBidWlsZCBtdWx0aW1vZGFsIEFJIHB5dG9yY2ggdHJhbnNmb3JtZXJzMgUQIRigATIFECEYoAFI3IkBULIFWJ-GAXADeAKQAQCYAb0CoAHuJ6oBCDAuMTUuNy4yuAEDyAEA-AEBmAIcoALfKMICBBAAGEfCAgYQABgWGB7CAgsQABiABBiGAxiKBcICCBAAGIAEGKIEwgIHECEYoAEYCsICBBAhGBXCAgUQIRifBZgDAIgGAZAGCJIHCDQuMTMuOS4yoAe1Ug&sclient=gws-wiz-serp)
+
+Extra:
+- 50-AI/ML papers + technical breakdown of content
+- optimize resume
+%%
+
 # Resources
 
 ### Basic ML from scratch
@@ -7,7 +39,11 @@ https://github.com/eriklindernoren/ML-From-Scratch/
 https://github.com/patrickloeber/MLfromscratch
 https://github.com/alirezadir/Machine-Learning-Interviews/blob/main/src/ml-fundamental.md
 https://github.com/mrdbourke/zero-to-mastery-ml
-https://github.com/souvikmajumder26/Neural-Network-from-Scratch
+
+- Neural Networks
+	- Theory/NN ZerotoHero Series/nn-zero-to-hero/[[Theory/NN ZerotoHero Series/nn-zero-to-hero/README|README]]
+	- https://github.com/souvikmajumder26/Neural-Network-from-Scratch
+	- Simple MNIST NN from scratch only NumPy, no TF/Keras [link](https://www.kaggle.com/code/wwsalmon/simple-mnist-nn-from-scratch-numpy-no-tf-keras)
 ### PyTorch:
 
 - Notebook attached on folder
@@ -29,9 +65,28 @@ https://github.com/aymericdamien/TensorFlow-Examples
 https://github.com/BaoLocPham/TensorFlow-Advanced-Techniques-Specialization
 https://github.com/tensorflow/models/tree/master
 
+
+https://github.com/BhanuPrakashNani/Image_Processing?tab=readme-ov-file
+
 ### Deep learning / CV models:
 - Deep neural network specialization
 - deep learning +cv course of Sandford
+
+- PyTorch Tutorial 14 - Convolutional Neural Network (CNN): https://www.youtube.com/watch?v=pDdP0TFzsoQ
+ - NumPyCNN: Implementing Convolutional Neural Networks From Scratch: https://github.com/ahmedfgad/NumPyCNN
+ - Convolutional Neural Network from Scratch | Mathematics & Python Code: https://www.youtube.com/watch?v=Lakz2MoHy6o
+ 
+https://www.deeplearningbook.org/
+https://github.com/AlessandroSaviolo/CNN-from-Scratch
+https://github.com/vzhou842/cnn-from-scratch
+
+
+
+
+
+
+
+
 
 ## Extra
 
