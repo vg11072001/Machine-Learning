@@ -1,7 +1,7 @@
 ## My Notes
 
 
-## Available notes:
+## ML Available notes:
 ---
 ### 1. CS229: Machine Learning: [Aman.ai/cs299](https://aman.ai/cs229/)  / Official [link](https://cs229.stanford.edu/syllabus-summer2020.html)
 
@@ -193,4 +193,6 @@ collaborative filtering; clustering; recommender systems; reinforcement learning
     - [Practice Quiz : Continuous state spaces](https://github.com/greyhatguy007/Machine-Learning-Specialization-Coursera/tree/main/C3%20-%20Unsupervised%20Learning%2C%20Recommenders%2C%20Reinforcement%20Learning/week3/Practice%20Quiz%20-%20Continuous%20state%20spaces)
     - [Programming Assignment](https://github.com/greyhatguy007/Machine-Learning-Specialization-Coursera/tree/main/C3%20-%20Unsupervised%20Learning%2C%20Recommenders%2C%20Reinforcement%20Learning/week3/C3W3A1)
         - [Deep Q-Learning - Lunar Lander](https://github.com/greyhatguy007/Machine-Learning-Specialization-Coursera/blob/main/C3%20-%20Unsupervised%20Learning%2C%20Recommenders%2C%20Reinforcement%20Learning/week3/C3W3A1/C3_W3_A1_Assignment.ipynb)
+
+
 
