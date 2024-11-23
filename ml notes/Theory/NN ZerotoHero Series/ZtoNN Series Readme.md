@@ -68,8 +68,8 @@ outtakes :)
 ### Useful links for practice:
 
 - Python + Numpy tutorial from CS231n [https://cs231n.github.io/python-numpy...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbWxMRXhzTU5FZ2toR0d3UTBxOHBqb3MtRFI3d3xBQ3Jtc0ttdVFrRVhfLXRNX185VWIxcDVfUEtxb3ZGa1F2MTMta2dNT0NZazJwYVdVbHdPNHQ3Q3lZVndOTVBiOUJPQnJUZzUyZU5QQWxqcGxKZWlwd1d3N3JrSlV0MTUyUGNUeHc2S0puaVJybEtVbW9TMl9lQQ&q=https%3A%2F%2Fcs231n.github.io%2Fpython-numpy-tutorial%2F&v=PaCmpygFfXo) . We use torch.tensor instead of numpy.array in this video. Their design (e.g. broadcasting, data types, etc.) is so similar that practicing one is basically practicing the other, just be careful with some of the APIs - how various functions are named, what arguments they take, etc. - these details can vary.
-- PyTorch tutorial on Tensor [https://pytorch.org/tutorials/beginne...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbHZwMFRON0Q5OVAzV043bF9ZUjZVU0RGN2VQd3xBQ3Jtc0tuVllSYms4X1RYdk5qMXBXZVNYcWhoSVFVRDJIM0FJQmhJVUhuMWVhZm11MW5tUXVSWmZIclNuV2c0V2JRb1VGbjhQU1cwMGhheEc3YVVwT1ViWHl2RlM1YmdtUDAwbFRzZHVJOEhKSmY5Q0drQ2I5NA&q=https%3A%2F%2Fpytorch.org%2Ftutorials%2Fbeginner%2Fbasics%2Ftensorqs_tutorial.html&v=PaCmpygFfXo)
-- Another PyTorch intro to Tensor [https://pytorch.org/tutorials/beginne...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbTlIR0JfeTJGN1RZak8xaVJ6WkttRmFxOVFjd3xBQ3Jtc0tsa214dlVBUmpGT3BRMnVqV0pjLV9ocm1ral9kNk9VZ3VzUHVpelJIWnhiSFRKcm0zcl9EOFczbXYwNEJkcXFXYUtpNkNhR1JPU1FlTmRRWVpZd0pwaEtlMEgxRE9KeFYyQ1VzWG1Md2tzNWxCeXFpUQ&q=https%3A%2F%2Fpytorch.org%2Ftutorials%2Fbeginner%2Fnlp%2Fpytorch_tutorial.html&v=PaCmpygFfXo)
+- PyTorch tutorial on Tensor https://pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html
+- Another PyTorch intro to Tensor https://pytorch.org/tutorials/beginner/nlp/pytorch_tutorial.html
 
 ### Exercises: 
 - **E01**: train a trigram language model, i.e. take two characters as an input to predict the 3rd one. Feel free to use either counting or a neural net. Evaluate the loss; Did it improve over a bigram model? 
