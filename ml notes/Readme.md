@@ -1,3 +1,49 @@
+
+# Status
+![[Pasted image 20241111143542.png]]
+ ## **Daily**
+- [ ] Theory Coursera/ Book reading, [[Theory Readme|Theory Readme]]
+- [ ] Leetcode 
+- [ ] Extra checks planning / Resource [[#Blog guide]]
+## **Bi Weekly**
+- [ ] ML Coding [[MLCoding Readme|MLCoding Readme]]
+## **Weekend**
+- [ ] Portfolio [[Portfolio Readme|Portfolio Readme]], Kaggle[[Kaggle Readme|Kaggle Readme]], Papers [[Papers Readme|Papers Readme]]
+
+> add calendar
+
+|                  |        | Knowledge Base              | Interview                |                    |
+| ---------------- | ------ | --------------------------- | ------------------------ | ------------------ |
+| 4-5days Daily    | 1-2hr  | Basic ml theory             | basic ML theory          |                    |
+|                  |        |                             |                          |                    |
+| 4-5days Daily    | 1-2hr  | LDSA                        | Leetcode DSA             |                    |
+|                  |        |                             |                          |                    |
+| Weeknd           |        | portfolio                   | 1-2 projects             |                    |
+|                  |        |                             |                          |                    |
+| weekly 2-3 times | 2hrs   | ML coding                   | all basic ML algo coding |                    |
+|                  |        |                             |                          |                    |
+| 1-2 a week       | 30min  | extra collections           |                          |                    |
+|                  |        |                             | **Reaserch Role**        | **Technical Role** |
+|                  |        | hard theory                 |                          |                    |
+|                  |        |                             | **Project**              |                    |
+|                  |        | Time series - o9 nikhil     |                          |                    |
+|                  |        | ML - o9 Recomm, LR          | 1 regression/recomm      |                    |
+| Weeknd           | 2 proj | DL 10 repos/Kaggle          | 1 DL                     |                    |
+|                  |        | DL 4-5 papers               |                          |                    |
+| Weeknd           | 2 proj | NLP 5repos/Kaggle           | 1 NLP                    |                    |
+|                  |        | NLP 10 papers /company blog |                          |                    |
+| 3rd week of nov  |        |                             | **LinkedIn active**      |                    |
+Portfolio: 
+1. papers(2-3) stream based
+2. project (ready chip Huyen how to add on resume)
+	1. kaggle
+	2. some blogs
+	3. companies ML
+	4. open source project ML
+	5. coding/debugging/SW
+ 
+
+---
 # Resources
 ### Contain all kind Handwritten Resources: [Github](https://github.com/merveenoyan/my_notes)
 ```
