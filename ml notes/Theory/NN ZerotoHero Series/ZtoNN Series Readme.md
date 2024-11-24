@@ -115,9 +115,8 @@ outtakes :)
 
 
 > [!NOTE] Notebooks
-> 1. [makemore_part2_mlp.ipynb](lectures/makemore/makemore_part2_mlp.ipynb) 
-> 2. [a-neural-probabilistic-lang-model-bengio03a](a-neural-probabilistic-lang-model-bengio03a.pdf)
-
+> 1. [makemore_part2_mlp.ipynb](nn-zero-to-hero/lectures/makemore/makemore_part2_mlp.ipynb) 
+> 2. [a-neural-probabilistic-lang-model-bengio03a](nn-zero-to-hero/lectures/3.a-neural-probabilistic-lang-model-bengio03a.pdf)
 
 ### Useful links:
 
