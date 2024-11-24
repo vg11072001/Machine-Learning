@@ -66,10 +66,13 @@
 3. https://www.coursera.org/specializations/deep-learning
 
 Specialization: 
-- Theory/ML Specialization Course/Readme: [[Theory/ML Specialization Course/Readme|Readme]]
+- Theory/ML Specialization Course/Readme: [[MLNotes Readme|MLNotes Readme]]
 - https://www.youtube.com/playlist?list=PLkDaE6sCZn6FNC6YRfRQc_FbeQrF8BwGI
 ### Deep learning
+![[Pasted image 20241115112128.png]]
+-![[Pasted image 20241115113136.png]]
 
+- [CNN Readme](CNN%20Readme.md)
 - https://course19.fast.ai/part2
 - https://course.fast.ai/
 - https://www.deeplearningbook.org/
@@ -78,4 +81,4 @@ Specialization:
 Links:
 - [[1. 100 Page ML Book]]
 - ML with PyTorch and Scikit-Learn [[Theory/ML with PyTorch and Sklearn/Readme|Readme]]  
-- ML Specialization Course [[Theory/ML Specialization Course/Readme|Readme]]
+- ML Specialization Course [[MLNotes Readme|MLNotes Readme]]

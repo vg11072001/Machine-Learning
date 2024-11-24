@@ -7,8 +7,8 @@ From Autor:
 - jupyter notebooks built in this video: 
 
 > [!NOTE] Notebooks
-> 1. [micrograd_lecture_first_half_roughly.ipynb](lectures/micrograd/micrograd_lecture_first_half_roughly.ipynb)
-> 2. [micrograd_lecture_second_half_roughly.ipynb](lectures/micrograd/micrograd_lecture_second_half_roughly.ipynb)
+> 1. [micrograd_lecture_first_half_roughly.ipynb](nn-zero-to-hero/lectures/micrograd/micrograd_lecture_first_half_roughly.ipynb)
+> 2. [micrograd_lecture_second_half_roughly.ipynb](nn-zero-to-hero/lectures/micrograd/micrograd_lecture_second_half_roughly.ipynb)
 > 
 
 - From author
@@ -58,7 +58,7 @@ outtakes :)
 	-  Bigram (one character predicts the next one with a lookup table of counts)
 
 > [!NOTE] Notebooks
-> 1. [makemore_part1_bigrams.ipynb](lectures/makemore/makemore_part1_bigrams.ipynb) 
+> 1. [makemore_part1_bigrams.ipynb](nn-zero-to-hero/lectures/makemore/makemore_part1_bigrams.ipynb) 
 
 - From Author:
 - We implement a bigram character-level language model, which we will further complexify in follow-up videos into a modern Transformer language model, like GPT. In this video, the focus is on
@@ -115,7 +115,7 @@ outtakes :)
 
 
 > [!NOTE] Notebooks
-> 1. [makemore_part2_mlp.ipynb](nn-zero-to-hero/lectures/makemore/makemore_part2_mlp.ipynb) 
+> 1. [makemore_part2_mlp.ipynb](nn-zero-to-hero/lectures/makemore/makemore_part2_mlp.ipynb)
 > 2. [a-neural-probabilistic-lang-model-bengio03a](nn-zero-to-hero/lectures/3.a-neural-probabilistic-lang-model-bengio03a.pdf)
 
 ### Useful links:
