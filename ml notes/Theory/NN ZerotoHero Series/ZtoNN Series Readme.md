@@ -161,7 +161,7 @@ outtakes :)
 > 1. [makemore_part3_bn.ipynb](lectures/makemore/makemore_part3_bn.ipynb) 
 > 2. [a-neural-probabilistic-lang-model-bengio03a](a-neural-probabilistic-lang-model-bengio03a.pdf)
 
-- 
+- ![](Pasted%20image%2020241123223506.png)
 
 
 
