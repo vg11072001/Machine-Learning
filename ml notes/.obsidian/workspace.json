@@ -107,19 +107,93 @@
           {
             "id": "65834a68a16a590a",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Theory/NN ZerotoHero Series/Readme.md",
+                "file": "Theory/NN ZerotoHero Series/ZtoNN Series Readme.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "ZtoNN Series Readme"
+            }
+          },
+          {
+            "id": "a7613a7dbf57679c",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Papers/VIT image is worth 16x16 words transformer for images recognition at scale.pdf"
+              },
+              "pinned": true,
+              "icon": "lucide-file-text",
+              "title": "VIT image is worth 16x16 words transformer for images recognition at scale"
+            }
+          },
+          {
+            "id": "a1f6c1b7b7db3c12",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Theory/CNN for visual recognition CV/2.cs231n-github-io-cnn-architecture.pdf"
+              },
+              "pinned": true,
+              "icon": "lucide-file-text",
+              "title": "2.cs231n-github-io-cnn-architecture"
+            }
+          },
+          {
+            "id": "6c5d61843e8620bf",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Theory/CNN for visual recognition CV/CNN Readme.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "CNN Readme"
+            }
+          },
+          {
+            "id": "3b55e70ea2c7433e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Papers/Papers Readme.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Readme"
+              "title": "Papers Readme"
+            }
+          },
+          {
+            "id": "bdf29e543d333d52",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Theory/NN ZerotoHero Series/nn-zero-to-hero/lectures/makemore/makemore/README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -252,10 +326,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Theory/NN ZerotoHero Series/Readme.md"
+                "file": "MLCoding/MLCoding Readme.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Readme"
+              "title": "Outline of MLCoding Readme"
             }
           }
         ],
@@ -280,7 +354,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 301.5
+    "width": 301.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -296,52 +371,52 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "65834a68a16a590a",
+  "active": "56bd08af51c405ed",
   "lastOpenFiles": [
-    "Portfolio/Inspirations.md",
-    "Theory/NN ZerotoHero Series/Readme.md",
-    "Portfolio/Portfolio Readme.md",
-    "Kaggle/Kaggle Readme.md",
+    "Theory/Theory Readme.md",
     "Papers/Papers Readme.md",
     "MLCoding/MLCoding Readme.md",
-    "Theory/Theory Readme.md",
-    "Readme.md",
-    "Portfolio/Open source.md",
-    "assets/Pasted image 20241112083428.png",
-    "Theory/NN ZerotoHero Series/micrograd/setup.py",
+    "Theory/NN ZerotoHero Series/ZtoNN Series Readme.md",
+    "Theory/NN ZerotoHero Series/nn-zero-to-hero/lectures/makemore/makemore/README.md",
+    "Theory/NN ZerotoHero Series/nn-zero-to-hero/lectures/9-LSTM-DNN-sequence-to-sequence-learning-with-NNs.pdf",
+    "Theory/NN ZerotoHero Series/nn-zero-to-hero/lectures/9-LSTM-DNN-sequence-to-sequence-learning-with-NNs.pdf.crdownload",
+    "Kaggle/Kaggle Readme.md",
+    "Papers/VIT image is worth 16x16 words transformer for images recognition at scale.pdf",
+    "Theory/NN ZerotoHero Series/nn-zero-to-hero/lectures/5-wavenet-a-generative-model-for-raw-audio.pdf",
+    "Theory/NN ZerotoHero Series/nn-zero-to-hero/lectures/9.Transformer-Allention-All-You-in-Need.pdf",
+    "Theory/NN ZerotoHero Series/nn-zero-to-hero/lectures/9.Transformer-Allention-All-You-in-Need.pdf.crdownload",
+    "Theory/NN ZerotoHero Series/nn-zero-to-hero/lectures/9.GRU-onthe-properties-Nueral-Machine-Translation-Encoder-Decoder.pdf",
+    "Theory/NN ZerotoHero Series/nn-zero-to-hero/lectures/9.GRU-onthe-properties-Nueral-Machine-Translation-Encoder-Decoder.pdf.crdownload",
+    "Theory/NN ZerotoHero Series/nn-zero-to-hero/lectures/9-LSTM-generating-sequences-RNN.pdf",
+    "Theory/NN ZerotoHero Series/nn-zero-to-hero/lectures/9-LSTM-generating-sequences-RNN.pdf.crdownload",
     "Theory/NN ZerotoHero Series/nn-zero-to-hero/README.md",
-    "Theory/NN ZerotoHero Series/nn-zero-to-hero/LICENSE",
-    "Theory/ML with PyTorch and Sklearn/ch12/README.md",
-    "Theory/ML with PyTorch and Sklearn/ch12/12. Parallelizing Neural Network Training with PyTorch.md",
-    "Theory/ML with PyTorch and Sklearn/Readme.md",
-    "Theory/NN ZerotoHero Series/micrograd/test/test_engine.py",
-    "Theory/NN ZerotoHero Series/micrograd/test",
-    "Theory/NN ZerotoHero Series/micrograd/micrograd/__init__.py",
-    "Theory/NN ZerotoHero Series/micrograd/micrograd/nn.py",
-    "Theory/NN ZerotoHero Series/micrograd/micrograd/engine.py",
-    "Theory/NN ZerotoHero Series/micrograd/micrograd",
-    "Theory/NN ZerotoHero Series/micrograd",
-    "Theory/NN ZerotoHero Series/nn-zero-to-hero/lectures/micrograd/micrograd_lecture_second_half_roughly.ipynb",
-    "Theory/Book 100 Page/2. Mathematics for Notation and Definitions.md",
-    "Papers/Extra.md",
-    "assets/Pasted image 20241110201951.png",
-    "assets/Pasted image 20241110202015.png",
-    "assets/Pasted image 20241110202047.png",
-    "assets/Pasted image 20241111143542.png",
-    "Theory/ML with Pytorch and Sklearn/ch13/README.md",
-    "Theory/ML with PyTorch and Sklearn/ch01/README.md",
-    "Theory/ML with PyTorch and Sklearn/README_book.md",
-    "Theory/Book 100 Page/1. 100 Page ML Book.md",
-    "assets/Pasted image 20241110201605.png",
-    "assets/Pasted image 20241110201249.png",
-    "Kaggle/Competitions Time Series or regression.md",
-    "202411040715.md",
-    "Theory/ML with Pytorch and Sklearn/ch12/celeba/img_align_celeba/img_align_celeba/005499.jpg",
-    "Theory/ML with Pytorch and Sklearn/ch12/celeba/img_align_celeba/img_align_celeba/005498.jpg",
-    "Theory/ML with Pytorch and Sklearn/ch12/celeba/img_align_celeba/img_align_celeba/005497.jpg",
-    "Theory/ML with Pytorch and Sklearn/ERRATA/old-errata/README.md",
-    "Theory/ML with Pytorch and Sklearn/ERRATA/README.md",
+    "Theory/CNN for visual recognition CV/CNN Readme.md",
+    "Portfolio/Portfolio Readme.md",
+    "Readme.md",
+    "a-neural-probabilistic-lang-model-bengio03a.pdf.md",
+    "Theory/NN ZerotoHero Series/nn-zero-to-hero/lectures/makemore/Pastedimage20241123223506.png",
+    "Theory/NN ZerotoHero Series/nn-zero-to-hero/lectures/makemore/Pasted image 20241123223506.png",
+    "Pasted image 20241123223506.png",
+    "Theory/ML with PyTorch and Sklearn/ch19/figures/19_12.png",
+    "Theory/ML with PyTorch and Sklearn/ch19/figures/19_13.png",
+    "Theory/ML with PyTorch and Sklearn/ch19/figures/19_10.png",
+    "Theory/ML with PyTorch and Sklearn/ch19/figures/19_11.png",
+    "Theory/ML with PyTorch and Sklearn/ch19/figures/19_09.png",
+    "Theory/ML with PyTorch and Sklearn/ch19/figures/19_08.png",
+    "Theory/ML with PyTorch and Sklearn/ch19/figures/19_07.png",
     "Theory/ML with PyTorch and Sklearn/ch19/README.md",
-    "Theory/ML with PyTorch and Sklearn/ch18/README.md"
+    "Theory/ML with PyTorch and Sklearn/ch18/README.md",
+    "Theory/ML with PyTorch and Sklearn/ch10/README.md",
+    "Theory/ML with PyTorch and Sklearn/ch09/README.md",
+    "Theory/ML with PyTorch and Sklearn/ch08/README.md",
+    "Theory/ML with PyTorch and Sklearn/ch04/README.md",
+    "Theory/ML with PyTorch and Sklearn/ch17/README.md",
+    "Theory/ML with PyTorch and Sklearn/ch16/README.md",
+    "Theory/ML with PyTorch and Sklearn/ch15/README.md",
+    "Theory/ML with PyTorch and Sklearn/ch14/README.md",
+    "Theory/ML with PyTorch and Sklearn/ch12/README.md",
+    "Theory/ML with PyTorch and Sklearn/ch11/README.md",
+    "Theory/ML with PyTorch and Sklearn/ch07/README.md",
+    "Theory/ML with PyTorch and Sklearn/ch06/README.md"
   ]
 }

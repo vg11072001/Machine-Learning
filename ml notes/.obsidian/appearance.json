@@ -3,6 +3,6 @@
   "theme": "obsidian",
   "cssTheme": "Things",
   "baseFontSizeAction": true,
-  "baseFontSize": 15,
+  "baseFontSize": 10,
   "nativeMenus": false
 }
