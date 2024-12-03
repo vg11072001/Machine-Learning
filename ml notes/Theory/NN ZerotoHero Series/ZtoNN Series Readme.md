@@ -62,7 +62,7 @@ outtakes :)
 
 - From Author:
 - We implement a bigram character-level language model, which we will further complexify in follow-up videos into a modern Transformer language model, like GPT. In this video, the focus is on
-	- (1) introducing torch.Tensor and its subtleties and use in efficiently evaluating neural networks and 
+	- (1) introducing torch.Tensor and its subtleties and use in efficiently evaluating neural networks .
 	- (2) the overall framework of language modeling that includes model training, sampling, and the evaluation of a loss (e.g. the negative log likelihood for classification). Links:
 
 ### Useful links for practice:
@@ -73,18 +73,14 @@ outtakes :)
 
 ### Exercises: 
 - **E01**: train a trigram language model, i.e. take two characters as an input to predict the 3rd one. Feel free to use either counting or a neural net. Evaluate the loss; Did it improve over a bigram model? 
-
 - **E02**: split up the dataset randomly into 80% train set, 10% dev set, 10% test set. Train the bigram and trigram models only on the training set. Evaluate them on dev and test splits. What can you see? 
-
 - **E03**: use the dev set to tune the strength of smoothing (or regularization) for the trigram model - i.e. try many possibilities and see which one works best based on the dev set loss. What patterns can you see in the train and dev set loss as you tune this strength? Take the best setting of the smoothing and evaluate on the test set once and at the end. How good of a loss do you achieve? 
-
 - **E04**: we saw that our 1-hot vectors merely select a row of W, so producing these vectors explicitly feels wasteful. Can you delete our use of F.one_hot in favor of simply indexing into rows of W? 
-
 - **E05**: look up and use F.cross_entropy instead. You should achieve the same result. Can you think of why we'd prefer to use F.cross_entropy instead? 
-
 - **E06**: meta-exercise! Think of a fun/interesting exercise and complete it.
 
 ### Sequence 
+
 [00:00:00](https://www.youtube.com/watch?v=PaCmpygFfXo&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=2&t=0s) intro 
 [00:03:03](https://www.youtube.com/watch?v=PaCmpygFfXo&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=2&t=183s) reading and exploring the dataset 
 [00:06:24](https://www.youtube.com/watch?v=PaCmpygFfXo&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=2&t=384s) exploring the bigrams in the dataset
@@ -111,7 +107,6 @@ outtakes :)
 
 
 ## 3rd video: Building makemore Part 2: MLP
-
 
 
 > [!NOTE] Notebooks
@@ -167,8 +162,7 @@ outtakes :)
 > 3. [3.2-rethinking-batch-in-BatchNorm](nn-zero-to-hero/lectures/3.2-rethinking-batch-in-BatchNorm.pdf)
 > 4. [3.3-batch-normalization-deep-nueral-networks](nn-zero-to-hero/lectures/3.3-batch-normalization-deep-nueral-networks.pdf)
 
-Useful links:
-
+### Useful links: 
 - "Kaiming init" paper: [https://arxiv.org/abs/1502.01852](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmpIQ0l2UFZ4MFdMSEZvNTRHZGFDMll0b05KUXxBQ3Jtc0traEJGcmtyeUdpNWxLODZOZ1ZPNmlDZU4wQUNrSHphNUNzUzl0ZjY3cUVSNDgxX1Rlb2hVYlhKaWlqdm5zM3FxZk9taDBSMmNXdTZ2em5OT05aQW5wb0lRNTlIaDRJTlVtb0x4Y21CLXNNbHhRWmZlSQ&q=https%3A%2F%2Farxiv.org%2Fabs%2F1502.01852&v=P6sfmUTpUmc)
 - BatchNorm paper: [https://arxiv.org/abs/1502.03167](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa0FQc0VlZHFLenIwaGxRdkZ4RHFCOGhIMjVOZ3xBQ3Jtc0tsdXFORU94UWpseUVVbkd1UFBFekptYnBsc1J1MHZ1SWI2VVQ1ODlnLWJuZTJWLUlQTHpqaWFoZXBvb2dBdHRpODJXTUVEMjRMSWdvcGxIVk5ITTlabVo3bjBiQ3hoVG9EWWN2NUFtMzhlXzRiZjE0Yw&q=https%3A%2F%2Farxiv.org%2Fabs%2F1502.03167&v=P6sfmUTpUmc)
 - Bengio et al. 2003 MLP language model paper (pdf): [https://www.jmlr.org/papers/volume3/b...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbFlzU003RmtlaXpyaTExa01seVAzOGUyUHQ1QXxBQ3Jtc0ttaTVxY1ZESFZIbFJDU18xemxCUDA4XzFMb3ZBTUdmdlZjc3h5N3FNRm5NM1UzemJTQ2NuMDdkaGJ4OVB2d0RtRldvcy1xYlFiZ1JiS1VRWmlzNXhQZnpYSU5yRHU0Qm5PNk5yZDNfSzdSSGRwWTRjMA&q=https%3A%2F%2Fwww.jmlr.org%2Fpapers%2Fvolume3%2Fbengio03a%2Fbengio03a.pdf&v=P6sfmUTpUmc)
@@ -176,40 +170,100 @@ Useful links:
 
 Exercises:
 
-- E01: I did not get around to seeing what happens when you initialize all weights and biases to zero. Try this and train the neural net. You might think either that 1) the network trains just fine or 2) the network doesn't train at all, but actually it is 3) the network trains but only partially, and achieves a pretty bad final performance. Inspect the gradients and activations to figure out what is happening and why the network is only partially training, and what part is being trained exactly.
-- E02: BatchNorm, unlike other normalization layers like LayerNorm/GroupNorm etc. has the big advantage that after training, the batchnorm gamma/beta can be "folded into" the weights of the preceeding Linear layers, effectively erasing the need to forward it at test time. Set up a small 3-layer MLP with batchnorms, train the network, then "fold" the batchnorm gamma/beta into the preceeding Linear layer's W,b by creating a new W2, b2 and erasing the batch norm. Verify that this gives the same forward pass during inference. i.e. we see that the batchnorm is there just for stabilizing the training, and can be thrown out after training is done! pretty cool.
+- **E01**: I did not get around to seeing what happens when you initialize all weights and biases to zero. Try this and train the neural net. You might think either that 1) the network trains just fine or 2) the network doesn't train at all, but actually it is 3) the network trains but only partially, and achieves a pretty bad final performance. Inspect the gradients and activations to figure out what is happening and why the network is only partially training, and what part is being trained exactly.
+- **E02**: BatchNorm, unlike other normalization layers like LayerNorm/GroupNorm etc. has the big advantage that after training, the batchnorm gamma/beta can be "folded into" the weights of the preceeding Linear layers, effectively erasing the need to forward it at test time. Set up a small 3-layer MLP with batchnorms, train the network, then "fold" the batchnorm gamma/beta into the preceeding Linear layer's W,b by creating a new W2, b2 and erasing the batch norm. Verify that this gives the same forward pass during inference. i.e. we see that the batchnorm is there just for stabilizing the training, and can be thrown out after training is done! pretty cool.
 
 ### Sequence:
- [00:00:00](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=0s) intro [00:01:22](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=82s) starter code [00:04:19](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=259s) fixing the initial loss [00:12:59](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=779s) fixing the saturated tanh [00:27:53](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=1673s) calculating the init scale: “Kaiming init” [00:40:40](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=2440s) batch normalization [01:03:07](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=3787s) batch normalization: summary [01:04:50](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=3890s) real example: resnet50 walkthrough [01:14:10](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=4450s) summary of the lecture [01:18:35](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=4715s) just kidding: part2: PyTorch-ifying the code [01:26:51](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=5211s) viz #1: forward pass activations statistics [01:30:54](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=5454s) viz #2: backward pass gradient statistics [01:32:07](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=5527s) the fully linear case of no non-linearities [01:36:15](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=5775s) viz #3: parameter activation and gradient statistics [01:39:55](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=5995s) viz #4: update:data ratio over time [01:46:04](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=6364s) bringing back batchnorm, looking at the visualizations [01:51:34](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=6694s) summary of the lecture for real this time
+
+ intro [00:01:22](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=82s) 
+ starter code [00:04:19](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=259s) 
+ fixing the initial loss [00:12:59](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=779s) 
+ fixing the saturated tanh [00:27:53](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=1673s) 
+ calculating the init scale: “Kaiming init” [00:40:40](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=2440s) 
+ batch normalization [01:03:07](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=3787s) 
+ batch normalization: summary [01:04:50](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=3890s) 
+ real example: resnet50 walkthrough [01:14:10](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=4450s) 
+ summary of the lecture [01:18:35](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=4715s) 
+ just kidding: part2: PyTorch-ifying the code [01:26:51](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=5211s) 
+ viz #1: forward pass activations statistics [01:30:54](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=5454s) 
+ viz #2: backward pass gradient statistics [01:32:07](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=5527s) 
+ the fully linear case of no non-linearities [01:36:15](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=5775s) 
+ viz #3: parameter activation and gradient statistics [01:39:55](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=5995s) 
+ viz #4: update: data ratio over time [01:46:04](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=6364s) 
+ bringing back batchnorm, looking at the visualizations [01:51:34](https://www.youtube.com/watch?v=P6sfmUTpUmc&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=4&t=6694s) 
+ summary of the lecture for real this time
 
 ## 5th Video: Building makemore Part 4: Becoming a Backprop Ninja
 
-Supplementary links:
+We take the 2-layer MLP (with BatchNorm) from the previous video and backpropagate through it manually without using PyTorch autograd's loss.backward(): through the cross entropy loss, 2nd linear layer, tanh, batchnorm, 1st linear layer, and the embedding table. Along the way, we get a strong intuitive understanding about how gradients flow backwards through the compute graph and on the level of efficient Tensors, not just individual scalars like in micrograd. This helps build competence and intuition around how neural nets are optimized and sets you up to more confidently innovate on and debug modern neural networks.
 
+### Useful links: 
 - Yes you should understand backprop:   [medium/ yes-you-should-understand-backprop](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbFNFZVlQeVQ5eGxpeGRkQUlVMDk1MERMZndrQXxBQ3Jtc0trNWJIS3Jsb0FRaE5LQWwtVGhock1KNEdYQmVnWUJoaFFST1ZneC1tZU9MZ0xjem1Oc2ljcnNXbnJMX2FPdzRBb0tkUlB1dDhjSG10WXhTeWRqT1ZqQVgxUmItSmdQNDhMWXlwS0VIejhzaWFEXzI4QQ&q=https%3A%2F%2Fkarpathy.medium.com%2Fyes-you-should-understand-backprop-e2f06eab496b&v=q8SA3rM6ckI)  
 - BatchNorm paper: [https://arxiv.org/abs/1502.03167](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa2NSMmVXTjFGYkIyYzd3N3FzdkVtTWtXc1AyUXxBQ3Jtc0ttbEV1WlBuMmgyc2dWOFdoSXpTcU5RNlJGODBheTFBRUVNMVBvRU5xRnR4V2tabDZBZW1NYlRKOE9WZnBUTGdBVzRtWGZiTFhRX3doU25LM1RZTjhCUklJd0FRQnl2dDNrSk5aM0Z2UWFyOXcwMGpsOA&q=https%3A%2F%2Farxiv.org%2Fabs%2F1502.03167&v=q8SA3rM6ckI)
 - Bessel’s Correction: [http://math.oxford.emory.edu/site/mat...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbFoybGRwejJhTkNUbFpKbHRXaC1PUHBzM2tNd3xBQ3Jtc0ttNWhXNWwyY1h5ZFU3bkVRQWRmcTRSZDBIcjcwdGVaRmlsQmpXMWI3amlsbkZfaGhtUXNzWWlpMHVwVXRCRXpzVEZYT2J5bUd6ejJaQ2Mxa3RQeDZuS2twSU4zZTl2ZzZjajBNNFFVQTBrdWRhX0kxQQ&q=http%3A%2F%2Fmath.oxford.emory.edu%2Fsite%2Fmath117%2FbesselCorrection%2F&v=q8SA3rM6ckI)
 - Bengio et al. 2003 MLP LM [https://www.jmlr.org/papers/volume3/b...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbEZqNWFWbDhKZnVNc1FDZVpFQWpWd2UzYUEwUXxBQ3Jtc0tuWnNkVjVXMUF2MlFvWHBKZmlBUGZfeFd0SW93bHk5ZXBKYnpremJwODlYWUROaU4yTlpBbFRWUlNmZEFFdVUtZ2lyTU5XNjZONVBzR0puaG0xYWRvSXNwZG5yYzBIZzFRODg0enl0Tm54OXgwQjFsaw&q=https%3A%2F%2Fwww.jmlr.org%2Fpapers%2Fvolume3%2Fbengio03a%2Fbengio03a.pdf&v=q8SA3rM6ckI)
 
-
 ### Sequence:
- [00:00:00](https://www.youtube.com/watch?v=q8SA3rM6ckI&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=5&t=0s) intro: why you should care & fun history [00:07:26](https://www.youtube.com/watch?v=q8SA3rM6ckI&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=5&t=446s) starter code [00:13:01](https://www.youtube.com/watch?v=q8SA3rM6ckI&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=5&t=781s) exercise 1: backproping the atomic compute graph [01:05:17](https://www.youtube.com/watch?v=q8SA3rM6ckI&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=5&t=3917s) brief digression: bessel’s correction in batchnorm [01:26:31](https://www.youtube.com/watch?v=q8SA3rM6ckI&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=5&t=5191s) exercise 2: cross entropy loss backward pass [01:36:37](https://www.youtube.com/watch?v=q8SA3rM6ckI&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=5&t=5797s) exercise 3: batch norm layer backward pass [01:50:02](https://www.youtube.com/watch?v=q8SA3rM6ckI&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=5&t=6602s) exercise 4: putting it all together [01:54:24](https://www.youtube.com/watch?v=q8SA3rM6ckI&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=5&t=6864s) outro
-
-
+ - [00:00:00](https://www.youtube.com/watch?v=q8SA3rM6ckI&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=5&t=0s) intro: why you should care & fun history 
+ - [00:07:26](https://www.youtube.com/watch?v=q8SA3rM6ckI&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=5&t=446s) starter code 
+ - [00:13:01](https://www.youtube.com/watch?v=q8SA3rM6ckI&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=5&t=781s) exercise 1: backproping the atomic compute graph 
+ - [01:05:17](https://www.youtube.com/watch?v=q8SA3rM6ckI&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=5&t=3917s) brief digression: bessel’s correction in batchnorm 
+ - [01:26:31](https://www.youtube.com/watch?v=q8SA3rM6ckI&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=5&t=5191s) exercise 2: cross entropy loss backward pass 
+ - [01:36:37](https://www.youtube.com/watch?v=q8SA3rM6ckI&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=5&t=5797s) exercise 3: batch norm layer backward pass 
+ - [01:50:02](https://www.youtube.com/watch?v=q8SA3rM6ckI&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=5&t=6602s) exercise 4: putting it all together 
+ - [01:54:24](https://www.youtube.com/watch?v=q8SA3rM6ckI&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=5&t=6864s) outro
 
 
 ## 6th video: Building makemore Part 5: Building WaveNet
 
-[wavenet-a-generative-model-for-raw-audio](wavenet-a-generative-model-for-raw-audio.pdf)
-https://github.com/ibab/tensorflow-wavenet
-check PyTorch models documentation
+We take the 2-layer MLP from previous video and make it deeper with a tree-like structure, arriving at a convolutional neural network architecture similar to the WaveNet (2016) from DeepMind. In the WaveNet paper, the same hierarchical architecture is implemented more efficiently using causal dilated convolutions (not yet covered). Along the way we get a better sense of torch.nn and what it is and how it works under the hood, and what a typical deep learning development process looks like (a lot of reading of documentation, keeping track of multidimensional tensor shapes, moving between jupyter notebooks and repository code, ...). Links:
+
+- makemore on github: [https://github.com/karpathy/makemore](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazlZUnV4M0dlSS1OWVl5QTNqQV85cTh4Y25iQXxBQ3Jtc0tsYjVBN29ObWlHcm1JcW9mMmt6eVJRd0VKMTM3Xy1oSzJMUWpPSEpOVU04bUM1MUExODN6aGhqQXNiWjlIQnR0SGY3WDRmLVVZZGEtVjg4VEE2YlVuR1A0Qi1OY2dBZXl3TWg0WTlLekVCUk5jbWR0TQ&q=https%3A%2F%2Fgithub.com%2Fkarpathy%2Fmakemore&v=t3YJ5hKiMQ0)
+- jupyter notebook I built in this video: [https://github.com/karpathy/nn-zero-t...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbm04WFRKd3MzaFY1U1pRbEI2R3BTdUdHQjNjZ3xBQ3Jtc0tsQ0ZUeFJjZW1LbnU3QWFISjFKU1MwZVJDMmRxWFc5ZUJWam5leEdnc214Y2ZMaEdqTFl0bFVXcnlUdmpqNzd4SGdDSl95NF9zYlZ6WklHUzJtTVBJUmh3Z0xLMm9ORVJNb2MzQWZhSzREWmtqTXIwTQ&q=https%3A%2F%2Fgithub.com%2Fkarpathy%2Fnn-zero-to-hero%2Fblob%2Fmaster%2Flectures%2Fmakemore%2Fmakemore_part5_cnn1.ipynb&v=t3YJ5hKiMQ0)
+- collab notebook: [https://colab.research.google.com/dri...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbGdPS1AzTnRod3lIUjJiN1V6QlNScC1ZNGRkZ3xBQ3Jtc0tsUEloekZpUlB6dTRidUp6S01aNzE1RzRicHZXcTh2WFZMMXN4eThMZU1FWXF4ejF6aTY4RnFXMnFQZ1JQQkFDYjR5a3hMZmdWNExPMGNLcEFMa0cyYUtiaWt1MHc3dmtNalgwUkh2MjN0ZERaaUJsQQ&q=https%3A%2F%2Fcolab.research.google.com%2Fdrive%2F1CXVEmCO_7r7WYZGb5qnjfyxTvQa13g5X%3Fusp%3Dsharing&v=t3YJ5hKiMQ0)
+
+### Useful links: 
+- WaveNet 2016 from DeepMind [https://arxiv.org/abs/1609.03499](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbGFOY2NwMDVsYmE2RjlhdkxFNHhCTjF0b0x6d3xBQ3Jtc0tsejNYSm9JQmZGWkNKcV9DMUN5Qm45ZUk5Q2VGMXozVDVEYXExNVFnbmFXVWIweld0Q1U5bFBuR09uNm11XzJaTExydDdhR2U2R2dxNjkxQkNjZ0o5NlZEazFDTWpGTldLbTRFUTlWV3lqdXdOamd6Zw&q=https%3A%2F%2Farxiv.org%2Fabs%2F1609.03499&v=t3YJ5hKiMQ0)
+- Bengio et al. 2003 MLP LM [https://www.jmlr.org/papers/volume3/b...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbldPVzl6VHlZQ1dnanowdTIyc2RhZ016VTktUXxBQ3Jtc0tscjhnbVR2bHVqLTRVQ3RVRFJsLVR4TkNxRjliaU15dGpwVWw1T1ZhX0gzLWxYT2ZkS0w1dldQeFFMbkFTR2RNRWxheEN5OGRvNVVDQVEzZWRfOFo1ekcxVTlpb3FGTTRULTBOZHdSZklNVERxSjhqOA&q=https%3A%2F%2Fwww.jmlr.org%2Fpapers%2Fvolume3%2Fbengio03a%2Fbengio03a.pdf&v=t3YJ5hKiMQ0)
 
 
 
+- [wavenet-a-generative-model-for-raw-audio](wavenet-a-generative-model-for-raw-audio.pdf)
+- https://github.com/ibab/tensorflow-wavenet
+- check PyTorch models documentation
 
-## 12th CNN
+
+## 7th video: Let's build GPT: from scratch, in code, spelled out.
+
+We build a Generatively Pretrained Transformer (GPT), following the paper "Attention is All You Need" and OpenAI's GPT-2 / GPT-3. We talk about connections to ChatGPT, which has taken the world by storm. We watch GitHub Copilot, itself a GPT, help us write a GPT (meta :D!) . I recommend people watch the earlier makemore videos to get comfortable with the autoregressive language modeling framework and basics of tensors and PyTorch nn, which we take for granted in this video. Links:
+
+- Google colab for the video: [https://colab.research.google.com/dri...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa0dMS1VtWEtGSDR4bkY0ckZNN1d5WkxMbDQ0d3xBQ3Jtc0tuM2NhRDRwQmxBdi05MUFXVFEzdGdTekZBVUw0U2hEV3BxZGxRdENod1BuTjZPek00NmVyblZ2M2JWT3RVamhmYllkaEU0V2pUN29VQVpGa1U1LXFBb2xSbXJxSTkwbjBmdVY4LVZnVWhPZVZDeGdjaw&q=https%3A%2F%2Fcolab.research.google.com%2Fdrive%2F1JMLa53HDuA-i7ZBmqV7ZnA3c_fvtXnx-%3Fusp%3Dsharing&v=kCc8FmEb1nY)
+- GitHub repo for the video: [https://github.com/karpathy/ng-video-...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbXhnWUJyb3dyLS1melBmMnI2emtLdm50OFgtZ3xBQ3Jtc0tuRXpJMU4tYlBCNjk5UWRFTkZpdllMVjVBMUFYdUoyNHNQTHowd2FKc1NNQXR6SnZXbnVfTTFYQzFEMnJVSl96OUt2MXNTQVAxQVBqeGgyTnRNbnE3bnVHNWlkZi1oQVZVRlVZXzJONU5UTFJFMk9ITQ&q=https%3A%2F%2Fgithub.com%2Fkarpathy%2Fng-video-lecture&v=kCc8FmEb1nY)
+- nanoGPT repo: [https://github.com/karpathy/nanoGPT](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbWFLY1BxQzlNcFA5UmpWZ2tkb0k5N3J0XzFsQXxBQ3Jtc0tsNFhGMW0xZXVhQXhJMlMyNVJiSVlLNmtkZ2pQd2UxXzNJRC1IX2hYSzk3Z1VGNzc2WHotbU56QWZEaUI4R2JLa0VHZGYzZVFjX2l6TW9ycEVVWm1MenZLU003WEZEY2oyNEFDVmdlT2d6bFFzSlFhdw&q=https%3A%2F%2Fgithub.com%2Fkarpathy%2FnanoGPT&v=kCc8FmEb1nY)
 
 
+### Useful links: 
+- Attention is All You Need paper: [https://arxiv.org/abs/1706.03762](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmktdjEydFRhd2NDWHlVb3ZOVC15Zlk4N2Ntd3xBQ3Jtc0trcGR1Nl83dHFBaEFhV0JPMHRUT2FHdGFnTE1Ic01ESHM0eXIxLU5TN3RLR1ZiX1FYaTJUOFBHV0l0M3VreFZWMEswbEt5bWJtSERQUUhMVlQ4OWQzczFmQ1h0UUVpUlFtTzgzUHRkWWtuUW84bF9PSQ&q=https%3A%2F%2Farxiv.org%2Fabs%2F1706.03762&v=kCc8FmEb1nY)
+- OpenAI GPT-3 paper: [https://arxiv.org/abs/2005.14165](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa3Z4WklWUWV3dnRKVGNrX1RCS0JMMU1ET1Bld3xBQ3Jtc0ttSlR1a3NaellpelNkZlN1Sml0dmlXRDVTd1RQNHpwS003TTdnZ29JcTBBVkQ3M2hCVFV1WlpPVEJvYldKYXZUSnNBMldmQkdQSG52VlNWQ19Xd29LdGNDSXRnd3VWTllUbGpFaHZPdGFLQXRQTUUyUQ&q=https%3A%2F%2Farxiv.org%2Fabs%2F2005.14165&v=kCc8FmEb1nY)
+- OpenAI ChatGPT blog post: [https://openai.com/blog/chatgpt/](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa2VUUDZISmVmbjBhaUppSThuVVVBNFZ2dlY1Z3xBQ3Jtc0tud2w0Mnc0N09zX3pieENkOGhvMFgzRTMxT3ZpVVptNzBkZTN0LVB0NVJpbUdfSzJ5N0xsMGVqdnB3R0pYLWVYNHlmN1RjWWh1amJjZlZhZnE3VjBRekE2LUNOakZQbDNCT1ozUzlzanZLN3pQT1JIQQ&q=https%3A%2F%2Fopenai.com%2Fblog%2Fchatgpt%2F&v=kCc8FmEb1nY)
+- The GPU I'm training the model on is from Lambda GPU Cloud, I think the best and easiest way to spin up an on-demand GPU instance in the cloud that you can ssh to: [https://lambdalabs.com](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbXh1X1RxNGdHS0NGUnhxWUhiOHZHR1Zfc1hMd3xBQ3Jtc0tteGFQQTNBSXNHclBUVF9rc1pLWVJISGszUllpS1oyS2U2NF9VNWFTSDcwU2wxYjZyNElXYWRLQlh0SWplMDMteUNVbDFvdUxrNWdHRDhWUGZjYkZtaEVnOGtwbGNIRGZ3OEllSG8zdGdHRVRaLUFnWQ&q=https%3A%2F%2Flambdalabs.com%2F&v=kCc8FmEb1nY) . If you prefer to work in notebooks, I think the easiest path today is Google Colab.
+
+Suggested exercises:
+
+- EX1: The n-dimensional tensor mastery challenge: Combine the `Head` and `MultiHeadAttention` into one class that processes all the heads in parallel, treating the heads as another batch dimension (answer is in nanoGPT).
+- EX2: Train the GPT on your own dataset of choice! What other data could be fun to blabber on about? (A fun advanced suggestion if you like: train a GPT to do addition of two numbers, i.e. a+b=c. You may find it helpful to predict the digits of c in reverse order, as the typical addition algorithm (that you're hoping it learns) would proceed right to left too. You may want to modify the data loader to simply serve random problems and skip the generation of train.bin, val.bin. You may want to mask out the loss at the input positions of a+b that just specify the problem using y=-1 in the targets (see CrossEntropyLoss ignore_index). Does your Transformer learn to add? Once you have this, swole doge project: build a calculator clone in GPT, for all of +-*/. Not an easy problem. You may need Chain of Thought traces.)
+- EX3: Find a dataset that is very large, so large that you can't see a gap between train and val loss. Pretrain the transformer on this data, then initialize with that model and finetune it on tiny shakespeare with a smaller number of steps and lower learning rate. Can you obtain a lower validation loss by the use of pretraining?
+- EX4: Read some transformer papers and implement one additional feature or change that people seem to use. Does it improve the performance of your GPT?
+
+
+## 8th video: State of GPT
+
+## 9th video: GPT Tokenizers
+
+## 10th video: GPT2 - 124M
+
+
+## 12th: CNN
 
 ### Useful links:
 - Karapathy blogs : https://karpathy.github.io/
