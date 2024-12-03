@@ -9,7 +9,7 @@ Inspired from GPT Learning Hub:
 - Generative LLMs: Basic ML to Implementation of Attention All you need and training own mini LLM
 	- start with neural networks/deep neural networks
 		- [x] NN
-		- [ ] CNN
+		- [ ] CNN 
 			- [ ] Image processing [github](https://github.com/BhanuPrakashNani/Image_Processing?tab=readme-ov-file) [Tutorial](https://github.com/askitlouder/Image-Processing-Tutorials)
 		- [ ] Some complex mode
 	- go for already implemented PyTorch papers/CNN or NN based
@@ -24,8 +24,8 @@ Inspired from GPT Learning Hub:
 	- [ ] take some hugging face models
 
 - to build Multimodal AI - PyTorch and transformer [link](https://www.google.com/search?q=how+to+build+multimodal+AI+pytorch+transformers&sca_esv=a88b1582b82b9395&rlz=1C1UEAD_en-GBIN1073IN1073&sxsrf=ADLYWIK2BnE1C7csUJqtna1ks5vQGcp-Jg%3A1731785123846&ei=o_E4Z-uvM_qhnesPxo_DmAQ&ved=0ahUKEwirjYmpyuGJAxX6UGcHHcbHEEMQ4dUDCA8&uact=5&oq=how+to+build+multimodal+AI+pytorch+transformers&gs_lp=Egxnd3Mtd2l6LXNlcnAiL2hvdyB0byBidWlsZCBtdWx0aW1vZGFsIEFJIHB5dG9yY2ggdHJhbnNmb3JtZXJzMgUQIRigATIFECEYoAFI3IkBULIFWJ-GAXADeAKQAQCYAb0CoAHuJ6oBCDAuMTUuNy4yuAEDyAEA-AEBmAIcoALfKMICBBAAGEfCAgYQABgWGB7CAgsQABiABBiGAxiKBcICCBAAGIAEGKIEwgIHECEYoAEYCsICBBAhGBXCAgUQIRifBZgDAIgGAZAGCJIHCDQuMTMuOS4yoAe1Ug&sclient=gws-wiz-serp)
-
-Extra:
+- amazon competition can add on kaggle [Video link](https://www.twitch.tv/videos/1804684510) /  [Github of ranked solution](https://github.com/greenfish8090/AmazonML?tab=readme-ov-file) / Amazon [Site](https://www.hackerearth.com/challenges/competitive/amazon-ml-challenge-2023/leaderboard/)
+Extra: 
 - 50-AI/ML papers + technical breakdown of content
 - optimize resume
 %%
