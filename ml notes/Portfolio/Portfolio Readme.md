@@ -20,7 +20,13 @@ Ref:
 
 https://viso.ai/deep-learning/deep-learning-software/
 
+![alt text](image.png)
+
 ---
+
+Frelance ML :
+- toptal
+- Braintrust
 
 Links:
 [[Open source]]
