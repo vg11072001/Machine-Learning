@@ -1,6 +1,6 @@
 From Autor: 
-	- [/nn-zero-to-hero/README](Theory/NN%20ZerotoHero%20Series/nn-zero-to-hero/README.md)
-	- [makemore/README](Theory/NN%20ZerotoHero%20Series/nn-zero-to-hero/lectures/makemore/makemore/README.md)
+- [nn-zero-to-hero/README](nn-zero-to-hero/README.md)
+- [makemore/README](nn-zero-to-hero/lectures/makemore/makemore/README.md)
 ## 1st video: The spelled-out intro to neural networks and backpropagation: building micrograd
 ### Useful links
 - *micrograd* on GitHub: https://github.com/karpathy/micrograd
@@ -251,10 +251,10 @@ We build a Generatively Pretrained Transformer (GPT), following the paper "Atten
 
 Suggested exercises:
 
-- EX1: The n-dimensional tensor mastery challenge: Combine the `Head` and `MultiHeadAttention` into one class that processes all the heads in parallel, treating the heads as another batch dimension (answer is in nanoGPT).
-- EX2: Train the GPT on your own dataset of choice! What other data could be fun to blabber on about? (A fun advanced suggestion if you like: train a GPT to do addition of two numbers, i.e. a+b=c. You may find it helpful to predict the digits of c in reverse order, as the typical addition algorithm (that you're hoping it learns) would proceed right to left too. You may want to modify the data loader to simply serve random problems and skip the generation of train.bin, val.bin. You may want to mask out the loss at the input positions of a+b that just specify the problem using y=-1 in the targets (see CrossEntropyLoss ignore_index). Does your Transformer learn to add? Once you have this, swole doge project: build a calculator clone in GPT, for all of +-*/. Not an easy problem. You may need Chain of Thought traces.)
-- EX3: Find a dataset that is very large, so large that you can't see a gap between train and val loss. Pretrain the transformer on this data, then initialize with that model and finetune it on tiny shakespeare with a smaller number of steps and lower learning rate. Can you obtain a lower validation loss by the use of pretraining?
-- EX4: Read some transformer papers and implement one additional feature or change that people seem to use. Does it improve the performance of your GPT?
+- **EX1**: The n-dimensional tensor mastery challenge: Combine the `Head` and `MultiHeadAttention` into one class that processes all the heads in parallel, treating the heads as another batch dimension (answer is in nanoGPT).
+- **EX2**: Train the GPT on your own dataset of choice! What other data could be fun to blabber on about? (A fun advanced suggestion if you like: train a GPT to do addition of two numbers, i.e. a+b=c. You may find it helpful to predict the digits of c in reverse order, as the typical addition algorithm (that you're hoping it learns) would proceed right to left too. You may want to modify the data loader to simply serve random problems and skip the generation of train.bin, val.bin. You may want to mask out the loss at the input positions of a+b that just specify the problem using y=-1 in the targets (see CrossEntropyLoss ignore_index). Does your Transformer learn to add? Once you have this, swole doge project: build a calculator clone in GPT, for all of +-*/. Not an easy problem. You may need Chain of Thought traces.)
+- **EX3**: Find a dataset that is very large, so large that you can't see a gap between train and val loss. Pretrain the transformer on this data, then initialize with that model and finetune it on tiny shakespeare with a smaller number of steps and lower learning rate. Can you obtain a lower validation loss by the use of pretraining?
+- **EX4**: Read some transformer papers and implement one additional feature or change that people seem to use. Does it improve the performance of your GPT?
 
 
 ## 8th video: State of GPT
@@ -272,14 +272,19 @@ Suggested exercises:
 - Karapathy interview on learning from start ML : [Blog Link](https://www.datascienceweekly.org/data-scientist-interviews/training-deep-learning-models-browser-andrej-karpathy-interview)
 - CNN for visulal recognition CV [CNN Readme](CNN%20Readme.md)
 - Theory/ML with PyTorch and Sklearn/ch12 : [[Theory/ML with PyTorch and Sklearn/ch12/README|README]]
-- Build VIT from scratch [VIT image is worth 16x16 words transformer for images recognition at scale](VIT%20image%20is%20worth%2016x16%20words%20transformer%20for%20images%20recognition%20at%20scale.pdf)  / [Papers Readme](Papers%20Readme.md)
+- Build VIT from scratch VIT image is worth 16x16 words transformer for images recognition at scale [pdf](VIT%20image%20is%20worth%2016x16%20words%20transformer%20for%20images%20recognition%20at%20scale.pdf)  / [Papers Readme](Papers%20Readme.md)
 - [Convolutional Neural Network from Scratch](Convolutional%20Neural%20Network%20from%20Scratch.md)
 - [github.com/johko/computer-vision-course](https://github.com/johko/computer-vision-course)
 - [medium.com/@marklpd/cnn-knowledge-distillation-in-pytorch-59b115bc3ec1](https://medium.com/@marklpd/cnn-knowledge-distillation-in-pytorch-59b115bc3ec1)
 
+## 13th: RNN, LSTM and RRU
+
+- RNN, [9.RNN-language-model Mikolov et al. 2010](nn-zero-to-hero/lectures/9.RNN-language-model.pdf)
+- LSTM, [9-LSTM-generating-sequences-RNN Graves et al. 2014](nn-zero-to-hero/lectures/9-LSTM-generating-sequences-RNN.pdf)
+	- [9-LSTM-DNN-sequence-to-sequence-learning-with-NNs](nn-zero-to-hero/lectures/9-LSTM-DNN-sequence-to-sequence-learning-with-NNs.pdf)
+- GRU, [9.GRU-onthe-properties-Nueral-Machine-Translation-Encoder-Decoder Kyunghyun Cho et al. 2014](nn-zero-to-hero/lectures/9.GRU-onthe-properties-Nueral-Machine-Translation-Encoder-Decoder.pdf)
 
 
 ## Reading NNs/ LLMs
 
 - https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464
-- [github.com/karpathy/LLM101n](https://github.com/karpathy/LLM101n)

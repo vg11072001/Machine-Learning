@@ -1,6 +1,7 @@
 ## Roots:
 
-Attention Is All You Need : [PDF](nn-zero-to-hero/lectures/11.Attention-All-You-Need.pdf)
+- Attention Is All You Need : [PDF](nn-zero-to-hero/lectures/11.Attention-All-You-Need.pdf)
+- [github.com/karpathy/LLM101n](https://github.com/karpathy/LLM101n)
 
 
 ## 1. 3Blue1Brown 
