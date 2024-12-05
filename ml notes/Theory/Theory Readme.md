@@ -55,6 +55,12 @@
 2. Mathematics for Machine Learning and Data Science [Specialization](https://www.coursera.org/specializations/mathematics-for-machine-learning-and-data-science) [Notes](https://github.com/greyhatguy007/Mathematics-for-Machine-Learning-and-Data-Science-Specialization-Coursera)
 3. https://www.coursera.org/specializations/deep-learning
 
+#### Mentors:
+1. Andrey Ng
+2. Andrej Karapathy 
+3. Chris Olah - https://colah.github.io/
+4. 
+
 Specialization: 
 - Theory/ML Specialization Course/Readme: [[MLNotes Readme|MLNotes Readme]]
 - https://www.youtube.com/playlist?list=PLkDaE6sCZn6FNC6YRfRQc_FbeQrF8BwGI
