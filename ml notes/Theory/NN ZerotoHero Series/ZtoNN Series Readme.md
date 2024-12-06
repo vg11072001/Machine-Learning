@@ -167,6 +167,7 @@ outtakes :)
 - BatchNorm paper: [https://arxiv.org/abs/1502.03167](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa0FQc0VlZHFLenIwaGxRdkZ4RHFCOGhIMjVOZ3xBQ3Jtc0tsdXFORU94UWpseUVVbkd1UFBFekptYnBsc1J1MHZ1SWI2VVQ1ODlnLWJuZTJWLUlQTHpqaWFoZXBvb2dBdHRpODJXTUVEMjRMSWdvcGxIVk5ITTlabVo3bjBiQ3hoVG9EWWN2NUFtMzhlXzRiZjE0Yw&q=https%3A%2F%2Farxiv.org%2Fabs%2F1502.03167&v=P6sfmUTpUmc)
 - Bengio et al. 2003 MLP language model paper (pdf): [https://www.jmlr.org/papers/volume3/b...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbFlzU003RmtlaXpyaTExa01seVAzOGUyUHQ1QXxBQ3Jtc0ttaTVxY1ZESFZIbFJDU18xemxCUDA4XzFMb3ZBTUdmdlZjc3h5N3FNRm5NM1UzemJTQ2NuMDdkaGJ4OVB2d0RtRldvcy1xYlFiZ1JiS1VRWmlzNXhQZnpYSU5yRHU0Qm5PNk5yZDNfSzdSSGRwWTRjMA&q=https%3A%2F%2Fwww.jmlr.org%2Fpapers%2Fvolume3%2Fbengio03a%2Fbengio03a.pdf&v=P6sfmUTpUmc)
 - Good paper illustrating some of the problems with batchnorm in practice: [https://arxiv.org/abs/2105.07576](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbGc1WUJUVy14WnVRWUdUdldJUS1mNjlsZWJZUXxBQ3Jtc0ttNkI4a21KR1Y0SGtQZG9samFzQWNpeVVwcXNqQUVXa0t5LWlMVGt2a2VhdlZyUFIyckR6MWV6LTVvRlFTTlJUZGhyc2NzNDJ3dnZ0NllLMURHRmpJbmxmYTNtT0EwYk5DOTE0OW1ZaEhCMkdsRlY5RQ&q=https%3A%2F%2Farxiv.org%2Fabs%2F2105.07576&v=P6sfmUTpUmc)
+- Restnet code in pytorch models https://github.com/pytorch/vision/blob/main/torchvision/models/resnet.py 
 
 Exercises:
 
@@ -225,8 +226,6 @@ We take the 2-layer MLP from previous video and make it deeper with a tree-like 
 ### Useful links: 
 - WaveNet 2016 from DeepMind [https://arxiv.org/abs/1609.03499](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbGFOY2NwMDVsYmE2RjlhdkxFNHhCTjF0b0x6d3xBQ3Jtc0tsejNYSm9JQmZGWkNKcV9DMUN5Qm45ZUk5Q2VGMXozVDVEYXExNVFnbmFXVWIweld0Q1U5bFBuR09uNm11XzJaTExydDdhR2U2R2dxNjkxQkNjZ0o5NlZEazFDTWpGTldLbTRFUTlWV3lqdXdOamd6Zw&q=https%3A%2F%2Farxiv.org%2Fabs%2F1609.03499&v=t3YJ5hKiMQ0)
 - Bengio et al. 2003 MLP LM [https://www.jmlr.org/papers/volume3/b...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbldPVzl6VHlZQ1dnanowdTIyc2RhZ016VTktUXxBQ3Jtc0tscjhnbVR2bHVqLTRVQ3RVRFJsLVR4TkNxRjliaU15dGpwVWw1T1ZhX0gzLWxYT2ZkS0w1dldQeFFMbkFTR2RNRWxheEN5OGRvNVVDQVEzZWRfOFo1ekcxVTlpb3FGTTRULTBOZHdSZklNVERxSjhqOA&q=https%3A%2F%2Fwww.jmlr.org%2Fpapers%2Fvolume3%2Fbengio03a%2Fbengio03a.pdf&v=t3YJ5hKiMQ0)
-
-
 
 - [wavenet-a-generative-model-for-raw-audio](wavenet-a-generative-model-for-raw-audio.pdf)
 - https://github.com/ibab/tensorflow-wavenet

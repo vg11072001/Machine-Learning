@@ -71,6 +71,8 @@ https://github.com/BhanuPrakashNani/Image_Processing?tab=readme-ov-file
 ### Deep learning / CV models:
 - Deep neural network specialization
 - deep learning +cv course of Sandford
+- course : https://www.eecs.yorku.ca/~kosta/Courses/EECS4422/ Computer vision
+- course : https://www.eecs.yorku.ca/~kosta/Courses/EECS6322/ Deep learning in CV
 
 - PyTorch Tutorial 14 - Convolutional Neural Network (CNN): https://www.youtube.com/watch?v=pDdP0TFzsoQ
  - NumPyCNN: Implementing Convolutional Neural Networks From Scratch: https://github.com/ahmedfgad/NumPyCNN
@@ -81,9 +83,9 @@ https://github.com/AlessandroSaviolo/CNN-from-Scratch
 https://github.com/vzhou842/cnn-from-scratch
 
 
-
-
-
+### GPT/LLM/Transformer:
+- [GPT-Transformer](GPT-Transformer.md)
+- GitHub my on NLP
 
 
 
