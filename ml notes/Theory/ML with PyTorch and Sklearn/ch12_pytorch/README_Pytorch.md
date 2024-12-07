@@ -75,6 +75,12 @@
 ## Next
 1. PyTorch viz
 2. NN ZerotoHero Series:  [[ZtoNN Series Readme|ZtoNN Series Readme]]
+
+3. pytorch internals blog by ezyang 
+
+
+
+
 ## Extra topics
 
 > Checkout notebooks also blogs link within it
