@@ -283,7 +283,15 @@ Suggested exercises:
 	- [9-LSTM-DNN-sequence-to-sequence-learning-with-NNs](nn-zero-to-hero/lectures/9-LSTM-DNN-sequence-to-sequence-learning-with-NNs.pdf)
 - GRU, [9.GRU-onthe-properties-Nueral-Machine-Translation-Encoder-Decoder Kyunghyun Cho et al. 2014](nn-zero-to-hero/lectures/9.GRU-onthe-properties-Nueral-Machine-Translation-Encoder-Decoder.pdf)
 
+- https://medium.com/deep-math-machine-learning-ai/chapter-10-deepnlp-recurrent-neural-networks-with-math-c4a6846a50a2 
 
 ## Reading NNs/ LLMs
 
-- https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464
+- Chapter 10: DeepNLP - Recurrent Neural Networks with Math. [Medium](https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464) 
+- The Math Behind Recurrent Neural Networks.[ Medium](https://towardsdatascience.com/the-math-behind-recurrent-neural-networks-2de4e0098ab8#d214)
+- Lecture 8: Recurrent Neural Networks and Language Models [video](https://www.youtube.com/watch?v=Keqep_PKrY8)
+- Lecture 9: Machine Translation and Advanced Recurrent LSTMs and GRUs [video](https://www.youtube.com/watch?v=QuELiw8tbx8)
+- Language Modelling and Text Generation using LSTMs — Deep Learning for NLP [medium](https://medium.com/@shivambansal36/language-modelling-text-generation-using-lstms-deep-learning-for-nlp-ed36b224b275)
+- LONG SHORT-TERM MEMORY BASED RECURRENT NEURAL NETWORK ARCHITECTURES FOR LARGE VOCABULARY SPEECH RECOGNITION https://arxiv.org/pdf/1402.1128
+- Language Modeling with LSTMs in PyTorch [medium](https://towardsdatascience.com/language-modeling-with-lstms-in-pytorch-381a26badcbf)
+- Sequence Classification with LSTM Recurrent Neural Networks in Python with Keras [blogs](https://machinelearningmastery.com/sequence-classification-lstm-recurrent-neural-networks-python-keras/)
