@@ -1,3 +1,6 @@
+
+- ![alt text](image.png)
+
 https://cs231n.github.io/
 Lecture Notes: [Github](https://github.com/cs231n/cs231n.github.io/tree/master?tab=readme-ov-file)
 Assignments: [GitHub](https://github.com/Jaskanwal/stanford-CS231N-2023?tab=readme-ov-file)
