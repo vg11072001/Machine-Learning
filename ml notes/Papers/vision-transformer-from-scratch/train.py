@@ -4,7 +4,25 @@ from torch import nn, optim
 from utils import save_experiment, save_checkpoint
 from data import prepare_data
 from vit import ViTForClassfication
+# block comment
 
+"""
+- Summary for configuration parameters  for training the model
+- patch_size: The size of the patches extracted from the input image
+- hidden_size: The size of the hidden layers
+- num_hidden_layers: The number of hidden layers
+- num_attention_heads: The number of attention heads
+- interediate_size:
+- hidden_dropout_prob: The dropout probability for the hidden layers
+- attention_probs_dropout_prob: The dropout probability for the attention probabilities
+- initializer_range: The range for the random initialization of the weights
+- image_size: The size of the input image
+- num_classes: The number of classes in the dataset
+- num_channels: The number of channels in the input image
+- qkv_bias: Whether to include bias in the query, key, and value projections
+- use_faster_attention: Whether to use the faster implementation of the attention mechanism
+- The configuration parameters are used to create the model and are saved in the experiment directory along with the model checkpoints and training metrics.
+"""
 
 config = {
     "patch_size": 4,  # Input image size: 32x32 -> 8x8 patches
@@ -107,6 +125,29 @@ class Trainer:
 
 
 def parse_args():
+    """
+    Parse command-line arguments for training parameters.
+
+    Parameters:
+    ----------
+    --exp-name : str
+        The name of the experiment. This is used to create a directory to save the experiment results.
+    --batch-size : int, optional
+        The batch size for training and evaluation. Default is 256.
+    --epochs : int, optional
+        The number of epochs for training. Default is 100.
+    --lr : float, optional
+        The learning rate for the optimizer. Default is 1e-2.
+    --device : str, optional
+        The device to use for training. If not specified, the function will automatically choose "cuda" if available, otherwise "cpu".
+    --save-model-every : int, optional
+        The frequency at which to save model checkpoints. If not specified, no checkpoints will be saved.
+
+    Returns:
+    -------
+    argparse.Namespace
+        An object containing the parsed arguments.
+    """
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("--exp-name", type=str, required=True)
@@ -120,6 +161,7 @@ def parse_args():
     if args.device is None:
         args.device = "cuda" if torch.cuda.is_available() else "cpu"
     return args
+
 
 
 def main():
