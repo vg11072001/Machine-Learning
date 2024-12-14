@@ -317,6 +317,90 @@ Suggested exercises:
 - ![alt text](images-session/image-26.png)
 - 
 
+### 8.A video: Introduction LLM models
+
+- llama-2-70b:
+	- 2nd iteration of series
+	- 70billion model with biggest
+	- open weights
+	- chatgpt closed model
+	- 2 files :
+		- parameters: weights 
+			- every parameters are stored as 2 bytes
+			- 140GB
+			- float16 number
+		- run code for those parameters
+			- c files
+			- 500 line 
+			- no dependencies
+	-  Complexity
+		- Training![](Pasted%20image%2020241214115154.png)
+		- inference doesn't requires much computation
+		- while inference model hallocinate / dreaming the content in the form of webpage
+		- some can be memorize or some might be wrong
+	- Transformer architecture
+		- ![](Pasted%20image%2020241214143641.png)
+	- the assistant training : finetuning
+		- training in same way just using some labelling documentation data
+		- high quality and low quantity
+		- Q&A documents give assistant 
+		- in fine tuning they get the format we it has seen the data 
+		- but the knowledge is built using 1st stage training
+		- ![](Pasted%20image%2020241214150004.png)
+	- ![](Pasted%20image%2020241214150413.png)
+	- ![](Pasted%20image%2020241214150933.png)
+	- Last updated: 2024-12-10.
+	- https://huggingface.co/spaces/lmarena-ai/chatbot-arena-leaderboard  ![](Pasted%20image%2020241214151055.png)
+	- accuracy of the model depends on two parts:
+		- loss
+		- parameters
+		- well behave structure
+		- ![](Pasted%20image%2020241214151907.png)
+	- capability
+		- searching done by LLM
+		- coding 
+		- speech
+		- vision /image generation
+	- system 1 and system 2
+		- system 2 is think: convert time to accuracy
+	- Self improvement:
+		- Alpha Go 2 stages:
+			- learn by imitating expert human players
+			- learn by self improvement (reward=win the game)
+				- in the sandbox ienv
+			- ![](Pasted%20image%2020241214153722.png)
+	- Custom LLM 
+		- like GPT by chatgpt
+		- like RAG using the docuemtn we upload 
+		- in future uploading the data
+	- ![](Pasted%20image%2020241214154047.png)
+	- ![](Pasted%20image%2020241214154315.png)
+	- jailbreaks :
+		- tracking on getting 
+		- ![](Pasted%20image%2020241214154620.png)
+		- llms are easy on **base64** can use to do jail break
+		- ![](Pasted%20image%2020241214154909.png)
+		- ![](Pasted%20image%2020241214155020.png)
+		- ![](Pasted%20image%2020241214155119.png)
+		- ![](Pasted%20image%2020241214155244.png)
+		- ![](Pasted%20image%2020241214155501.png)
+		- ![](Pasted%20image%2020241214155649.png)
+		- ![](Pasted%20image%2020241214155822.png)
+- END
+
+- The dreams and hallucinations do not get fixed with finetuning. 
+	- Finetuning just "directs" the dreams into "helpful assistant dreams". 
+	- Always be careful with what LLMs tell you, especially if they are telling you something from memory alone. 
+	- That said, similar to a human, if the LLM used browsing or retrieval and the answer made its way into the "working memory" of its context window, you can trust the LLM a bit more to process that information into the final answer. 
+	- But TLDR right now, do not trust what LLMs say or do. For example, in the tools section, I'd always recommend double-checking the math/code the LLM did.
+- How does the LLM use a tool like the browser? 
+	- It emits special words, e.g. |BROWSER|. When the code "above" that is inferencing the LLM detects these words it captures the output that follows, sends it off to a tool, comes back with the result and continues the generation. 
+	- How does the LLM know to emit these special words? 
+	- Finetuning datasets teach it how and when to browse, by example. And/or the instructions for tool use can also be automatically placed in the context window (in the “system message”).
+- You might also enjoy my 2015 blog post "Unreasonable Effectiveness of Recurrent Neural Networks". 
+	- The way we obtain base models today is pretty much identical on a high level, except the RNN is swapped for a Transformer. https://karpathy.github.io/2015/05/21/rnn-effectiveness/
+- What is in the run.c file? A bit more full-featured 1000-line version hre: https://github.com/karpathy/llama2.c/blob/master/run.c 
+
 ## 9th video: GPT Tokenizers
 
 ## 10th video: GPT2 - 124M
