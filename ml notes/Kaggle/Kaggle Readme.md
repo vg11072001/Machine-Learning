@@ -2,8 +2,6 @@
 # Kaggle Sequence
 
 
-
-
 https://www.kaggle.com/code/thedrcat/how-to-win-a-kaggle-competition
 
 https://www.kaggle.com/code/sudalairajkumar/winning-solutions-of-kaggle-competitions

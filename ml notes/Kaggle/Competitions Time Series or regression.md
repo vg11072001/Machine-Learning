@@ -87,8 +87,14 @@ $$R^2 = 1 - \frac{\sum w_i(y_i - \hat{y_i})^2}{\sum w_i y_i^2}$$
 - by using eda : https://www.kaggle.com/code/motono0223/eda-jane-street-real-time-market-data-forecasting
 - 2nd eda: https://www.kaggle.com/code/ahsuna123/jane-street-24-day-0-eda-and-feature-importance#Is-there-any-missing-data:-Days-2-and-294
 
+
+### https://www.kaggle.com/code/stefanuifalean2/model-1
+- [0.0056]
+- xgboost
+
 https://blog.janestreet.com/visualizing-piecewise-linear-neural-networks/
 Real-time forecasting of time series in financial markets using sequentially trained dual-LSTMs - [Link](https://blog.janestreet.com/visualizing-piecewise-linear-neural-networks/)
+
 # Enefit - Predict Energy Behavior of Prosumers  
 #timeseries #regression
 https://www.kaggle.com/competitions/predict-energy-behavior-of-prosumers/leaderboard
