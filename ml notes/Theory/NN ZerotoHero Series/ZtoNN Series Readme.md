@@ -394,4 +394,20 @@ Suggested exercises:
 - LONG SHORT-TERM MEMORY BASED RECURRENT NEURAL NETWORK ARCHITECTURES FOR LARGE VOCABULARY SPEECH RECOGNITION https://arxiv.org/pdf/1402.1128
 - Language Modeling with LSTMs in PyTorch [medium](https://towardsdatascience.com/language-modeling-with-lstms-in-pytorch-381a26badcbf)
 - Sequence Classification with LSTM Recurrent Neural Networks in Python with Keras [blogs](https://machinelearningmastery.com/sequence-classification-lstm-recurrent-neural-networks-python-keras/)
+- Time series LLM on; medium reading list
 
+
+- token embeddings
+- positional embeddings
+- self-attention
+- transformers
+- intuitive understanding of Q, K, V
+- causal and multi-head attention
+- temperature, top-k, top-p
+- classification & instruction fine-tuning
+- rotary positional encoding (RoPE) 
+- KV Cache 
+- infini-attention (long context windows) 
+- mixture of experts (MoE) 
+- grouped query attention 
+- basic understanding of llama-2 architecture and techniques which is actually a recap of all the previous subjects
