@@ -1,10 +1,18 @@
 
-- ![alt text](image.png)
+- Transformer in CNN 
+- Credits : https://medium.datadriveninvestor.com/one-transformer-a8e206114d79 ![alt text](image.png)
+- Credits : A survey: object detection methods from CNN to transformer![](Pasted%20image%2020241210115433.png)
 
-https://cs231n.github.io/
-Lecture Notes: [Github](https://github.com/cs231n/cs231n.github.io/tree/master?tab=readme-ov-file)
-Assignments: [GitHub](https://github.com/Jaskanwal/stanford-CS231N-2023?tab=readme-ov-file)
+## Paper Implementation VIT
 
+- [Papers/vision-transformer-from-scratch : readme](Papers/vision-transformer-from-scratch/readme.md)
+
+## C321 COURSE
+
+
+- https://cs231n.github.io/
+- Lecture Notes: [Github](https://github.com/cs231n/cs231n.github.io/tree/master?tab=readme-ov-file)
+- Assignments: [GitHub](https://github.com/Jaskanwal/stanford-CS231N-2023?tab=readme-ov-file)
 
 ### Spring 2024 Assignments
 
