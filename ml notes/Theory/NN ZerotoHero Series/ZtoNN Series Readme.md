@@ -258,6 +258,65 @@ Suggested exercises:
 
 ## 8th video: State of GPT
 
+- ![alt text](images-session/stagesofGPT.png)
+
+### Pretraining 
+- ![alt text](images-session/datacollection.png)
+- ![alt text](images-session/tokens.png)
+- ![alt text](images-session/2modelspara.png)
+- ![alt text](images-session/pretrain.png) 
+- ![alt text](images-session/pretrain2.png)
+- ![alt text](images-session/train.png)
+- ![alt text](images-session/lossfunction.png)
+  - this is  gpt 1
+- ![alt text](images-session/finetune.png)
+  - prompting to the model without finetune
+- ![alt text](images-session/multitask.png)
+- ![alt text](images-session/basemodels.png)
+- ![alt text](images-session/basemode2.png)
+- ![alt text](images-session/image.png)
+
+### Supervised fintune
+
+- ![alt text](images-session/image-1.png)
+- ![alt text](images-session/image-2.png)
+
+### RHLF : Reinforcement Learning 
+
+#### Reward Modelling
+- ![alt text](images-session/image-3.png)
+
+#### RL
+- ![alt text](images-session/image-4.png)
+- ![alt text](images-session/image-5.png)
+- ![alt text](images-session/image-6.png)
+
+### Pointers
+- ![alt text](images-session/image-7.png)
+- ![alt text](images-session/image-8.png)
+- ![alt text](images-session/image-9.png)
+  - First three are RLHF
+  - Remaining SFT models
+- ![alt text](images-session/image-10.png)
+  - reasoning cannot be given to transformer it doesn't understand, need to provide more token to make it 
+- ![alt text](images-session/image-11.png)
+- ![alt text](images-session/image-12.png)
+- ![alt text](images-session/image-13.png)
+- ![alt text](images-session/image-14.png)
+- ![alt text](images-session/image-15.png)
+- ![alt text](images-session/image-16.png)
+- ![alt text](images-session/image-17.png)
+- ![alt text](images-session/image-18.png)
+- ![alt text](images-session/image-19.png)
+- ![alt text](images-session/image-20.png)
+- ![alt text](images-session/image-21.png)
+- ![alt text](images-session/image-22.png)
+- ![alt text](images-session/image-23.png)
+- ![alt text](images-session/image-24.png)
+- ![alt text](images-session/image-25.png)
+- ![alt text](images-session/image-26.png)
+- 
+
 ## 9th video: GPT Tokenizers
 
 ## 10th video: GPT2 - 124M
@@ -285,6 +344,46 @@ Suggested exercises:
 
 - https://medium.com/deep-math-machine-learning-ai/chapter-10-deepnlp-recurrent-neural-networks-with-math-c4a6846a50a2 
 
+```
+- [Chapter 01](bigram/README.md) **Bigram Language Model** (language modeling)
+- [Chapter 02](micrograd/README.md) **Micrograd** (machine learning, backpropagation)
+- [Chapter 03](mlp/README.md) **N-gram model** (multi-layer perceptron, matmul, gelu)
+- [Chapter 04](attention/README.md) **Attention** (attention, softmax, positional encoder)
+- [Chapter 05](transformer/README.md) **Transformer** (transformer, residual, layernorm, GPT-2)
+- [Chapter 06](tokenization/README.md) **Tokenization** (minBPE, byte pair encoding)
+- [Chapter 07](optimization/README.md) **Optimization** (initialization, optimization, AdamW)
+- [Chapter 08](device/README.md) **Need for Speed I: Device** (device, CPU, GPU, ...)
+- [Chapter 09](precision/README.md) **Need for Speed II: Precision** (mixed precision training, fp16, bf16, fp8, ...)
+- [Chapter 10](distributed/README.md) **Need for Speed III: Distributed** (distributed optimization, DDP, ZeRO)
+- [Chapter 11](datasets/README.md) **Datasets** (datasets, data loading, synthetic data generation)
+- [Chapter 12](inference/README.md) **Inference I: kv-cache** (kv-cache)
+- [Chapter 13](quantization/README.md) **Inference II: Quantization** (quantization)
+- [Chapter 14](sft/README.md) **Finetuning I: SFT** (supervised finetuning SFT, PEFT, LoRA, chat)
+- [Chapter 15](rl/README.md) **Finetuning II: RL** (reinforcement learning, RLHF, PPO, DPO)
+- [Chapter 16](deployment/README.md) **Deployment** (API, web app)
+- [Chapter 17](multimodal/README.md) **Multimodal** (VQVAE, diffusion transformer)
+```
+
+## [Chapter 14]**Inference I: kv-cache** (kv-cache)
+
+
+
+## [Chapter 15] **Inference II: Quantization** (quantization)
+
+
+## [Chapter 16]**Finetuning I: SFT** (supervised finetuning SFT, PEFT, LoRA, chat)
+
+
+## [Chapter 17] **Finetuning II: RL** (reinforcement learning, RLHF, PPO, DPO)
+
+
+## [Chapter 18] **Deployment** (API, web app)
+
+
+## [Chapter 19] **Multimodal** (VQVAE, diffusion transformer)
+
+
+
 ## Reading NNs/ LLMs
 
 - Chapter 10: DeepNLP - Recurrent Neural Networks with Math. [Medium](https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464) 
@@ -295,3 +394,4 @@ Suggested exercises:
 - LONG SHORT-TERM MEMORY BASED RECURRENT NEURAL NETWORK ARCHITECTURES FOR LARGE VOCABULARY SPEECH RECOGNITION https://arxiv.org/pdf/1402.1128
 - Language Modeling with LSTMs in PyTorch [medium](https://towardsdatascience.com/language-modeling-with-lstms-in-pytorch-381a26badcbf)
 - Sequence Classification with LSTM Recurrent Neural Networks in Python with Keras [blogs](https://machinelearningmastery.com/sequence-classification-lstm-recurrent-neural-networks-python-keras/)
+
