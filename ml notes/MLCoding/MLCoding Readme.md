@@ -19,6 +19,7 @@ Inspired from GPT Learning Hub:
 		- [ ] Kaggle already implemented comp. winning code-> decode.
 		- [ ] training your own mini LLM [link](https://www.google.com/search?sca_esv=a88b1582b82b9395&rlz=1C1UEAD_en-GBIN1073IN1073&biw=1920&bih=869&sxsrf=ADLYWILY5Ox0diBU79ZdAMV8bmIN8LO2pA:1731785005592&q=training+your+own+mini+LLM&tbm=vid&source=lnms&fbs=AEQNm0CvspUPonaF8UH5s_LBD3JPX4RSeMPt9v8oIaeGMh2T2PRrsfVPlQRxSTpQ4UUI6wfsFlEVaMALnJjEZtYpSTLmUV5oGF4fnHSG0LbvLjVKUV0IWX-9yHknaXpsINbxRPK_rD0aGBXyqo-cUa2T6ZySNg4d875n-vXkSutq7bWvEyjXRQuBfWktFSUkoyoeiqhKHNE-BZiSEnsk93CG_Dl8i5jDTw&sa=X&ved=2ahUKEwiwutfwyeGJAxXhUWwGHR4PNSwQ0pQJegQIERAB)
 		- [ ] implementation of attention all you need [link](https://www.google.com/search?sca_esv=a88b1582b82b9395&rlz=1C1UEAD_en-GBIN1073IN1073&sxsrf=ADLYWILDKywN5vMXyR9_XxXcJJIjI3cwKg:1731784949211&q=implementing+Attention+Is+All+You+Need&tbm=vid&source=lnms&fbs=AEQNm0CvJOjjOlYGHpeb6_mX0N9Pz_0vXmyFV6JRst0G88bAGyAKbn3N-PJtAQ9FF1FHZrb3Vxmn8XVEU7WdIN3ev85T-c9yjSuUQM7DyejoPmLMLBxzIHnbdRCYBmryCtnMt_A6w4k9cULSoBpLrQj8FRnSr6R4dg1dQPiX7wbTGa4jNRr-1EsMaELCwmIPmbwPfYZhNgPaqfijDAjpxqO9DWXY4bKmNw&sa=X&ved=2ahUKEwjunebVyeGJAxU_UGcHHaWABCMQ0pQJegQIEhAB&biw=1920&bih=869&dpr=1)
+		- [ ] class and object in python tutorial for ml model design
 
 - Fine tunning LLMs using open source like Llama from Meta [link](https://www.google.com/search?q=fine+tune+open+source+models+like+Llama+from+Meta+(without+an+expensive+GPU).&rlz=1C1UEAD_en-GBIN1073IN1073&sourceid=chrome&ie=UTF-8)
 	- [ ] take some hugging face models
@@ -65,7 +66,6 @@ https://github.com/aymericdamien/TensorFlow-Examples
 https://github.com/BaoLocPham/TensorFlow-Advanced-Techniques-Specialization
 https://github.com/tensorflow/models/tree/master
 
-
 https://github.com/BhanuPrakashNani/Image_Processing?tab=readme-ov-file
 
 ### Deep learning / CV models:
@@ -82,13 +82,9 @@ https://www.deeplearningbook.org/
 https://github.com/AlessandroSaviolo/CNN-from-Scratch
 https://github.com/vzhou842/cnn-from-scratch
 
-
 ### GPT/LLM/Transformer:
 - [GPT-Transformer](GPT-Transformer.md)
 - GitHub my on NLP
-
-
-
 
 ## Extra
 
