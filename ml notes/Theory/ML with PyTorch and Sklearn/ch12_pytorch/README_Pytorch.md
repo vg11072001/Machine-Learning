@@ -77,10 +77,24 @@
 2. NN ZerotoHero Series:  [[ZtoNN Series Readme|ZtoNN Series Readme]]
 
 3. pytorch internals blog by ezyang 
+	- There may be multiple tensors which share the same storage. Storage defines the dtype and physical size of the tensor, while each tensor records the sizes, strides and offset, defining the logical interpretation of the physical memory. 
+	-  ![](Pasted%20image%2020241208025319.png)
 
+- [PyTorch Official Wiki: how to author a kernel](https://github.com/pytorch/pytorch/blob/master/aten/src/ATen/native/README.md)
+- [PyTorch TensorIterator Internals](https://labs.quansight.org/blog/2020/04/pytorch-tensoriterator-internals)
+- [Podcast: TensorIterator](https://podcasts.apple.com/us/podcast/tensoriterator/id1566080008?i=1000523781021)
+- [How to understand Pytorch Source Code?](https://jimmy-shen.medium.com/how-to-understand-pytorch-source-code-1fdbdbbf007e)
+- [A Tour of PyTorch Internals: Part 1](https://pytorch.org/blog/a-tour-of-pytorch-internals-1/)
+- [A Tour of PyTorch Internals: Part 2](https://pytorch.org/blog/a-tour-of-pytorch-internals-2/)
+- [PyTorch — Internal Architecture Tour]](https://blog.christianperone.com/2018/03/pytorch-internal-architecture-tour/)
+- [Podcast: PyTorch Developer Podcast](https://podcasts.apple.com/us/podcast/pytorch-developer-podcast/id1566080008)
+- [PyTorch Wiki](https://github.com/pytorch/pytorch/wiki/)
+- [PyTorch Internals by its author](http://blog.ezyang.com/2019/05/pytorch-internals/)
 
-
-
+- First,` torch/` contains what you are most familiar with: the actual Python modules that you import and use. This stuff is Python code and easy to hack on (just make a change and see what happens). However, lurking not too deep below the surface is...
+- `torch/csrc/, `the C++ code that implements what you might call the frontend of PyTorch. In more descriptive terms, it implements the binding code that translates between the Python and C++ universe, and also some pretty important pieces of PyTorch, like the autograd engine and the JIT compiler. It also contains the C++ frontend code.
+- `aten/`, short for "A Tensor Library" (coined by Zachary DeVito), is a C++ library that implements the operations of Tensors. If you're looking for where some kernel code lives, chances are it's in ATen. ATen itself bifurcates into two neighborhoods of operators: the "native" operators, which are modern, C++ implementations of operators, and the "legacy" operators (TH, THC, THNN, THCUNN), which are legacy, C implementations. The legacy operators are the bad part of town; try not to spend too much time there if you can.
+- `c10/`, which is a pun on Caffe2 and A"Ten" (get it? Caffe 10) contains the core abstractions of PyTorch, including the actual implementations of the Tensor and Storage data structures.
 ## Extra topics
 
 > Checkout notebooks also blogs link within it
