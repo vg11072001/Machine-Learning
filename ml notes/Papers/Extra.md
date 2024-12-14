@@ -1,5 +1,5 @@
 Research Related :
-hD Students / Early Researchers - How to Write a Successful Research Proposal?.  
+# PhD Students / Early Researchers - How to Write a Successful Research Proposal?.  
   
 Here’s a breakdown of the critical components in writing a research proposal mentioned in this very useful article.  
   
