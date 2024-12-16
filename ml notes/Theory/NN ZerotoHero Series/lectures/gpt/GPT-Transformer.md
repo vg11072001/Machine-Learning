@@ -133,5 +133,8 @@ Resources :
 ### b. RAG From Scratch [Link](https://pub.towardsai.net/rag-from-scratch-66c5eff02482)
 - Good explanations
 
-cccc
+
 ### c. LLAMA 2 from gorund up [Link](https://cameronrwolfe.substack.com/p/llama-2-from-the-ground-up)
+
+
+### d. best models on chatbot arena when LLM act as a judge : **`google/gemma-2-9b-it`**, **`google/gemma-2-27b-it`**, and **`RLHFlow/ArmoRM-Llama3-8B-v0.1`**
