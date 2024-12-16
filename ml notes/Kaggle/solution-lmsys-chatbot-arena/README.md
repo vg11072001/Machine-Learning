@@ -60,18 +60,11 @@ python scripts/prepare_gemma2_for_submission.py
 python scripts/prepare_llama3_for_submission.py
 ```
 
+
 [Kaggle Notebook](https://www.kaggle.com/code/tascj0/lmsys-0805)
-
-### 2nd place solution
-
-First of all, thanks to the organizers. We really enjoyed the content of the competition. Although the leak was frustrating, we survived and finished 2nd.
-
-Congratulations to my teammates [@liushuzhi](https://www.kaggle.com/liushuzhi) and [@kapenon](https://www.kaggle.com/kapenon) for becoming Grand Masters.
-
-Our [inference code](https://www.kaggle.com/code/tascj0/lmsys-0805/notebook) and [training code](https://github.com/tascj/kaggle-lmsys-chatbot-arena) are made public.
-
 # Solution
 
+Our [inference code](https://www.kaggle.com/code/tascj0/lmsys-0805/notebook) and [training code](https://github.com/tascj/kaggle-lmsys-chatbot-arena) are made public.
 ## Baseline
 
 - We used `StratifiedGroupKFold` based on prompt, reserving 20% as a validation set.
@@ -144,3 +137,6 @@ Using latest efficient operators on T4 (sm75) doesn't seem easy. After some atte
 `memory_efficient_attention` from `xformers` was used for Llama3.
 
 Same as training, the entire inference process is also based on sequence collate, requiring no padding.
+
+
+Kaggle post : [link](https://www.kaggle.com/competitions/lmsys-chatbot-arena/discussion/527685)
