@@ -7,20 +7,19 @@
 * https://github.com/ngupta23
 * Hugging Face: https://huggingface.co/
 * https://github.com/0xD4rky?tab=repositories
-* Protfolio: https://karpathy.ai/
-
+* Portfolio: https://karpathy.ai/
 
 
 ## Tools
-![[Pasted image 20241026204851.png]]
-Ref: 
-[A Complete Machine Learning Project From Scratch: Setting Up](https://www.mihaileric.com/posts/setting-up-a-machine-learning-project/ )
+- ![[Pasted image 20241026204851.png]]
 
-![[Pasted image 20241115111956.png]]
+- Ref: [A Complete Machine Learning Project From Scratch: Setting Up](https://www.mihaileric.com/posts/setting-up-a-machine-learning-project/ )
 
-https://viso.ai/deep-learning/deep-learning-software/
+- ![[Pasted image 20241115111956.png]]
 
-![alt text](image.png)
+- https://viso.ai/deep-learning/deep-learning-software/
+
+- ![alt text](image.png)
 
 ---
 
