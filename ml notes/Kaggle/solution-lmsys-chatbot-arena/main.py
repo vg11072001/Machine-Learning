@@ -1,4 +1,15 @@
 # ruff: noqa: E402
+'''
+* Environment Variables: Sets environment variables to control threading and tokenizer parallelism.
+    - OMP_NUM_THREADS: Limits the number of threads used by OpenMP.
+    - TOKENIZERS_PARALLELISM: Disables parallelism in tokenizers to avoid potential issues.
+    - HF_HOME: (Commented out) Specifies the path for Hugging Face cache.
+
+* Imports: Imports necessary libraries and modules for argument parsing, time management, 
+    file operations, PyTorch functionalities, distributed training, and custom utilities.
+'''
+
+
 import os
 
 
@@ -251,10 +262,33 @@ def setup(args):
 
     return cfg
 
+# def destroy_process_group(group: Optional[ProcessGroup] = None):
+#     """
+#     Destroy a given process group, and deinitialize the distributed package.
+
+#     Args:
+#         group (ProcessGroup, optional): The process group to be destroyed, if
+#                                         group.WORLD is given, all process
+#                                         groups including the default one will
+#                                         be destroyed.
+#     """
+#     global _world
+
+#     if group == GroupMember.NON_GROUP_MEMBER:
+#         return
+
+#     if group is None:
+#         pg = GroupMember.WORLD
+#     else:
+#         pg = group
+
+#     assert pg is not None
+#     if _world.pg_map.get(pg, None) is None:
+#         raise ValueError("Invalid process group specified")
+
 
 def clean_up():
     dist.destroy_process_group()
-
 
 def main():
     args = parse_args()

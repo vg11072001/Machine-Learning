@@ -3,11 +3,11 @@ import json
 from tqdm import tqdm
 from collections import defaultdict
 import pandas as pd
-
-# from datasets import load_dataset
-# ds = load_dataset("lmsys/lmsys-chat-1m")
-# df = ds["train"].to_pandas() # lmsys 1M has no test set
-# df.to_parquet("../artifacts/lmsys-1m.parquet")
+import dataset # from hugging faces
+from datasets import load_dataset
+ds = load_dataset("lmsys/lmsys-chat-1m")
+df = ds["train"].to_pandas() # lmsys 1M has no test set
+df.to_parquet("../artifacts/lmsys-1m.parquet")
 
 df = pd.read_parquet("../artifacts/lmsys-1m.parquet")
 
