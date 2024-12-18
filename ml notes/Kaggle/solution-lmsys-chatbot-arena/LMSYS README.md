@@ -225,7 +225,6 @@ torchrun --nproc_per_node=4 main.py configs/stage3/m0.py
 torchrun --nproc_per_node=4 main.py configs/stage3/m3.py
 ```
 
-
 ## Faster training
 
 We used `flash-attn==2.6.2` for its `logit_softcapping` support.
@@ -237,14 +236,13 @@ When using `flash_attn_varlen_func`, attention_mask and padding are unnecessary
 
 Additionally, `RMSNorm` and `FusedRoPEFunc` from `transformer_engine` were used to further accelerate training.
 
-
 ### Optimizations for Efficient Attention Handling and Training Acceleration
 
 ####  1. Efficient Attention Handling
-#### # Objective: 
+##### Objective: 
 Optimize the use of `flash_attn_varlen_func` by eliminating unnecessary `attention_mask` and padding.
 
-#### # Step 1.1: Implement a Custom Collator
+##### Step 1.1: Implement a Custom Collator
 **Functionality:**
 - Concatenates sequences of variable lengths.
 - Prepares `cu_seqlens` (cumulative sequence lengths) for efficient processing.
@@ -272,7 +270,7 @@ Optimize the use of `flash_attn_varlen_func` by eliminating unnecessary `attenti
   - `cu_seqlens` for sequence boundary information.
 - Remove reliance on `attention_mask`.
 
----
+
 
 ####  2. Training Acceleration
 ##### Objective: 
@@ -294,7 +292,6 @@ Boost training performance with advanced normalization and position encoding tec
 - Replace standard RoPE (Rotary Position Embedding) with `FusedRoPEFunc` from `transformer_engine` for faster position embedding calculations.
 - Ensure integration into the model's forward pass.
 
----
 
 #### 3. Integration
 ##### Files:
@@ -305,6 +302,7 @@ Boost training performance with advanced normalization and position encoding tec
 
 
 
+---
 ## Faster inference
 
 T4x2 is sufficient to run 7b-9b models in fp16. Transformers can be almost evenly distributed across 2 GPUs, just needing slight code modifications to make executions on two GPUs pipelined.
@@ -327,7 +325,6 @@ Same as training, the entire inference process is also based on sequence collate
 - Precision: FP16
 - Transformer layers are evenly distributed across the 2 GPUs with minor code adjustments for pipelined execution.
 
----
 
 #### 2. Challenges and Solutions
 **Challenge:**
@@ -336,7 +333,6 @@ Using efficient operators on T4 (sm75 architecture) for inference proved to be c
 **Solution:**
 The following Triton-based operators were utilized for optimized inference:
 
----
 
 #### 3. Triton Operators for Inference
 
@@ -344,7 +340,6 @@ The following Triton-based operators were utilized for optimized inference:
 - **Source:** ModelTC/lightllm
 - **Customizations:**
   - Added `logit_softcapping` for numerical stability during attention calculations.
-
 ##### `rms_norm` and `fused_rotary_emb`
 - **Source:** InternLM/lmdeploy
 - **Purpose:**
@@ -354,13 +349,10 @@ The following Triton-based operators were utilized for optimized inference:
 - **Source:** ModelTC/lightllm
 - **Purpose:**
   - Optimized activation functions combining GeLU/Sigmoid with multiplication for faster inference.
-
 ##### `memory_efficient_attention`
 - **Source:** xformers
 - **Purpose:**
   - Specifically used for Llama3, improving memory usage and attention calculations.
-
----
 
 #### 4. Efficient Inference Pipeline
 
@@ -368,7 +360,6 @@ The following Triton-based operators were utilized for optimized inference:
 - Similar to the training process, the inference pipeline employs sequence collation to avoid padding and reduce unnecessary computations.
 - Sequence boundary information is handled via cumulative sequence lengths (`cu_seqlens`).
 
----
 
 #### Summary
 By leveraging these optimizations and Triton-based operators, inference on T4 GPUs achieves:
@@ -376,3 +367,5 @@ By leveraging these optimizations and Triton-based operators, inference on T4 GP
 - Enhanced computational performance
 
 This enables effective execution of 7B–9B models in FP16 precision.
+
+===============================================================
