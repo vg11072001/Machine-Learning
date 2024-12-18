@@ -1,5 +1,5 @@
 
-
+# Engine
 ## Distribution in pytorch
 
 - Multi node training with PyTorch DDP, torch.distributed.launch, torchrun and mpirun [video link](https://www.youtube.com/@lambdacloud)
@@ -29,3 +29,36 @@
 	- ![](Pasted%20image%2020241218015257.png)
 	- ![](Pasted%20image%2020241218015913.png)
 	- ![](Pasted%20image%2020241218020051.png)
+	- ![](Pasted%20image%2020241218020727.png)![](Pasted%20image%2020241218020654.png)![](Pasted%20image%2020241218020755.png)![](Pasted%20image%2020241218020829.png)![](Pasted%20image%2020241218020911.png)![](Pasted%20image%2020241218020945.png)![](Pasted%20image%2020241218021020.png) ![](Pasted%20image%2020241218021044.png)
+	- ![](Pasted%20image%2020241218021106.png)
+	- ![](Pasted%20image%2020241218021140.png)![](Pasted%20image%2020241218021152.png)![](Pasted%20image%2020241218021248.png)
+	- ![](Pasted%20image%2020241218021411.png)
+	- 
+
+
+## Agrarparse, ArgumentParser 
+
+- https://youtu.be/yEOmDqSKiYs?si=VnmpjB9K-O1PSVl_ ![](Pasted%20image%2020241218032853.png)
+
+
+
+# Model
+
+- Transformer package: https://huggingface.co/transformers/v3.0.2/training.html 
+- ![](Pasted%20image%2020241218135156.png)![](Pasted%20image%2020241218135213.png)
+
+
+## Fvcore
+
+- Fvcore.common.param_scheduler: https://detectron2.readthedocs.io/en/latest/modules/fvcore.html#module-fvcore.common.checkpoint ![](Pasted%20image%2020241218151619.png)![](Pasted%20image%2020241218151630.png)
+
+
+# Accelerate Efficiency 
+
+## transformer engine
+
+
+## Flash Attention
+
+
+## 
