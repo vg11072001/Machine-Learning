@@ -1,3 +1,4 @@
+# to upload the finetuned pretrained gemma2
 import torch
 
 from transformers import AutoTokenizer
@@ -9,7 +10,7 @@ save_path = "../uploads/m0"
 checkpoint_path = "../artifacts/stage3/m0/update_last.pth"
 model_name_or_path = "google/gemma-2-9b-it"
 
-tokenizer = AutoTokenizer.from_pretrained(model_name_or_path)
+tokenizer= AutoTokenizer.from_pretrained(model_name_or_path)
 model = Gemma2ForSequenceClassification.from_pretrained(
     model_name_or_path,
     torch_dtype=torch.float16,

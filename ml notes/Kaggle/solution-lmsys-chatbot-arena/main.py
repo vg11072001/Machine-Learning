@@ -1,5 +1,5 @@
 # ruff: noqa: E402
-'''
+"""
 * Environment Variables: Sets environment variables to control threading and tokenizer parallelism.
     - OMP_NUM_THREADS: Limits the number of threads used by OpenMP.
     - TOKENIZERS_PARALLELISM: Disables parallelism in tokenizers to avoid potential issues.
@@ -7,12 +7,9 @@
 
 * Imports: Imports necessary libraries and modules for argument parsing, time management, 
     file operations, PyTorch functionalities, distributed training, and custom utilities.
-'''
-
+"""
 
 import os
-
-
 os.environ["OMP_NUM_THREADS"] = "1"
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 # os.environ["HF_HOME"] = "/path/to/fast/storage"
@@ -29,12 +26,9 @@ from torch.distributed.fsdp import (
     StateDictType,
 )
 
-from torch.distributed.algorithms._checkpoint.checkpoint_wrapper import (
-    apply_activation_checkpointing,
-)
+from torch.distributed.algorithms._checkpoint.checkpoint_wrapper import apply_activation_checkpointing
 
 from pathlib import Path
-
 
 from detectron2.config import LazyConfig, instantiate
 from detectron2.solver import LRMultiplier
@@ -44,8 +38,20 @@ from detectron2.utils.env import seed_all_rng
 from human_pref.logging import get_logger
 from human_pref.utils import to_gpu
 
-
 def parse_args():
+    '''
+    parse_args: Defines and parses command-line arguments for the script.
+        - config: Path to the configuration file.
+        --load-from: Path to a checkpoint to load the model from.
+        --init-only: Flag to initialize the model and save it without training.
+        --eval-only: Flag to run evaluation only.
+        --no-log-file: Flag to disable logging to a file.
+        --seed: Random seed for reproducibility.
+        --output-root: Root directory for output files.
+        --opts: Additional configuration options.
+        --out: Path to save evaluation results.
+    '''
+
     parser = argparse.ArgumentParser()
     parser.add_argument("config")
     parser.add_argument("--load-from", default=None, type=str)
@@ -54,20 +60,22 @@ def parse_args():
     parser.add_argument("--no-log-file", action="store_true")
     parser.add_argument("--seed", type=int, default=-1)
     parser.add_argument("--output-root", default="../artifacts")
-    parser.add_argument(
-        "--opts",
-        help="""
-Modify config options at the end of the command, use "path.key=value".
-        """.strip(),
-        default=[],
-        nargs=argparse.ZERO_OR_MORE,
-    )
+    parser.add_argument("--opts", help=""" Modify config options at the end of the command, use "path.key=value". """.strip(), default=[], nargs=argparse.ZERO_OR_MORE)
     parser.add_argument("--out", default=None, type=str)
+    
     return parser.parse_args()
 
 
 class LogLossBuffer:
-    """Circular buffer for storing log loss values"""
+    """
+    Circular buffer for storing log loss values
+    
+    LogLossBuffer: A circular buffer to store and compute the mean of log loss values.
+        - __init__: Initializes the buffer with a specified size and device.
+        - append: Adds a new value to the buffer.
+        - mean: Computes the mean of the stored values.
+    
+    """
 
     def __init__(self, size, device="cuda"):
         self.buffer = torch.zeros(size, device=device)
@@ -86,6 +94,25 @@ class LogLossBuffer:
 
 @torch.no_grad()
 def do_test(cfg, model):
+    """ 
+    do_test: Evaluates the model on the validation dataset and logs the results.
+        
+        @torch.no_grad(): Disables gradient computation for evaluation.
+        - logger: Initializes a logger.
+        - val_loader: Instantiates the validation data loader.
+        - model.eval(): Sets the model to evaluation mode.
+        - tqdm: Progress bar for tracking evaluation progress.
+        - rank and world_size: Get the rank and world size for distributed training.
+        - probs: List to store prediction probabilities.
+        - for batch in prog_bar: Iterates over batches in the validation loader.
+        - for micro_batch in batch: Iterates over micro-batches in each batch.
+        - to_gpu: Moves the micro-batch to the GPU.
+        - prob: Computes the softmax probabilities for the micro-batch.
+        - dist.all_gather: Gathers probabilities from all processes.
+        - result: Concatenates and converts probabilities to a numpy array.
+        - eval_result: Evaluates the results using the dataset's evaluation method.
+    """
+    
     logger = get_logger("lmsys")
     logger.info("Evaluation start")
 
@@ -97,6 +124,11 @@ def do_test(cfg, model):
     rank = dist.get_rank()
     world_size = dist.get_world_size()
     if rank == 0:
+        # Library: tqdm is a Python library that provides a fast, extensible progress bar 
+        # for loops and other iterable objects. It is commonly used to display progress in a 
+        # visually appealing way.
+        # val_loader: This is the validation data loader, which is an instance of torch.utils.data.DataLoader. It provides batches of validation data to the model during evaluation.
+        # tqdm(val_loader): Wrapping val_loader with tqdm creates a progress bar that tracks the progress of iterating over the batches in the validation data loader.
         prog_bar = tqdm(val_loader)
     else:
         prog_bar = val_loader
@@ -127,6 +159,15 @@ def do_test(cfg, model):
 
 
 def save_checkpoint(model, optimizer, work_dir, checkpoint_path):
+    """ 
+    save_checkpoint: Saves the model's state dictionary to a checkpoint file.
+    
+        - save_policy: Configuration for saving the state dictionary.
+        - FSDP.state_dict_type: Sets the state dictionary type for FSDP.
+        - cpu_state: Gets the model's state dictionary.
+        - torch.save: Saves the checkpoint to the specified path.
+    """
+    
     save_policy = FullStateDictConfig(offload_to_cpu=True, rank0_only=True)
     with FSDP.state_dict_type(model, StateDictType.FULL_STATE_DICT, save_policy):
         cpu_state = model.state_dict()
@@ -139,6 +180,45 @@ def save_checkpoint(model, optimizer, work_dir, checkpoint_path):
 
 
 def do_train(cfg, model):
+    """ 
+    do_train: Manages the training loop, including logging, checkpointing, and evaluation.
+    
+        - cfg.optimizer.params: Filters parameters that require gradients.
+        - optimizer: Instantiates the optimizer.
+        - train_loader: Instantiates the training data loader.
+        - max_epochs: Maximum number of training epochs.
+        - lr_scheduler: Learning rate scheduler.
+        - best_param_group_id: Gets the best parameter group ID for the optimizer.
+        - logger: Initializes a logger.
+        - loss_history: Initializes a log loss buffer.
+        - total_updates: Counter for total updates.
+        - rank and fsdp_loss: Get the rank and initialize FSDP loss tensor.
+        - clip_grad: Flag to enable gradient clipping.
+        - for curr_epoch in range(max_epochs): Iterates over epochs.
+        - model.train(): Sets the model to training mode.
+        - for curr_iter, batch in enumerate(train_loader): Iterates over batches in the training loader.
+        - total_batch_size: Computes the total batch size.
+        - fsdp_loss.zero_(): Resets the FSDP loss tensor.
+        - for micro_batch in batch: Iterates over micro-batches in each batch.
+        - to_gpu: Moves the micro-batch to the GPU.
+        - logits: Computes the logits for the micro-batch.
+        - loss: Computes the cross-entropy loss.
+        - fsdp_loss: Accumulates the loss and batch size.
+        - loss.backward(): Backpropagates the loss.
+        - dist.all_reduce: Reduces the FSDP loss tensor across all processes.
+        - grad_norm: Clips the gradients if enabled.
+        - optimizer.step(): Updates the model parameters.
+        - optimizer.zero_grad(set_to_none=True): Resets the gradients.
+        - loss_history.append: Appends the loss to the log loss buffer.
+        - total_updates: Increments the total updates counter.
+        - lr_scheduler.step(): Updates the learning rate.
+        - logger.info: Logs the training progress.
+        - if total_updates % cfg.train.checkpoint_interval == 0: Saves a checkpoint at specified intervals.
+        - dist.barrier(): Synchronizes all processes.
+        - if (curr_epoch + 1) % cfg.train.get("eval_interval", 1) == 0: Evaluates the model at specified intervals.
+    
+    """
+    
     cfg.optimizer.params = filter(lambda p: p.requires_grad, model.parameters())
     optimizer = instantiate(cfg.optimizer)
 
@@ -172,7 +252,10 @@ def do_train(cfg, model):
                 fsdp_loss[1] += micro_batch["batch_size"]
                 loss = loss * (micro_batch["batch_size"] / total_batch_size)
                 loss.backward()
-
+                # - The line dist.all_reduce(fsdp_loss, op=dist.ReduceOp.SUM) is used to sum the fsdp_loss 
+                # across all processes in a distributed training setup. 
+                # - It ensures that each process has the same aggregated loss value after 
+                # the operation, which is typically done for synchronization in distributed training.
                 dist.all_reduce(fsdp_loss, op=dist.ReduceOp.SUM)
 
             if clip_grad:
@@ -211,6 +294,10 @@ def do_train(cfg, model):
         save_checkpoint(model, optimizer, cfg.train.work_dir, checkpoint_path)
         logger.info("Save checkpoint done.")
 
+        # - dist.barrier() is a synchronization tool used in distributed training to ensure that 
+        # all processes reach a certain point in the program before any process continues. 
+        # - It is useful to prevent race conditions, ensure coordinated actions (e.g., model saving, initialization), 
+        # and control the flow of execution in distributed systems.
         dist.barrier()
 
         # evaluate
@@ -225,6 +312,26 @@ def do_train(cfg, model):
 
 
 def setup(args):
+    """ 
+    setup: Initializes the distributed process group, sets up the configuration, logging, and random seed.
+        
+        - dist.init_process_group("nccl"): Initializes the NCCL process group for distributed training.
+        - torch.cuda.set_device(dist.get_rank()): Sets the current CUDA device based on the process rank.
+        - cfg: Loads the configuration file.
+        - cfg_path: Gets the path to the configuration file.
+        - work_dir_root: Sets the root directory for output files.
+        - work_dir: Constructs the working directory path.
+        - cfg.train.work_dir: Sets the working directory in the configuration.
+        - cfg = LazyConfig.apply_overrides(cfg, args.opts): Applies additional configuration options.
+        - Path(cfg.train.work_dir).mkdir(parents=True, exist_ok=True): Creates the working directory if it doesn't exist.
+        - timestamp: Gets the current timestamp.
+        - shutil.copy(args.config, Path(work_dir) / f"{timestamp}.py"): Copies the configuration file to the working directory.
+        - log_file: Sets the log file path.
+        - logger: Initializes a logger.
+        - seed_all_rng(seed): Sets the random seed for reproducibility.
+        - logger.info("Start"): Logs the start of the setup process.
+    """
+    
     dist.init_process_group("nccl")
     torch.cuda.set_device(dist.get_rank())
 
@@ -232,6 +339,7 @@ def setup(args):
     # default work_dir
     cfg_path = Path(args.config)
     work_dir_root = Path(args.output_root)
+    # example: work_dir = artifacts/stage1/m0
     work_dir = str(work_dir_root / cfg_path.relative_to("configs/").with_suffix(""))
     cfg.train.work_dir = work_dir
     # override config
@@ -288,25 +396,56 @@ def setup(args):
 
 
 def clean_up():
+    """ 
+    clean_up: Destroys the distributed process group.
+        - dist.destroy_process_group(): Cleans up the distributed training environment.
+    """
     dist.destroy_process_group()
 
 def main():
+    """ 
+    The main function that orchestrates the entire workflow, including parsing arguments, setting up configurations, 
+    initializing the model, handling different modes (initialization, evaluation, training), and cleaning up.
+    """
+    '''
+    Purpose: If the --init-only flag is set, the script will initialize the model and save its state to a file, then exit.
+    Steps:
+    - Path Setup: Constructs the path where the initialized model will be saved.
+    - Save Model State: Saves the model's state dictionary to the specified path.
+    - Logging: Logs the path where the initialized model is saved.
+    '''
     args = parse_args()
     cfg = setup(args)
     model = instantiate(cfg.model)
     logger = get_logger("lmsys")
     if args.init_only:
+        # example: work_dir = artifacts/stage1/m0/initialized.pth
         init_path = Path(cfg.train.work_dir) / "initialized.pth"
         torch.save(model.state_dict(), init_path)
         logger.info(f"Saved initialized model: {init_path}")
 
+    '''
+    Purpose: If the configuration specifies cast_to_bf16, the model's parameters are cast to BF16 (bfloat16) precision.
+    Steps:
+    - Logging: Logs that the model is being cast to BF16.
+    - Casting: Iterates over the model's parameters and casts them to BF16.
+    '''
     if cfg.train.get("cast_to_bf16", False):
         logger.info("Casting model to BF16")
         # for name, m in model.named_modules():
         #     m.to(torch.bfloat16)
         for p in model.parameters():
             p.data = p.data.to(torch.bfloat16)
-
+    
+    '''
+    Purpose: Loads a model checkpoint if specified in the configuration or command-line arguments.
+    Steps:
+    - Determine Checkpoint Path: Checks if a checkpoint path is provided via command-line arguments or configuration.
+    - Load Checkpoint: Loads the checkpoint from the specified path.
+    - Compatibility Check: Ensures the checkpoint contains the model state dictionary.
+    - Load Model State: Loads the model state dictionary from the checkpoint.
+    - Logging: Logs the checkpoint path and the result of loading the checkpoint.
+    '''
     load_from = cfg.train.get("load_from", None)
     if args.load_from is not None:
         load_from = args.load_from
@@ -319,8 +458,15 @@ def main():
         logger.info(f"Load checkpoint: {load_from}")
         logger.info(f"Load checkpoint: {load_result}")
 
+    # Purpose: Logs the sharding strategy being used for the model.
     logger.info(f"Use sharding strategy: {cfg.fsdp.sharding_strategy}")
 
+    '''
+    Purpose: Wraps the model with Fully Sharded Data Parallel (FSDP) for efficient distributed training.
+    Steps:
+    - FSDP Wrapping: Wraps the model with FSDP using the specified auto-wrap policy, sharding strategy, device ID, and mixed precision settings.
+    - Activation Checkpointing: Applies activation checkpointing to the model to save memory during training.
+    '''
     model = FSDP(
         model,
         auto_wrap_policy=cfg.fsdp.auto_wrap_policy,
@@ -330,14 +476,26 @@ def main():
     )
     apply_activation_checkpointing(model, auto_wrap_policy=cfg.fsdp.auto_wrap_policy)
 
+    '''
+    Purpose: If the --eval-only flag is set, the script will evaluate the model and save the results.
+    Steps:
+    - Evaluation: Calls the do_test function to evaluate the model.
+    - Logging: Logs the evaluation results.
+    - Save Results: Saves the evaluation results to the specified output path if provided.
+    '''
     if args.eval_only:
         result, eval_result = do_test(cfg, model)
         logger.info(f"Evaluation result: {eval_result}")
         if args.out is not None:
             torch.save(result, args.out)
     else:
+        # Purpose: If the --eval-only flag is not set, the script will train the model.
+        # Training: Calls the do_train function to train the model.
         do_train(cfg, model)
 
+    # Purpose: Cleans up the distributed process group.
+    # Steps:
+    # Clean Up: Calls the clean_up function to destroy the distributed process group.
     clean_up()
 
 

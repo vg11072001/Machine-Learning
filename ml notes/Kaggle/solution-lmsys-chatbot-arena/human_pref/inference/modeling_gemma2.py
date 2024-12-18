@@ -26,6 +26,7 @@ from transformers.utils import logging
 from transformers.models.gemma2.configuration_gemma2 import Gemma2Config
 
 
+# from .ops import fmha
 from xformers.ops import fmha
 from .ops.rms_norm import rms_norm
 from .ops.gelu_and_mul import gelu_and_mul_fwd
