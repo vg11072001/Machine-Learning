@@ -41,9 +41,7 @@ class LMSYSDataset(Dataset):
             data_swap["response_b"] = data["response_a"]
             data_swap["winner_model_a"] = data["winner_model_b"]
             data_swap["winner_model_b"] = data["winner_model_a"]
-            ret.extend(
-                [processor.build_input(data_swap) for processor in self.processor]
-            )
+            ret.extend([processor.build_input(data_swap) for processor in self.processor])
         # a list of samples
         # maybe including swapped samples
         # maybe including samples from multiple processors

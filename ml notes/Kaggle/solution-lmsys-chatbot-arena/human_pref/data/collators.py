@@ -54,9 +54,7 @@ class ShardedMaxTokensCollator:
             )
 
         sample_index_matrix = torch.arange(len(samples)).reshape(-1, self.world_size)
-        size_matrix = torch.tensor(
-            [sample["input_ids"].size(0) for sample in samples]
-        ).reshape(-1, self.world_size)
+        size_matrix = torch.tensor([sample["input_ids"].size(0) for sample in samples]).reshape(-1, self.world_size)
         micro_batch_segments = []
         # (start, end) that (size_matrix[start:end].sum(0) <= self.max_tokens).all()
         start = 0
@@ -77,3 +75,46 @@ class ShardedMaxTokensCollator:
             ]
             micro_batches.extend(self.base_collator(micro_batch_samples))
         return micro_batches
+
+# ----------------------------------------------------------------------------------------------------------
+
+def build_data_loader(dataset, batch_size, num_workers, training=True):
+    from human_pref.data.collators import VarlenCollator, ShardedMaxTokensCollator
+
+    max_tokens = 1024 * 16
+    return torch.utils.data.DataLoader(
+        dataset,
+        shuffle=training,
+        batch_size=batch_size,
+        num_workers=num_workers,
+        drop_last=training,
+        collate_fn=ShardedMaxTokensCollator(
+            max_tokens=max_tokens,
+            base_collator=VarlenCollator(),
+            sort_samples=training,
+        ),
+    )
+
+
+if __name__ == "__main__":
+    from human_pref.data.dataset import LMSYSDataset
+    from human_pref.data.processors import ProcessorPAB
+    from transformers import AutoTokenizer
+
+    model_name_or_path = "google/gemma-2-9b-it"
+    
+    tokenizer = AutoTokenizer.from_pretrained(model_name_or_path)
+    processor = ProcessorPAB(
+        tokenizer=tokenizer,
+        max_length=1024,
+        support_system_role=False,
+    )
+    dataset = LMSYSDataset(
+        csv_file="D:/Personal/ML/ml notes/Kaggle/solution-lmsys-chatbot-arena/dataset/dtrainval.csv",
+        query=None,
+        processor=processor,
+    )
+    data_loader = build_data_loader(dataset, batch_size=2, num_workers=0)
+    for batch in data_loader:
+        print(batch)
+        break
