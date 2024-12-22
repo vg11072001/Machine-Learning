@@ -42,6 +42,12 @@
 
 
 
+# data collection
+
+-  https://pytorch.org/docs/stable/data.html#torch.utils.data._utils.collate.collate
+
+- https://huggingface.co/docs/transformers/en/main_classes/data_collator
+
 # Model
 
 - Transformer package: https://huggingface.co/transformers/v3.0.2/training.html 
@@ -53,18 +59,46 @@
 - Fvcore.common.param_scheduler: https://detectron2.readthedocs.io/en/latest/modules/fvcore.html#module-fvcore.common.checkpoint ![](Pasted%20image%2020241218151619.png)![](Pasted%20image%2020241218151630.png)
 
 
+## gemma architecture official code
+
+- https://github.com/google/gemma_pytorch/blob/main/gemma/model.py#L164
+- https://github.com/huggingface/transformers/blob/main/src/transformers/models/gemma2/modeling_gemma2.py
+- https://github.com/google-deepmind/gemma/tree/main/gemma
+- transformer: https://github.com/huggingface/transformers/blob/main/src/transformers/models/gemma2/modeling_gemma2.py
+
+## Gemma2 architecture related ques 
+
+- [model support] please support gemma2 https://github.com/NVIDIA/TensorRT-LLM/issues/1984
+- could not finetune gemma 2 9b with lora and fsdp: https://github.com/huggingface/peft/issues/2111
+- 
+
+
+## Gemma-cookbook
+
+- https://github.com/google-gemini/gemma-cookbook/tree/main
+- About: A collection of guides and examples for the Gemma open models from Google.
+
+
+## transformer Engine
+
+- https://github.com/NVIDIA/TransformerEngine
+- https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/examples/advanced_optimizations.html
+- Accelerating a Hugging Face Llama 2 model with Transformer Engine: https://docs.nvidia.com/deeplearning/transformer-engine-releases/release-1.5/user-guide/examples/te_llama/tutorial_accelerate_hf_llama_with_te.html#:~:text=of%20almost%2040%25!-,Conclusion,up%20is%20even%20more%20pronounced!
+
 # Accelerate training : **modeling_gemma2_fast.py** 
 
 ### Flash Attention
  [FlexAttention: The Flexibility of PyTorch with the Performance of FlashAttention | PyTorch](https://pytorch.org/blog/flexattention/)
 
 - https://github.com/Dao-AILab/flash-attention
+- reading : https://gordicaleksa.medium.com/eli5-flash-attention-5c44017022ad
  
 - `logit_softcapping`
 
 ### transformer engine 
 
 - Improving Hugging Face Training Efficiency Through Packing with Flash Attention [link](https://huggingface.co/blog/packing-with-FA2)
+- https://github.com/NVIDIA/TransformerEngine/blob/main/transformer_engine/pytorch/transformer.py#L447
 # Faster inference: **modeling_gemma2.py** 
 
 ### Flash Attention
@@ -73,6 +107,36 @@
 - https://github.com/Dao-AILab/flash-attention
  
 - `logit_softcapping`
+
+### xtransformer
+
+- toolbox to accelerate research on transformer - [link](https://github.com/facebookresearch/xformers/tree/main)
+- 
+- 
+
+### using triton language kernels
+- https://github.com/triton-lang/triton
+
+#### fused softmax
+- ![](Pasted%20image%2020241221004839.png)
+
+
+#### flash_attn_trrittton
+- https://github.com/Dao-AILab/flash-attention/blob/main/flash_attn/flash_attn_triton.py#L1160
+
+
+## (Beta) Implementing High-Performance Transformers with Scaled Dot Product Attention (SDPA)
+
+- https://pytorch.org/tutorials/intermediate/scaled_dot_product_attention_tutorial.html
+- https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/fc133e4ffc6275f9d1c3a74ddd10e0a2/scaled_dot_product_attention_tutorial.ipynb#scrollTo=oUjAmpChvFXi
+
+### # [Is pytorch SDPA using flash attention V2?](https://discuss.pytorch.org/t/is-pytorch-sdpa-using-flash-attention-v2/192165)
+
+### FlashAttention-3: Fast and Accurate Attention with Asynchrony and Low-precision
+- https://tridao.me/blog/2024/flash3/
+
+
+
 ## LightLLM or vLLM
 
 LightLLM is a Python-based LLM (Large Language Model) inference and serving framework, notable for its lightweight design, easy scalability, and high-speed performance. LightLLM harnesses the strengths of numerous well-regarded open-source implementations, including but not limited to FasterTransformer, TGI, vLLM, and FlashAttention.
@@ -115,14 +179,29 @@ Find the full list of supported models [here](https://docs.vllm.ai/en/latest/mo
 ### context_attention_fwd
 
 
+
 ## LMDeploy
 
 LMDeploy is a toolkit for compressing, deploying, and serving LLM, developed by the [MMRazor](https://github.com/open-mmlab/mmrazor) and [MMDeploy](https://github.com/open-mmlab/mmdeploy) teams. It has the following core features:
 
+### gemma from lmdeploy
+- https://github.com/InternLM/lmdeploy/blob/main/lmdeploy/pytorch/models/gemma.py
+
+### blog to read
+- supported model list:s https://lmdeploy.readthedocs.io/en/v0.2.5/supported_models/supported_models.html
+
 ### rms_norm
+- https://github.com/InternLM/lmdeploy/blob/main/lmdeploy/pytorch/kernels/cuda/rms_norm.py
 
-### fused_rotary_emb
-
-
+### kernels
+- ![](Pasted%20image%2020241221010205.png)
 
 ## `xformers` -Toolbox to Accelerate Research on Transformers
+
+
+# accelration using GPUs
+
+### NVIDIA A100 Tensor Core GPU
+
+- Unprecedented acceleration at every scale
+- link - https://www.nvidia.com/en-in/data-center/a100/
