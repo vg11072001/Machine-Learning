@@ -246,8 +246,12 @@ We build a Generatively Pretrained Transformer (GPT), following the paper "Atten
 - Attention is All You Need paper: [PDF](nn-zero-to-hero/lectures/11.Attention-All-You-Need.pdf)
 - OpenAI GPT-3 paper: [https://arxiv.org/abs/2005.14165](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa3Z4WklWUWV3dnRKVGNrX1RCS0JMMU1ET1Bld3xBQ3Jtc0ttSlR1a3NaellpelNkZlN1Sml0dmlXRDVTd1RQNHpwS003TTdnZ29JcTBBVkQ3M2hCVFV1WlpPVEJvYldKYXZUSnNBMldmQkdQSG52VlNWQ19Xd29LdGNDSXRnd3VWTllUbGpFaHZPdGFLQXRQTUUyUQ&q=https%3A%2F%2Farxiv.org%2Fabs%2F2005.14165&v=kCc8FmEb1nY)
 - OpenAI ChatGPT blog post: [https://openai.com/blog/chatgpt/](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa2VUUDZISmVmbjBhaUppSThuVVVBNFZ2dlY1Z3xBQ3Jtc0tud2w0Mnc0N09zX3pieENkOGhvMFgzRTMxT3ZpVVptNzBkZTN0LVB0NVJpbUdfSzJ5N0xsMGVqdnB3R0pYLWVYNHlmN1RjWWh1amJjZlZhZnE3VjBRekE2LUNOakZQbDNCT1ozUzlzanZLN3pQT1JIQQ&q=https%3A%2F%2Fopenai.com%2Fblog%2Fchatgpt%2F&v=kCc8FmEb1nY)
-- [FlexAttention: The Flexibility of PyTorch with the Performance of FlashAttention | PyTorch](https://pytorch.org/blog/flexattention/)
 - The GPU I'm training the model on is from Lambda GPU Cloud, I think the best and easiest way to spin up an on-demand GPU instance in the cloud that you can ssh to: [https://lambdalabs.com](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbXh1X1RxNGdHS0NGUnhxWUhiOHZHR1Zfc1hMd3xBQ3Jtc0tteGFQQTNBSXNHclBUVF9rc1pLWVJISGszUllpS1oyS2U2NF9VNWFTSDcwU2wxYjZyNElXYWRLQlh0SWplMDMteUNVbDFvdUxrNWdHRDhWUGZjYkZtaEVnOGtwbGNIRGZ3OEllSG8zdGdHRVRaLUFnWQ&q=https%3A%2F%2Flambdalabs.com%2F&v=kCc8FmEb1nY) . If you prefer to work in notebooks, I think the easiest path today is Google Colab.
+
+### more things
+- Types of Attention:
+  - [**FlexAttention**: The Flexibility of PyTorch with the Performance of FlashAttention | PyTorch](https://pytorch.org/blog/flexattention/)
+
 
 Suggested exercises:
 
@@ -404,6 +408,11 @@ Suggested exercises:
 
 ## 9th video: GPT Tokenizers
 
+
+### Useful links:
+- encoding type:
+  - Amazing blog - You could have designed state of the art positional encoding [link](https://huggingface.co/blog/designing-positional-encoding)
+
 ## 10th video: GPT2 - 124M
 
 
@@ -427,9 +436,21 @@ Suggested exercises:
 	- [9-LSTM-DNN-sequence-to-sequence-learning-with-NNs](nn-zero-to-hero/lectures/9-LSTM-DNN-sequence-to-sequence-learning-with-NNs.pdf)
 - GRU, [9.GRU-onthe-properties-Nueral-Machine-Translation-Encoder-Decoder Kyunghyun Cho et al. 2014](nn-zero-to-hero/lectures/9.GRU-onthe-properties-Nueral-Machine-Translation-Encoder-Decoder.pdf)
 
-- https://medium.com/deep-math-machine-learning-ai/chapter-10-deepnlp-recurrent-neural-networks-with-math-c4a6846a50a2 
 
-```
+
+### Useful links:
+- https://medium.com/deep-math-machine-learning-ai/chapter-10-deepnlp-recurrent-neural-networks-with-math-c4a6846a50a2 
+- Chapter 10: DeepNLP - Recurrent Neural Networks with Math. [Medium](https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464) 
+- The Math Behind Recurrent Neural Networks.[ Medium](https://towardsdatascience.com/the-math-behind-recurrent-neural-networks-2de4e0098ab8#d214)
+- Lecture 8: Recurrent Neural Networks and Language Models [video](https://www.youtube.com/watch?v=Keqep_PKrY8)
+- Lecture 9: Machine Translation and Advanced Recurrent LSTMs and GRUs [video](https://www.youtube.com/watch?v=QuELiw8tbx8)
+- Language Modelling and Text Generation using LSTMs — Deep Learning for NLP [medium](https://medium.com/@shivambansal36/language-modelling-text-generation-using-lstms-deep-learning-for-nlp-ed36b224b275)
+- LONG SHORT-TERM MEMORY BASED RECURRENT NEURAL NETWORK ARCHITECTURES FOR LARGE VOCABULARY SPEECH RECOGNITION https://arxiv.org/pdf/1402.1128
+- Language Modeling with LSTMs in PyTorch [medium](https://towardsdatascience.com/language-modeling-with-lstms-in-pytorch-381a26badcbf)
+- Sequence Classification with LSTM Recurrent Neural Networks in Python with Keras [blogs](https://machinelearningmastery.com/sequence-classification-lstm-recurrent-neural-networks-python-keras/)
+
+
+<!-- ```
 - [Chapter 01](bigram/README.md) **Bigram Language Model** (language modeling)
 - [Chapter 02](micrograd/README.md) **Micrograd** (machine learning, backpropagation)
 - [Chapter 03](mlp/README.md) **N-gram model** (multi-layer perceptron, matmul, gelu)
@@ -447,46 +468,117 @@ Suggested exercises:
 - [Chapter 15](rl/README.md) **Finetuning II: RL** (reinforcement learning, RLHF, PPO, DPO)
 - [Chapter 16](deployment/README.md) **Deployment** (API, web app)
 - [Chapter 17](multimodal/README.md) **Multimodal** (VQVAE, diffusion transformer)
-```
+``` -->
 
-## [Chapter 14]**Inference I: kv-cache** (kv-cache)
+## 14th:  **Need for Speed I: Device** (device, CPU, GPU, ...)
 
+- gpu-deep-learning: https://www.run.ai/guides/gpu-deep-learning#:~:text=Why%20Use%20GPUs%20for%20Deep,without%20sacrificing%20efficiency%20or%20power.
 
+## 15th:  **Need for Speed II: Precision** (mixed precision training, fp16, bf16, fp8, ...)
 
-## [Chapter 15] **Inference II: Quantization** (quantization)
-
-
-## [Chapter 16]**Finetuning I: SFT** (supervised finetuning SFT, PEFT, LoRA, chat)
-
-
-## [Chapter 17] **Finetuning II: RL** (reinforcement learning, RLHF, PPO, DPO)
+- Low Precision Training with Kahan Summation [link](https://optimi.benjaminwarner.dev/kahan_summation/)
 
 
-## [Chapter 18] **Deployment** (API, web app)
+## 16th:  **Need for Speed III: Distributed** (distributed optimization, DDP, ZeRO)
+
+- Multi GPU Fine tuning with DDP and FSDP by trelis reaserch [youtube](https://youtu.be/gXDsVcY8TXQ?si=YgMCzcjKuGhdeh4R)
+- https://pytorch.org/docs/stable/distributed.html
+- ![alt text](/lectures/gpt/image-4.png)
+- 
+
+## 17th:  **Datasets** (datasets, data loading, synthetic data generation)
 
 
-## [Chapter 19] **Multimodal** (VQVAE, diffusion transformer)
+## 18th: **Inference I: kv-cache** (kv-cache)
+- ![alt text](image.png)
+- ![alt text](image-1.png)
+- ![alt text](image-2.png)
+- ![alt text](image-3.png)
+- ![alt text](image-4.png)
+- ![alt text](image-5.png)
+- ![alt text](image-7.png)
+- ![alt text](image-8.png)
+- ![alt text](image-9.png)
+
+
+## 19th:  **Inference II: Quantization** (quantization)
+
+- ![alt text](image-28.png)
+- [github to check out elemets if llm on quantization and finetuning](https://github.com/arpytanshu/tests/tree/b536ef106130707fb1b337a2f53be87a64a2fd0e)
+
+### Inference III: Faster Inference and training tools:
+
+- using `vLLM` - Fast LLM Serving with vLLM and PagedAttention [link](https://www.youtube.com/watch?v=5ZlavKF_98U)
+- using `ModelITC/lightLLM` - used in github project of `kaggle/solution-lmsys-chatbot-arena` [link](https://github.com/InternLM/lmdeploy)
+- using `InternLM/lmdeploy` - used in github project of `kaggle/solution-lmsys-chatbot-arena`
+  - Large Language Models(LLMs) Deployment: [link](https://lmdeploy.readthedocs.io/en/latest/)
+    - **Offline Inference Pipeline**
+    - OpenAI Compatible Server
+    - Tools Calling
+    - Serving LoRA
+    - WebUI Demo
+    - Request Distributor Server
+    - Vision-Language Models(VLMs) Deployment
+    - **Offline Inference Pipeline**
+    - OpenAI Compatible Server
+    - Vision-Language Models
+    - **Quantization** 
+    - AWQ/GPTQ
+    - SmoothQuant
+    - INT4/INT8 KV Cache
+
+## 20th: **Finetuning I: SFT** (supervised finetuning SFT, PEFT, LoRA, chat)
+![alt text](image-13.png)
+![alt text](image-10.png)
+
+- LORA:
+  - ![alt text](image-11.png)
+  - ![alt text](image-12.png)
+  - after softmax we took it divides the matrix from the original matrix to the 2 matrix in form first vertical and second horizontal order.
+  - The rank factor for the model can be defined by the matrix which we divided
+  - [Reference Link](https://www.youtube.com/watch?v=t1caDsMzWBk) 
+  -  ![alt text](image-14.png)
+  -  ![alt text](image-15.png)
+  -  ![alt text](image-16.png)
+  -  ![alt text](image-17.png)
+  -  ![alt text](image-18.png)
+  -  ![alt text](image-19.png)
+  -  ![alt text](image-20.png)
+  -  ![alt text](image-22.png)
+  -  ![alt text](image-23.png)
+  -  ![alt text](image-24.png)
+  -  ![alt text](image-25.png)
+  -  ![alt text](image-26.png)
+  -  dropout also as hyperparameter
+  -  ![alt text](image-27.png)
+
+### Useful Links:
+- Very Few Parameter Fine tuning with ReFT and LoRA by trelis reaserch [link](https://youtu.be/TIUkONyNAb4?si=nVRLQZlBFkSEJNzQ)
+- This repo logs the training runs, mistakes and learnings from finetuning LMs on QA type datasets using 2 approaches: SFT and DPO. [link](https://github.com/arpytanshu/dpo-vs-sft)
+
+## 21th:  **Finetuning II: RL** (reinforcement learning, RLHF, PPO, DPO)
+
+### Useful Links
+- The Ultimate Guide to Fine-Tuning LLMs from Basics to Breakthroughs: An Exhaustive Review of Technologies, Research, Best Practices, Applied Research Challenges and Opportunities [pdf](lectures/20.ultimate-guide-to-fine-tuning-llms.pdf)
+- Interpretable Preferences via Multi-Objective Reward Modeling and Mixture-of-Experts by rlhflow.github.io [link](https://rlhflow.github.io/posts/2024-05-29-multi-objective-reward-modeling/)
+- hugging Face [link](https://huggingface.co/RLHFlow)
+
+
+## 22th:  **Deployment** (API, web app)
+- Starter pack using gradio to access the LLM thru API - [youtube link](https://www.youtube.com/watch?v=kAD3mPf3m9Q)
+
+## 23th:  **Multimodal** (VQVAE, diffusion transformer)
+
+
+## 24th: **Distillation**
+- Model distillation from openAi [link](https://platform.openai.com/docs/guides/distillation)
 
 
 
-## Reading NNs/ LLMs
+# Reading NNs/ LLMs 
 
-- Chapter 10: DeepNLP - Recurrent Neural Networks with Math. [Medium](https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464) 
-- The Math Behind Recurrent Neural Networks.[ Medium](https://towardsdatascience.com/the-math-behind-recurrent-neural-networks-2de4e0098ab8#d214)
-- Lecture 8: Recurrent Neural Networks and Language Models [video](https://www.youtube.com/watch?v=Keqep_PKrY8)
-- Lecture 9: Machine Translation and Advanced Recurrent LSTMs and GRUs [video](https://www.youtube.com/watch?v=QuELiw8tbx8)
-- Language Modelling and Text Generation using LSTMs — Deep Learning for NLP [medium](https://medium.com/@shivambansal36/language-modelling-text-generation-using-lstms-deep-learning-for-nlp-ed36b224b275)
-- LONG SHORT-TERM MEMORY BASED RECURRENT NEURAL NETWORK ARCHITECTURES FOR LARGE VOCABULARY SPEECH RECOGNITION https://arxiv.org/pdf/1402.1128
-- Language Modeling with LSTMs in PyTorch [medium](https://towardsdatascience.com/language-modeling-with-lstms-in-pytorch-381a26badcbf)
-- Sequence Classification with LSTM Recurrent Neural Networks in Python with Keras [blogs](https://machinelearningmastery.com/sequence-classification-lstm-recurrent-neural-networks-python-keras/)
 - Time series LLM on; medium reading list
 
-
-- token embeddings
-- positional embeddings
-- self-attention
-- transformers
-- intuitive understanding of Q, K, V
 - causal and multi-head attention
 - temperature, top-k, top-p
 - classification & instruction fine-tuning
