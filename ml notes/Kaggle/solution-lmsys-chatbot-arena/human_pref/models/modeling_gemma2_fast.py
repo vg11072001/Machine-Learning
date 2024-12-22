@@ -66,8 +66,8 @@ class GeGLUFunc(torch.autograd.Function):
     def backward(ctx, fc2_dgrad: torch.Tensor) -> Tuple[Union[torch.Tensor, None], ...]:
         (fc1_out,) = ctx.saved_tensors
         fc2_dgrad = te.cpp_extensions.dgeglu(
-            fc2_dgrad, fc1_out, te.constants.TE_DType[fc2_dgrad.dtype]
-        )
+            fc2_dgrad, fc1_out, te.constants.TE_DType[fc2_dgrad.dtype])
+        
         return fc2_dgrad
 
 
@@ -481,6 +481,23 @@ class Gemma2Model(Gemma2PreTrainedModel):
         past_key_values: Cache,
         output_attentions: bool,
     ):
+        # The _update_causal_mask function is typically used in transformer models to create and update the causal attention mask. 
+        # This mask ensures that each token can only attend to previous tokens and itself, which is essential for autoregressive models like transformers used in language modeling.
+
+        # Role of _update_causal_mask
+        
+        # Causal Masking:
+        # The primary role of _update_causal_mask is to create a causal mask that prevents tokens from attending to future tokens. 
+        # This is crucial for autoregressive models where the prediction of the next token should only depend on the current and previous tokens.
+        
+        # Handling Variable-Length Sequences:
+        # The function can handle variable-length sequences by ensuring that the mask correctly reflects the boundaries of each sequence within a batch. 
+        # This is particularly useful when dealing with packed sequences.
+        
+        # Efficiency:
+        # By updating the causal mask dynamically, the function ensures that the attention mechanism operates efficiently, avoiding unnecessary computations on padded tokens.
+        
+        
         if self.config._attn_implementation == "flash_attention_2":
             if attention_mask is not None and 0.0 in attention_mask:
                 return attention_mask

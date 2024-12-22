@@ -1,4 +1,6 @@
 # modify from: https://github.com/ModelTC/lightllm
+# https://github.com/ModelTC/lightllm/blob/main/lightllm/models/gemma_2b/triton_kernel/gelu_and_mul.py
+# 
 import torch
 import math
 import triton

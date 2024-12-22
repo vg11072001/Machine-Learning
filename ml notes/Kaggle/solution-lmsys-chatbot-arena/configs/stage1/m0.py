@@ -42,7 +42,7 @@ def build_model():
 
     return model
 
-
+# all config reated stuff
 model = L(build_model)()
 optimizer = L(AnyPrecisionAdamW)(
     lr=0.25e-5,

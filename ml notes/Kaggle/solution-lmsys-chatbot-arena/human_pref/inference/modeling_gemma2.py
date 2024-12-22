@@ -59,9 +59,8 @@ class Gemma2MLP(nn.Module):
         self.intermediate_size = config.intermediate_size
         # self.gate_proj = nn.Linear(self.hidden_size, self.intermediate_size, bias=False)
         # self.up_proj = nn.Linear(self.hidden_size, self.intermediate_size, bias=False)
-        self.gate_up_proj = nn.Linear(
-            self.hidden_size, self.intermediate_size * 2, bias=False
-        )
+        
+        self.gate_up_proj = nn.Linear(self.hidden_size, self.intermediate_size * 2, bias=False)
         self.down_proj = nn.Linear(self.intermediate_size, self.hidden_size, bias=False)
         self.act_fn = ACT2FN[config.hidden_activation]
 
@@ -341,6 +340,9 @@ class Gemma2ForSequenceClassification(Gemma2PreTrainedModel):
     def set_input_embeddings(self, value):
         self.model.embed_tokens = value
 
+    # inv_freq typically stands for "inverse frequency." It is used in the implementation of rotary positional embeddings (RoPE), 
+    # which are a type of positional encoding designed to encode the positions of tokens in a sequence more efficiently and 
+    # effectively than traditional positional encodings.
     def forward(self, input_ids, seq_info, inv_freq):
         assert input_ids.size(0) == 1
         hidden_states = self.model(input_ids.squeeze(0), seq_info, inv_freq)

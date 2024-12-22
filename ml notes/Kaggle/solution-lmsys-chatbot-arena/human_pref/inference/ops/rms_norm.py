@@ -1,4 +1,5 @@
 # copied from LMDeploy
+# https://github.com/InternLM/lmdeploy/blob/main/lmdeploy/pytorch/kernels/cuda/rms_norm.py
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
 import triton
@@ -78,19 +79,15 @@ if __name__ == '__main__':
         input_dtype = hidden_states.dtype
         hidden_states = hidden_states.to(torch.float32)
         variance = hidden_states.pow(2).mean(-1, keepdim=True)
-        hidden_states = hidden_states * torch.rsqrt(variance +
-                                                    variance_epsilon)
+        hidden_states = hidden_states * torch.rsqrt(variance + variance_epsilon)
         return weight * hidden_states.to(input_dtype)
 
     def test_rms_norm(bsz, ctx_len, feat_len, dtype):
         """test rms norm."""
         input = torch.empty((bsz, ctx_len, feat_len),
                             dtype=dtype,
-                            device='cuda').normal_(mean=0.,
-                                                   std=0.5).contiguous()
-        weight = torch.empty((feat_len), dtype=dtype,
-                             device='cuda').normal_(mean=0.,
-                                                    std=0.5).contiguous()
+                            device='cuda').normal_(mean=0., std=0.5).contiguous()
+        weight = torch.empty((feat_len), dtype=dtype, device='cuda').normal_(mean=0., std=0.5).contiguous()
         triton_output = rms_norm(hidden_states=input, weight=weight)
         torch_output = torch_forward(hidden_states=input, weight=weight)
         assert torch.allclose(torch_output, triton_output, atol=1e-2, rtol=0)

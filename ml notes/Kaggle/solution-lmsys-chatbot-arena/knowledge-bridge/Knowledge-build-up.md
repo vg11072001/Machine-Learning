@@ -78,12 +78,20 @@
 - https://github.com/google-gemini/gemma-cookbook/tree/main
 - About: A collection of guides and examples for the Gemma open models from Google.
 
+## llama architecture
+- https://github.com/meta-llama/llama3/blob/main/llama/model.py
+- https://github.com/arpytanshu/tests/blob/b536ef106130707fb1b337a2f53be87a64a2fd0e/customForward/modeling_llama.py#L194
+
 
 ## transformer Engine
 
 - https://github.com/NVIDIA/TransformerEngine
 - https://docs.nvidia.com/deeplearning/transformer-engine/user-guide/examples/advanced_optimizations.html
 - Accelerating a Hugging Face Llama 2 model with Transformer Engine: https://docs.nvidia.com/deeplearning/transformer-engine-releases/release-1.5/user-guide/examples/te_llama/tutorial_accelerate_hf_llama_with_te.html#:~:text=of%20almost%2040%25!-,Conclusion,up%20is%20even%20more%20pronounced!
+
+# Low Precision Training with Kahan Summation
+- [link](https://optimi.benjaminwarner.dev/kahan_summation/) 
+- ![alt text](image.png)
 
 # Accelerate training : **modeling_gemma2_fast.py** 
 
@@ -116,6 +124,11 @@
 
 ### using triton language kernels
 - https://github.com/triton-lang/triton
+- Lecture 14: Practitioners Guide to Triton [link](https://www.youtube.com/watch?v=DdTsX6DQk24)
+- Lecture 29: Triton Internals [link](https://www.youtube.com/watch?v=njgow_zaJMw)
+- Github Workshop | Triton NeuroTech [link](https://youtu.be/p5a7HgjeODw?si=q4JHPycwRmKnMLYV)
+
+
 
 #### fused softmax
 - ![](Pasted%20image%2020241221004839.png)
