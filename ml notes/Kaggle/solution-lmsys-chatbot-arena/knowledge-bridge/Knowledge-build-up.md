@@ -113,8 +113,11 @@
  [FlexAttention: The Flexibility of PyTorch with the Performance of FlashAttention | PyTorch](https://pytorch.org/blog/flexattention/)
 
 - https://github.com/Dao-AILab/flash-attention
+- https://github.com/Dao-AILab/flash-attention/blob/main/flash_attn/flash_attn_triton.py#L1111
+- https://github.com/Dao-AILab/flash-attention/blob/main/flash_attn/flash_attn_triton.py#L1160
+- 
  
-- `logit_softcapping`
+- `logit_softcapping` present in gemma2
 
 ### xtransformer
 
@@ -132,10 +135,7 @@
 
 #### fused softmax
 - ![](Pasted%20image%2020241221004839.png)
-
-
-#### flash_attn_trrittton
-- https://github.com/Dao-AILab/flash-attention/blob/main/flash_attn/flash_attn_triton.py#L1160
+- https://github.com/triton-lang/triton/blob/main/python/tutorials/06-fused-attention.py
 
 
 ## (Beta) Implementing High-Performance Transformers with Scaled Dot Product Attention (SDPA)

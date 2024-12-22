@@ -1,5 +1,6 @@
-# Human rule LLMpipeline
+# Human rules for LLMpipeline
 
+![Cute roots](assest1.svg)
 
 ## Table of Contents
 - [Requirements](#requirements)

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+  <!-- Background -->
+  <!-- <rect width="300" height="200" fill="#f3e5d8"/> -->
+  
+  <!-- Main root stem with animation -->
+  <path d="M150 0 Q150 100 150 200" stroke="#145BE9">
+    <animate 
+      attributeName="d" 
+      dur="3s"
+      repeatCount="indefinite"
+      values="M150 0 Q150 100 150 200;
+              M150 0 Q155 100 150 200;
+              M150 0 Q145 100 150 200;
+              M150 0 Q150 100 150 200"
+    />
+  </path>
+
+  <!-- Root branches -->
+  <g fill="none" stroke="#6b4423" stroke-width="3" stroke-linecap="round">
+    <!-- Left branches -->
+    <path d="M150 50 Q120 70 100 60">
+      <animate
+        attributeName="d"
+        dur="2s"
+        repeatCount="indefinite"
+        values="M150 50 Q120 70 100 60;
+                M150 50 Q125 65 100 60;
+                M150 50 Q120 70 100 60"
+      />
+    </path>
+    <path d="M150 100 Q110 120 90 110">
+      <animate
+        attributeName="d"
+        dur="2.5s"
+        repeatCount="indefinite"
+        values="M150 100 Q110 120 90 110;
+                M150 100 Q115 115 90 110;
+                M150 100 Q110 120 90 110"
+      />
+    </path>
+
+    <!-- Right branches -->
+    <path d="M150 75 Q180 95 200 85">
+      <animate
+        attributeName="d"
+        dur="2.2s"
+        repeatCount="indefinite"
+        values="M150 75 Q180 95 200 85;
+                M150 75 Q175 90 200 85;
+                M150 75 Q180 95 200 85"
+      />
+    </path>
+
+    <path d="M150 125 Q190 145 210 135">
+      <animate
+        attributeName="d"
+        dur="2.7s"
+        repeatCount="indefinite"
+        values="M150 125 Q190 145 210 135;
+                M150 125 Q185 140 210 135;
+                M150 125 Q190 145 210 135"
+      />
+    </path>
+  </g>
+
+  <!-- Add name on top of the left above branch -->
+  <text x="30" y="70" font-family="Arial" font-size="7" fill="#f3e5d8">Gemma Architecture</text>
+  <text x="30" y="100" font-family="Arial" font-size="7" fill="#f3e5d8">llama Architecture</text>
+  <!-- right side -->
+  <text x="180" y="70" font-family="Arial" font-size="7" fill="#f3e5d8">Flash Attention3</text>
+  <text x="180" y="130" font-family="Arial" font-size="7" fill="#f3e5d8">GPU Distribution</text>
+
+  <!-- Cute faces on root tips -->
+  <g fill="#f3e5d8">
+    <!-- Left side faces -->
+    <circle cx="100" cy="60" r="2"/>
+    <circle cx="90" cy="110" r="2"/>
+    <path d="M97 65 Q100 67 103 65" fill="none" stroke="#f3e5d8" stroke-width="1"/>
+    <path d="M87 115 Q90 117 93 115" fill="none" stroke="#f3e5d8" stroke-width="1"/>
+
+    <!-- Right side faces -->
+    <circle cx="200" cy="85" r="2"/>
+    <circle cx="210" cy="135" r="2"/>
+    <path d="M197 90 Q200 92 203 90" fill="none" stroke="#f3e5d8" stroke-width="1"/>
+    <path d="M207 140 Q210 142 213 140" fill="none" stroke="#f3e5d8" stroke-width="1"/>
+  </g>
+</svg>
