@@ -73,6 +73,7 @@ Some added resources for those interested in learning more about mechanistic int
   
 - ![alt text](image-1.png)
 - ![alt text](image-2.png)
+
 #### Go Forth And Transform
 I hope you’ve found this a useful place to start to break the ice with the major concepts of the Transformer. If you want to go deeper, I’d suggest these next steps:
 - Read the [Attention Is All You Need](https://arxiv.org/abs/1706.03762) paper, the Transformer blog post ([Transformer: A Novel Neural Network Architecture for Language Understanding](https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html)), and the [Tensor2Tensor announcement](https://ai.googleblog.com/2017/06/accelerating-deep-learning-research.html).
@@ -121,6 +122,8 @@ Resources :
 - Aligning Open Language Models : ![](Pasted%20image%2020241206184535.png)
 
 ### Stanford CS224N: Natural Language
+
+
 ## 4. Medium/ other blogs: 
 
 ### a. Amazing Things Happen When Attention Heads Are Supercharged Using Mixture-Of-Experts [Link](https://levelup.gitconnected.com/amazing-things-happen-when-attention-heads-are-supercharged-using-mixture-of-experts-b55a6b9a0ac8)
@@ -137,4 +140,21 @@ Resources :
 ### c. LLAMA 2 from gorund up [Link](https://cameronrwolfe.substack.com/p/llama-2-from-the-ground-up)
 
 
-### d. best models on chatbot arena when LLM act as a judge : **`google/gemma-2-9b-it`**, **`google/gemma-2-27b-it`**, and **`RLHFlow/ArmoRM-Llama3-8B-v0.1`**
+### d. best models on chatbot arena when LLM act as a judge : 
+- **`google/gemma-2-9b-it`**, 
+- **`google/gemma-2-27b-it`**, and 
+- **`RLHFlow/ArmoRM-Llama3-8B-v0.1`**
+
+### e. LLM tools:
+- https://github.com/PetroIvaniuk/llms-tools [![alt text](image-3.png)](https://github.com/PetroIvaniuk/llms-tools#tools)
+
+### f. 🤗 PEFT: Parameter-Efficient Fine-Tuning of Billion-Scale Models on Low-Resource Hardware
+
+- https://huggingface.co/blog/peft
+
+## I Read The Top 10 AI Research Papers of 2024 [Link](https://www.youtube.com/watch?v=tF-SBS5PuQY&t=559s)
+
+
+## Top 5 Generative AI Papers (read ASAP)[Link](https://www.youtube.com/watch?v=Qwh30hfrrAY)
+
+
