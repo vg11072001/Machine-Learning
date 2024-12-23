@@ -316,8 +316,6 @@ Using latest efficient operators on T4 (sm75) doesn't seem easy. After some atte
 `memory_efficient_attention` from `xformers` was used for Llama3.
 
 Same as training, the entire inference process is also based on sequence collate, requiring no padding.
-- https://github.com/huggingface/parler-tts/blob/main/INFERENCE.md 
-
 
 ### Inference on T4 GPUs with 7B–9B Models (FP16)
 
