@@ -1,4 +1,4 @@
-# Human rules for LLMpipeline
+# Human Rules - LLMpipeline
 
 ![Cute roots](assest1.svg)
 
