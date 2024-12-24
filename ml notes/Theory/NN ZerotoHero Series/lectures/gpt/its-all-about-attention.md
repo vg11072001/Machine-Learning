@@ -23,3 +23,4 @@ Rescources:
 - ![alt text](image-13.png)
 
 
+Deep dive - Better Attention layers for Transformer models [link](https://youtu.be/2TT384U4vQg?si=isWlxGtcy_RXjhPo) it covers all the attnetions
