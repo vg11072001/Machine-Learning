@@ -208,6 +208,8 @@ LMDeploy is a toolkit for compressing, deploying, and serving LLM, developed by 
 
 ### kernels
 - ![](Pasted%20image%2020241221010205.png)
+  - cute kernel repo :
+    - https://github.com/mayank31398/cute-kernels/tree/main/cute_kernels/kernels
 
 ## `xformers` -Toolbox to Accelerate Research on Transformers
 
