@@ -473,6 +473,7 @@ Suggested exercises:
 ## 14th:  **Need for Speed I: Device** (device, CPU, GPU, ...)
 
 - gpu-deep-learning: https://www.run.ai/guides/gpu-deep-learning#:~:text=Why%20Use%20GPUs%20for%20Deep,without%20sacrificing%20efficiency%20or%20power.
+- https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch 
 
 ## 15th:  **Need for Speed II: Precision** (mixed precision training, fp16, bf16, fp8, ...)
 
