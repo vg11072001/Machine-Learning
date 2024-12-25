@@ -477,14 +477,21 @@ Suggested exercises:
 ## 15th:  **Need for Speed II: Precision** (mixed precision training, fp16, bf16, fp8, ...)
 
 - Low Precision Training with Kahan Summation [link](https://optimi.benjaminwarner.dev/kahan_summation/)
+- Automatic Mixed Precision package - torch.amp [link](https://pytorch.org/docs/stable/amp.html#automatic-mixed-precision-package-torch-amp)
 
 
 ## 16th:  **Need for Speed III: Distributed** (distributed optimization, DDP, ZeRO)
 
 - Multi GPU Fine tuning with DDP and FSDP by trelis reaserch [youtube](https://youtu.be/gXDsVcY8TXQ?si=YgMCzcjKuGhdeh4R)
+- Distributed Data Parallel Model Training in PyTorch [link](https://www.youtube.com/@NCSAatIllinois)
 - https://pytorch.org/docs/stable/distributed.html
-- ![alt text](/lectures/gpt/image-4.png)
-- 
+- ![alt text](/images-session/image-4.png)
+- Distributed Pytorch [link](https://www.youtube.com/@marksaroufim)
+- PyTorch Distributed Overview[pytorch site](https://pytorch.org/tutorials/beginner/dist_overview.html#pytorch-distributed-overview)
+- Writing Distributed Applications with PyTorch[link](https://pytorch.org/tutorials/intermediate/dist_tuto.html#writing-distributed-applications-with-pytorch)
+- Distributed communication package - torch.distributed[link](https://pytorch.org/docs/stable/distributed.html#distributed-communication-package-torch-distributed)
+- torchrun (Elastic Launch)[ link](https://pytorch.org/docs/stable/elastic/run.html#module-torch.distributed.run)
+- Invited Talk: PyTorch Distributed (DDP, RPC) - By Facebook Research Scientist Shen Li [link  video](https://www.youtube.com/@chaoyanghe3712)  [profile](https://leimao.github.io/blog/PyTorch-Distributed-Training/)
 
 ## 17th:  **Datasets** (datasets, data loading, synthetic data generation)
 
@@ -564,15 +571,36 @@ Suggested exercises:
 - hugging Face [link](https://huggingface.co/RLHFlow)
 
 
+
 ## 22th:  **Deployment** (API, web app)
 - Starter pack using gradio to access the LLM thru API - [youtube link](https://www.youtube.com/watch?v=kAD3mPf3m9Q)
+- option streamlit
+- [Link](https://www.youtube.com/watch?v=qscVKkqf3q4&t=1s) You will learn about various LLM deployment scenarios tailored for personal use, small businesses, and enterprise settings, highlighting the distinctions and considerations for each. This video delves into the critical choice between local models and paid services, illuminating the benefits and drawbacks of both approaches. Special emphasis is placed on the importance of utilizing GPUs over CPUs for their superior processing power, crucial for handling the demands of Large Language Models (LLMs). The guide covers:
 
+- Deployment Scenarios: Detailed insights into deploying LLM applications across different scales, from personal projects to enterprise-level solutions.
+- Local Models vs. Paid Services: A comparison to help you decide the best approach for your project, considering factors like control, privacy, scalability, and cost.
+- GPU vs. CPU Deployment: Understanding the significant advantages of GPUs for LLM tasks, including faster processing times and improved efficiency.
+- Model Serving Frameworks: A deep dive into various frameworks like FastAPI, Amazon SageMaker, BentoML, and Ray Serve that support the deployment of LLM applications. This section highlights how these platforms can enhance scalability, reliability, and cost-effectiveness for deploying AI models.
+- Important Deployment Considerations: Strategies for scaling, load balancing, and monitoring your LLM applications to ensure they remain robust and efficient under different loads.
+- Live Deployment Demonstration: A step-by-step guide to deploying a Telegram LLM chatbot designed for interacting with PDF data using a vector database. This section includes practical instructions on using Docker and Docker Compose for containerization and deployment on a server.
+	This video serves as a comprehensive resource for anyone looking to integrate LLMs into their projects. By providing a blend of theoretical knowledge and practical demonstrations, I aim to equip you with the necessary skills to make informed decisions and effectively deploy LLM applications, ensuring they meet the needs of your project or business. Join me in this detailed guide to deploying LLM applications, where you'll gain the knowledge and confidence to navigate the complexities of AI integration, from the initial choice of models to the final steps of deployment. 📚 Resources:
+
+	- Get the Code: [https://github.com/Leon-Sander/docume...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbFJxQTVFeVN6a0dDNDFid1RsT2RYOU5ZLXRYd3xBQ3Jtc0tsRzluZUczMWF4UUU5LWtBVWJNR1dvOTkyeU8yQkpzcXYwdVE2VkJSMVlMQ2ZYQ0o2SmItV2poRHJxLVhUMU9uTXphRU5Za3FnWHk3MkFHb3VrTWo1YTlGWDFWSFlwYTFJS1I2S1hfcmpQWUs4emgyNA&q=https%3A%2F%2Fgithub.com%2FLeon-Sander%2Fdocument_telegram_chat_deployment&v=qscVKkqf3q4)
 ## 23th:  **Multimodal** (VQVAE, diffusion transformer)
 
 
 ## 24th: **Distillation**
+
 - Model distillation from openAi [link](https://platform.openai.com/docs/guides/distillation)
 
+## 25th: **LLM Beyond Attention**
+
+- check out notes: https://github.com/hesamsheikh/ml-retreat/blob/main/assets/LLM-Edge-Beyond-Attention.pdf
+- this paper ccontain some elements which is defined in this section: paper [link](https://github.com/ibm-granite/granite-3.0-language-models/blob/main/paper.pdf)
+- 
+
+### # Mixture of Experts Explained
+- https://huggingface.co/blog/moe
 
 
 # Reading NNs/ LLMs 

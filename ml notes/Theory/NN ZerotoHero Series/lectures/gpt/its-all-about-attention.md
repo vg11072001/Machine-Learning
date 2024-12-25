@@ -10,6 +10,7 @@ Rescources:
 - Flash Attention2 paper by Tia Dao: [Paper](https://tridao.me/publications/flash2/flash2.pdf)
 - Flash Attention3 paper by Tia Dao: [Paper](https://tridao.me/blog/2024/flash3/)
 - [link](https://www.youtube.com/watch?v=IoMSGuiwV3g)
+- Improving Hugging Face Training Efficiency Through Packing with Flash Attention [link](https://huggingface.co/blog/packing-with-FA2)
 
 - training speed is the number of token process per second
 - ![alt text](image-5.png)
