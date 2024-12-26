@@ -14,7 +14,27 @@ Ensure your chosen GPU is compatible with your operating system and machine lear
 
 
 - https://timdettmers.com/2023/01/30/which-gpu-for-deep-learning/
-\
 
+- https://www.youtube.com/watch?v=YiX9p8A7LqE
+
+ASUS ROG Strix G17 (1.7L) https://rog.asus.com/laptops/rog-strix/rog-strix-g17-2023-series/ 
+
+Razer Blade 15 (2023)	https://www.razer.com/gaming-laptops/razer-blade-15?srsltid=AfmBOorfigHmMtpiPaLpDIVlHhz7svXKb9oxOrmQpSDbKbmETCfwwjWP
+
+14″ MacBook Pro M4 Pro(~2L) or M4 Max(out of bugdet)
+
+Acer Predator Helios Neo 16 (1.7L) https://store.acer.com/en-in/acer-predator-helios-neo-16-14th-gen-intel-core-i9-processor-laptop-windows-11-home-16-gb-1-tb-ssd-nvidia-geforce-rtx-4070-phn16-72-wqxga-led-backlit-ips-display-with-240-hz-500-nits-high-brightness-abyssal-black-2-8-kg-nh-qnmsi-001
+
+Legion 7i 14th Gen,  https://www.lenovo.com/in/en/p/laptops/legion-laptops/legion-7-series/legion-7i-gen-9-16-inch-intel/83fd000yin
 
 - https://youtube.com/shorts/k_WJn40u-4U?si=eSYXdK_-hR4eGd2Z
+
+- https://developer.nvidia.com/cuda-gpus
+- https://www.nvidia.com/en-us/design-visualization/desktop-graphics/#nv-accordion-bd50fbb79d-item-7577526115
+
+
+https://github.com/Nixtla/nixtla
+https://www.nixtla.io/open-source
+https://www.researchgate.net/publication/235618253_Multi-scale_Internet_traffic_forecasting_using_neural_networks_and_time_series_methods
+https://otexts.com/fpp2/intro.html
+
