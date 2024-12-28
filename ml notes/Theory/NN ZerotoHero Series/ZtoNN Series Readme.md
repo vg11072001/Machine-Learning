@@ -450,30 +450,17 @@ Suggested exercises:
 - Sequence Classification with LSTM Recurrent Neural Networks in Python with Keras [blogs](https://machinelearningmastery.com/sequence-classification-lstm-recurrent-neural-networks-python-keras/)
 
 
-<!-- ```
-- [Chapter 01](bigram/README.md) **Bigram Language Model** (language modeling)
-- [Chapter 02](micrograd/README.md) **Micrograd** (machine learning, backpropagation)
-- [Chapter 03](mlp/README.md) **N-gram model** (multi-layer perceptron, matmul, gelu)
-- [Chapter 04](attention/README.md) **Attention** (attention, softmax, positional encoder)
-- [Chapter 05](transformer/README.md) **Transformer** (transformer, residual, layernorm, GPT-2)
-- [Chapter 06](tokenization/README.md) **Tokenization** (minBPE, byte pair encoding)
-- [Chapter 07](optimization/README.md) **Optimization** (initialization, optimization, AdamW)
-- [Chapter 08](device/README.md) **Need for Speed I: Device** (device, CPU, GPU, ...)
-- [Chapter 09](precision/README.md) **Need for Speed II: Precision** (mixed precision training, fp16, bf16, fp8, ...)
-- [Chapter 10](distributed/README.md) **Need for Speed III: Distributed** (distributed optimization, DDP, ZeRO)
-- [Chapter 11](datasets/README.md) **Datasets** (datasets, data loading, synthetic data generation)
-- [Chapter 12](inference/README.md) **Inference I: kv-cache** (kv-cache)
-- [Chapter 13](quantization/README.md) **Inference II: Quantization** (quantization)
-- [Chapter 14](sft/README.md) **Finetuning I: SFT** (supervised finetuning SFT, PEFT, LoRA, chat)
-- [Chapter 15](rl/README.md) **Finetuning II: RL** (reinforcement learning, RLHF, PPO, DPO)
-- [Chapter 16](deployment/README.md) **Deployment** (API, web app)
-- [Chapter 17](multimodal/README.md) **Multimodal** (VQVAE, diffusion transformer)
-``` -->
-
 ## 14th:  **Need for Speed I: Device** (device, CPU, GPU, ...)
 
 - gpu-deep-learning: https://www.run.ai/guides/gpu-deep-learning#:~:text=Why%20Use%20GPUs%20for%20Deep,without%20sacrificing%20efficiency%20or%20power.
 - https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch 
+
+- Install git repo for note on https://github.com/LambdaLabsML/distributed-training-guide/tree/main
+	- Distributed Training Guide [github](https://github.com/LambdaLabsML/distributed-training-guide/tree/main#distributed-training-guide)
+	
+- tutorial-getting-started-with-training-a-machine-learning-model [lambda labs link](tutorial-getting-started-with-training-a-machine-learning-model/ )
+	- Contain more resources
+	- Multi node PyTorch Distributed Training Guide For People In A Hurry [link](https://lambdalabs.com/blog/multi-node-pytorch-distributed-training-guide) 
 
 ## 15th:  **Need for Speed II: Precision** (mixed precision training, fp16, bf16, fp8, ...)
 
@@ -493,6 +480,7 @@ Suggested exercises:
 - Distributed communication package - torch.distributed[link](https://pytorch.org/docs/stable/distributed.html#distributed-communication-package-torch-distributed)
 - torchrun (Elastic Launch)[ link](https://pytorch.org/docs/stable/elastic/run.html#module-torch.distributed.run)
 - Invited Talk: PyTorch Distributed (DDP, RPC) - By Facebook Research Scientist Shen Li [link  video](https://www.youtube.com/@chaoyanghe3712)  [profile](https://leimao.github.io/blog/PyTorch-Distributed-Training/)
+
 
 ## 17th:  **Datasets** (datasets, data loading, synthetic data generation)
 
@@ -587,6 +575,8 @@ Suggested exercises:
 	This video serves as a comprehensive resource for anyone looking to integrate LLMs into their projects. By providing a blend of theoretical knowledge and practical demonstrations, I aim to equip you with the necessary skills to make informed decisions and effectively deploy LLM applications, ensuring they meet the needs of your project or business. Join me in this detailed guide to deploying LLM applications, where you'll gain the knowledge and confidence to navigate the complexities of AI integration, from the initial choice of models to the final steps of deployment. 📚 Resources:
 
 	- Get the Code: [https://github.com/Leon-Sander/docume...](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbFJxQTVFeVN6a0dDNDFid1RsT2RYOU5ZLXRYd3xBQ3Jtc0tsRzluZUczMWF4UUU5LWtBVWJNR1dvOTkyeU8yQkpzcXYwdVE2VkJSMVlMQ2ZYQ0o2SmItV2poRHJxLVhUMU9uTXphRU5Za3FnWHk3MkFHb3VrTWo1YTlGWDFWSFlwYTFJS1I2S1hfcmpQWUs4emgyNA&q=https%3A%2F%2Fgithub.com%2FLeon-Sander%2Fdocument_telegram_chat_deployment&v=qscVKkqf3q4)
+
+
 ## 23th:  **Multimodal** (VQVAE, diffusion transformer)
 
 
