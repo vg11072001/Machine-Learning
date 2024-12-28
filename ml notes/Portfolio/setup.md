@@ -33,8 +33,4 @@ Legion 7i 14th Gen,  https://www.lenovo.com/in/en/p/laptops/legion-laptops/legio
 - https://www.nvidia.com/en-us/design-visualization/desktop-graphics/#nv-accordion-bd50fbb79d-item-7577526115
 
 
-https://github.com/Nixtla/nixtla
-https://www.nixtla.io/open-source
-https://www.researchgate.net/publication/235618253_Multi-scale_Internet_traffic_forecasting_using_neural_networks_and_time_series_methods
-https://otexts.com/fpp2/intro.html
-
+https://www.hp.com/in-en/shop/hp-zbook-power-16-g11-mobile-workstation-pc-a8wn3pt.html?jumpid=so_in_go_st_hc_cm018701_cv_px_bps&gad_source=1&gclid=CjwKCAiAmrS7BhBJEiwAei59i7j8zLiWfrMbE9S59hJ9sThAMOtB8Cv7msW_nIaLYv8G0iJH60T6XxoC1n0QAvD_BwE&gclsrc=aw.ds#specs
