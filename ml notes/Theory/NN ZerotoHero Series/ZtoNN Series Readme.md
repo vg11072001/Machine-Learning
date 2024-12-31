@@ -593,6 +593,37 @@ Suggested exercises:
 ### # Mixture of Experts Explained
 - https://huggingface.co/blog/moe
 
+## 26th **Retrieval Augmented Generation**
+
+- ![](Pasted%20image%2020250101002314.png) ![](Pasted%20image%2020250101002333.png)
+- Semantic search then provide to LLM
+- But above is short term, to get the long term solution can use following
+- Embedding of models like example for indentation in rag might me better in fine tune but using embedding model can help
+- Graph Rag also - can help to organize in clusters 
+- ![](Pasted%20image%2020250101000436.png)
+	- Hierarchical clustering 
+	- Leiden Technique to organize graph, (knowledge graph)![](Pasted%20image%2020250101003223.png)
+- Hybrid Search ![](Pasted%20image%2020250101000657.png)
+- ![](Pasted%20image%2020250101000807.png)
+- last stage Generation : Reranking, and top k elemetents ![](Pasted%20image%2020250101000852.png)
+- Auto cut - base₫ on similarity distance, or content relevant with threshold
+- Llama index , llama parse ![](Pasted%20image%2020250101001013.png)
+- Reteriaval![](Pasted%20image%2020250101001026.png)
+- For embedding mode use Hugging Face
+- RAG R models- Command R+ models ![](Pasted%20image%2020250101001206.png)
+- Also provide Re Rank Models (not free_)
+- Graph RAG:
+	- Micrsofts Graph Rag
+	- ![](Pasted%20image%2020250101001335.png)
+	- Llama index
+	- Ragas to evaluate models
+
+### Useful Links
+- Retrieval augmented generation, a current popular method to utilize LLMs to retrieve from a database instead of putting everything in a context window. But how does it work? Today I will walk through the most basic idea of RAG and the current meta of how RAG is used, and what it is composed of. some papers 
+- [Web + RAG] https://arxiv.org/abs/2408.07611
+- [Vector + KG RAG] https://arxiv.org/abs/2408.04948
+- [RAG Survey] https://arxiv.org/abs/2404.10981
+- [Knowledge Graph for RAG] https://docs.llamaindex.ai/en/stable/llama_cloud/llama_parse/
 
 # Reading NNs/ LLMs 
 

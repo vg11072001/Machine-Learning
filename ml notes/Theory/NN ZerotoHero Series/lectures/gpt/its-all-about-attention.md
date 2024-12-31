@@ -2,7 +2,7 @@
 
 # Flash Attention
 
-Rescources:
+Resources:
 
 - ELI5:Flash Attention by Aleksa Gordic [Medium link](https://gordicaleksa.medium.com/eli5-flash-attention-5c44017022ad)
 - Making Deep Learning Go Brrrr From First Principles by horace : [link](https://horace.io/brrr_intro.html)
