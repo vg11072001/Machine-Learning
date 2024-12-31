@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"7514c5522718524b","x":-400,"y":-100,"width":320,"height":100,"type":"text","text":"base_transformer.py (BaseTransformerArgs)"},
+		{"id":"f7e806794e707cf0","x":-360,"y":-450,"width":280,"height":90,"type":"text","text":"args.py (Model Train.args)"},
+		{"id":"92c216b3651f6395","x":-705,"y":-580,"width":250,"height":60,"type":"text","text":"train.py"},
+		{"id":"9662b584ef275a6d","x":-580,"y":-260,"width":250,"height":60,"type":"text","text":"blt.py file"},
+		{"id":"2968858f8c45b32b","x":320,"y":-520,"width":250,"height":60,"type":"text","text":"entropy model"},
+		{"id":"5556932b00657877","x":445,"y":-390,"width":250,"height":60,"type":"text","text":""},
+		{"id":"c5cd718c89531e56","x":520,"y":-200,"width":250,"height":60,"type":"text","text":""}
+	],
+	"edges":[
+		{"id":"534051af4f1cdf74","fromNode":"9662b584ef275a6d","fromSide":"bottom","toNode":"7514c5522718524b","toSide":"top"},
+		{"id":"2f1fafd0cc2bd33b","fromNode":"92c216b3651f6395","fromSide":"bottom","toNode":"f7e806794e707cf0","toSide":"left"},
+		{"id":"162f99222db89e10","fromNode":"f7e806794e707cf0","fromSide":"bottom","toNode":"9662b584ef275a6d","toSide":"top"}
+	]
+}
