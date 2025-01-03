@@ -86,7 +86,7 @@ Our [inference code](https://www.kaggle.com/code/tascj0/lmsys-0805/notebook) a
     )
 ```
 
-Based on my experience on previous competitions, I did not try LoRA and used only full-parameter training. With BF16 and optimizer with [kahan summation](https://optimi.benjaminwarner.dev/kahan_summation/) support, it's possible to train 7B models using single A100 80G, 9B models requires two A100s.
+Based on my experience on previous competitions, I did not try LoRA and used only full-parameter training. With BF16 and optimizer with [kahan summation](https://optimi.benjaminwarner.dev/kahan_summation/) and [github](https://github.com/warner-benjamin/optimi) support, it's possible to train 7B models using single A100 80G, 9B models requires two A100s.
 
 During the last 10 days of this competition, I used A100 80G x4 for all experiments.
 
@@ -369,3 +369,17 @@ By leveraging these optimizations and Triton-based operators, inference on T4 GP
 This enables effective execution of 7B–9B models in FP16 precision.
 
 ===============================================================
+
+
+## RAG
+- https://github.com/Hemanthkumar2112/Gemma2-9B-Llama3-8B-Finetune-and-RAG
+- https://www.kaggle.com/code/squarenabla/single-model-solution-public-0-933
+
+## More solution for the problem
+
+- https://github.com/DaoyuanLi2816/Kaggle-4th-Place-Solution-LMSYS-Chatbot-Arena-Human-Preference-Predictions/tree/main
+
+## more comp. like multilingual
+- https://www.kaggle.com/code/hengck23/sft-gemma-2-9b-it-bnb-4bit
+
+
