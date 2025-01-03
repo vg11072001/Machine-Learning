@@ -3,6 +3,9 @@
 This is the 3rd place solution for the RSNA 2024 Lumbar Spine Degenerative Classification competition. For more details, please refer to the [discussion](https://www.kaggle.com/competitions/rsna-2024-lumbar-spine-degenerative-classification/discussion/539453).
 
 
+# TO READ
+- ![alt text](image.png)
+- ![](Pasted%20image%2020250101030429.png)
 ## Sanity Check
 
 To run the sanity check, execute the `sanity_check.sh` script. This script performs the following steps:
