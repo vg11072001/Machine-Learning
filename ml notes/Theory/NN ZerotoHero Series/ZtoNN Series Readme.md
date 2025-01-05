@@ -1,3 +1,5 @@
+# ZtoNN Series
+
 From Autor: 
 - [nn-zero-to-hero/README](nn-zero-to-hero/README.md)
 - [makemore/README](nn-zero-to-hero/lectures/makemore/makemore/README.md)
@@ -481,7 +483,14 @@ Suggested exercises:
 - torchrun (Elastic Launch)[ link](https://pytorch.org/docs/stable/elastic/run.html#module-torch.distributed.run)
 - Invited Talk: PyTorch Distributed (DDP, RPC) - By Facebook Research Scientist Shen Li [link  video](https://www.youtube.com/@chaoyanghe3712)  [profile](https://leimao.github.io/blog/PyTorch-Distributed-Training/)
 
+# LLM Mastery 
 
+- An Open Course on LLMs, Led by Practitioners : [Link](https://hamel.dev/blog/posts/course/)
+	- Hear from practitioners on a wide range of topics on LLMs, including [RAG](https://parlance-labs.com/education/#rag), [evaluation](https://parlance-labs.com/education/#evals), [applications](https://parlance-labs.com/education/#building-applications), [fine-tuning](https://parlance-labs.com/education/#fine-tuning) (advance techniques also included) and [prompt engineering](https://parlance-labs.com/education/#prompt-engineering).
+	- https://parlance-labs.com/education/ 
+
+- Blog:
+	- What We’ve Learned From A Year of Building with LLMs https://applied-llms.org/
 ## 17th:  **Datasets** (datasets, data loading, synthetic data generation)
 
 
