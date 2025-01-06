@@ -627,6 +627,11 @@ Suggested exercises:
 	- Llama index
 	- Ragas to evaluate models
 
+# Ops
+## CUDA kernels:
+- https://maharshi.bearblog.dev/optimizing-softmax-cuda/
+- https://github.com/mayank31398/cute-kernels
+
 ### Useful Links
 - Retrieval augmented generation, a current popular method to utilize LLMs to retrieve from a database instead of putting everything in a context window. But how does it work? Today I will walk through the most basic idea of RAG and the current meta of how RAG is used, and what it is composed of. some papers 
 - [Web + RAG] https://arxiv.org/abs/2408.07611
