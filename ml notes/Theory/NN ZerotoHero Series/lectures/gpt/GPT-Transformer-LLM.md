@@ -123,6 +123,8 @@ Resources :
 
 ### Stanford CS224N: Natural Language
 
+Its good as per my observation , the guy profile is interesting also!
+- Udemy https://www.udemy.com/course/llm-engineering-master-ai-and-large-language-models/ by https://www.linkedin.com/in/eddonner/
 
 ## 4. Medium/ other blogs: 
 

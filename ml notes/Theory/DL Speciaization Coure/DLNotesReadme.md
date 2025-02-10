@@ -5,9 +5,9 @@
 ## DL Available notes:
 
 ### 1. Deep Learning Specialization on Coursera  [amanlink](https://aman.ai/coursera-dl/)
-(offered by deeplearning.ai)
+(offered by deeplearning.ai/ Andrew Ng)
 
-A distilled compilation of my notes for Coursera's [Deep Learning Specialization (offered by deeplearning.ai)](https://www.coursera.org/specializations/natural-language-processing). The Deep Learning Specialization is a foundational program that will help you understand the capabilities, challenges, and consequences of deep learning and prepare you to participate in the development of leading-edge AI technology. In this Specialization, you will build and train neural network architectures such as Convolutional Neural Networks, Recurrent Neural Networks, LSTMs, Transformers, and learn how to make them better with strategies such as Dropout, BatchNorm, Xavier/He initialization, and more. Get ready to master theoretical concepts and their industry applications using Python and TensorFlow and tackle real-world cases such as speech recognition, music synthesis, chatbots, machine translation, natural language processing, and more.
+A distilled compilation of my notes for Coursera's [Deep Learning Specialization (offered by deeplearning.ai)](https://www.coursera.org/specializations/natural-language-processing). The Deep Learning Specialization is a foundational program that will help you understand the capabilities, challenges, and consequences of deep learning and prepare you to participate in the development of leading-edge AI technology. In this Specialization, you will build and train neural network architectures such as Convolutional Neural Networks, Recurrent Neural Networks, LSTMs, Transformers, and learn how to make them better with strategies such as Dropout, Batch Norm, Xavier/He initialization, and more. Get ready to master theoretical concepts and their industry applications using Python and TensorFlow and tackle real-world cases such as speech recognition, music synthesis, chatbots, machine translation, natural language processing, and more.
 
 Notes
 
@@ -31,6 +31,9 @@ facial recognition system; convolutional neural network architecture; object det
 
 long short term memory (LSTM); gated recurrent unit (GRU); recurrent neural networks; attention models
 
+
+More  notes
+- Deep Learning Specialization [link](https://github.com/greyhatguy007/deep-learning-specialization/tree/main)
 
 ### 2. CS231n: Convolutional Neural Networks for Visual Recognition [link](https://aman.ai/cs231n/)
 
@@ -114,6 +117,3 @@ practical aspects of deep learning; optimization
 Markov decision process; Bellman equation; Deep Q-learning
 
 [Chatbots](https://aman.ai/cs230/chatbots/) 
-
-
-### 4.Deep Learning Specialization [link](https://github.com/greyhatguy007/deep-learning-specialization/tree/main)

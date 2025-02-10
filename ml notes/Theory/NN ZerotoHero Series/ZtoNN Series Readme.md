@@ -452,10 +452,14 @@ Suggested exercises:
 - Sequence Classification with LSTM Recurrent Neural Networks in Python with Keras [blogs](https://machinelearningmastery.com/sequence-classification-lstm-recurrent-neural-networks-python-keras/)
 
 
-## 14th:  **Need for Speed I: Device** (device, CPU, GPU, ...)
+## 14th:  **Need for Speed I: Device** (device, CPU, GPU, ...) and CUDA Programming
 
-- gpu-deep-learning: https://www.run.ai/guides/gpu-deep-learning#:~:text=Why%20Use%20GPUs%20for%20Deep,without%20sacrificing%20efficiency%20or%20power.
-- https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch 
+- GPU workshop from cornell: [link](https://cvw.cac.cornell.edu/gpu-architecture/gpu-characteristics/index)
+- Roadmap: Parallel Programming Concepts and High Performance Computing[Introduction to Parallel Computation](https://cvw.cac.cornell.edu/parallel/intro/index)
+
+
+- gpu-deep-learning: [link runai](https://www.run.ai/guides/gpu-deep-learning#:~:text=Why%20Use%20GPUs%20for%20Deep,without%20sacrificing%20efficiency%20or%20power).
+	- https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch 
 
 - Install git repo for note on https://github.com/LambdaLabsML/distributed-training-guide/tree/main
 	- Distributed Training Guide [github](https://github.com/LambdaLabsML/distributed-training-guide/tree/main#distributed-training-guide)
@@ -488,6 +492,8 @@ Suggested exercises:
 - An Open Course on LLMs, Led by Practitioners : [Link](https://hamel.dev/blog/posts/course/)
 	- Hear from practitioners on a wide range of topics on LLMs, including [RAG](https://parlance-labs.com/education/#rag), [evaluation](https://parlance-labs.com/education/#evals), [applications](https://parlance-labs.com/education/#building-applications), [fine-tuning](https://parlance-labs.com/education/#fine-tuning) (advance techniques also included) and [prompt engineering](https://parlance-labs.com/education/#prompt-engineering).
 	- https://parlance-labs.com/education/ 
+
+Check out [GPT-Transformer-LLM](GPT-Transformer-LLM.md)
 
 - Blog:
 	- What We’ve Learned From A Year of Building with LLMs https://applied-llms.org/
@@ -588,7 +594,7 @@ Suggested exercises:
 
 ## 23th:  **Multimodal** (VQVAE, diffusion transformer)
 
-
+- https://github.com/SkalskiP/vlms-zero-to-hero
 ## 24th: **Distillation**
 
 - Model distillation from openAi [link](https://platform.openai.com/docs/guides/distillation)
@@ -596,8 +602,9 @@ Suggested exercises:
 ## 25th: **LLM Beyond Attention**
 
 - check out notes: https://github.com/hesamsheikh/ml-retreat/blob/main/assets/LLM-Edge-Beyond-Attention.pdf
-- this paper ccontain some elements which is defined in this section: paper [link](https://github.com/ibm-granite/granite-3.0-language-models/blob/main/paper.pdf)
-- 
+- this paper contains some elements which is defined in this section: paper [link](https://github.com/ibm-granite/granite-3.0-language-models/blob/main/paper.pdf)
+- The Large Language Model Course [link](https://huggingface.co/blog/mlabonne/llm-course)
+
 
 ### # Mixture of Experts Explained
 - https://huggingface.co/blog/moe
@@ -627,10 +634,15 @@ Suggested exercises:
 	- Llama index
 	- Ragas to evaluate models
 
+## 27th Readings
+
+- How to Scale Your Model, its a 12 chapter: [link ](https://jax-ml.github.io/scaling-book/)
+
 # Ops
 ## CUDA kernels:
 - https://maharshi.bearblog.dev/optimizing-softmax-cuda/
 - https://github.com/mayank31398/cute-kernels
+- Umar Jamil for Cuda 100 days discord channel
 
 ### Useful Links
 - Retrieval augmented generation, a current popular method to utilize LLMs to retrieve from a database instead of putting everything in a context window. But how does it work? Today I will walk through the most basic idea of RAG and the current meta of how RAG is used, and what it is composed of. some papers 
