@@ -41,6 +41,8 @@ https://github.com/patrickloeber/MLfromscratch
 https://github.com/alirezadir/Machine-Learning-Interviews/blob/main/src/ml-fundamental.md
 https://github.com/mrdbourke/zero-to-mastery-ml
 
+Also traditional algorithms available: https://mlcourse.ai/book/prereqs/python.html
+
 - Neural Networks
 	- Theory/NN ZerotoHero Series/nn-zero-to-hero/[[Theory/NN ZerotoHero Series/nn-zero-to-hero/README|README]]
 	- https://github.com/souvikmajumder26/Neural-Network-from-Scratch
