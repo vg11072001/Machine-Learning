@@ -38,6 +38,9 @@ Tokenization has been a bottleneck in LLM capabilities for years. With BLT’s b
 6. Why is LLM not actually end-to-end language modeling? Reason: **Tokenization**
    - Byte-Level Processing: BLTs operate at the byte level, eliminating the need for complex tokenization schemes and reducing discretization errors.
    - Improved Handling of OOV Words: By working with bytes, BLTs can represent out-of-vocabulary words and learn finer-grained morphological patterns directly.
+	- Reference : [Byte Latent Transformer: Patches Scale Better Than Tokens | Hacker News](https://news.ycombinator.com/item?id=42415122) 
+	- more: [I really hope Dynamic Byte Latent Transformers work out. Death to tokenizers! In... | Hacker News](https://news.ycombinator.com/item?id=42413430)
+
    - BLT architecture:
      - ![alt text](image-6.png)
      - ![alt text](image-4.png)

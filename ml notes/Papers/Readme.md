@@ -1,6 +1,6 @@
 # Research Odyssey: Papers, Insights, and Architectures
 
-This directory contains various research papers and notes related to machine learning, deep learning, Trannsformer and any about tools to better understanding. Below is an overview of the contents:
+This directory contains various research papers and notes related to machine learning, deep learning, Transformer and any about tools to better understanding. Below is an overview of the contents:
 
 ### Time Series Forecasting and Language Models
 1. **Context is Key: A Benchmark for Forecasting with Essential Textual Information**  
@@ -40,10 +40,10 @@ This directory contains various research papers and notes related to machine lea
 ---
 
 ## Repository Updates
-- **Create Readme.md**: 2 minutes ago.
+- **Create Readme.md**: 
 - **Extra.md**: Papers of ViT and time-series LLM added.  
-- **Time-series-forecasting-decoder-only-foundation-model-by-google.pdf**: Added 2 weeks ago.  
-- **Tiny Time Mixers**: Added 3 weeks ago.  
+- **Time-series-forecasting-decoder-only-foundation-model-by-google.pdf**:   
+- **Tiny Time Mixers**: 
 
 ---
 
