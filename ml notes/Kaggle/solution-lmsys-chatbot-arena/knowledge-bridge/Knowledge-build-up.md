@@ -42,7 +42,9 @@
 
 
 
-# data collection
+# data 
+
+## Data manipulation with some processor
 - Subclassing in Python
 In the context of Python and machine learning libraries like PyTorch, datasets are often represented as classes that subclass a base class like `torch.utils.data.Dataset`. This base class provides a standard interface for accessing data samples using keys.
 Here’s a breakdown of the methods mentioned:
@@ -60,6 +62,7 @@ This method is optional and is used for fetching multiple data samples at once.
 It accepts a list of indices and returns a list of corresponding data samples.
 This can be useful for speeding up batched data loading.
 
+## Data loader with collate fn
 In the context of PyTorch's DataLoader, the term "collate" refers to the process of combining individual data samples into a batch. The collate_fn is a function that defines how these samples should be combined.
 
 Explanation
@@ -123,11 +126,6 @@ It represents a Python iterable over a dataset, with support for
 4. single- and multi-process data loading,
 5. automatic memory pinning.
 
-# Model
-
-- Transformer package: https://huggingface.co/transformers/v3.0.2/training.html 
-- ![](Pasted%20image%2020241218135156.png)![](Pasted%20image%2020241218135213.png)
-
 ## Lazy Config from detectron2:
 - https://colab.research.google.com/drive/16jcaJoc6bCFAQ96jDe2HwtXj7BMD_-m5#scrollTo=S36RbV7uk1L8
 	- use the sample following code to test Lazy config feature working
@@ -171,6 +169,16 @@ trainer = instantiate(cfg)
 print(trainer.cfg.optimizer.lr)  # Output: 0.01
 ```
 - further reading https://github.com/facebookresearch/detectron2/blob/main/docs/tutorials/lazyconfigs.md
+
+## Tokenizer from transformer
+
+we are using Autotokenizer: 
+- https://huggingface.co/transformers/v3.0.2/model_doc/auto.html#autotokenizer
+
+# Model
+
+- Transformer package: https://huggingface.co/transformers/v3.0.2/training.html 
+- ![](Pasted%20image%2020241218135156.png)![](Pasted%20image%2020241218135213.png)
 
 
 ## Fvcore
