@@ -48,6 +48,15 @@
 
 - https://huggingface.co/docs/transformers/en/main_classes/data_collator
 
+torch.utils.data
+At the heart of PyTorch data loading utility is the torch.utils.data.DataLoader class. 
+It represents a Python iterable over a dataset, with support for
+1. map-style and iterable-style datasets,
+2. customizing data loading order,
+3. automatic batching,
+4. single- and multi-process data loading,
+5. automatic memory pinning.
+
 # Model
 
 - Transformer package: https://huggingface.co/transformers/v3.0.2/training.html 
