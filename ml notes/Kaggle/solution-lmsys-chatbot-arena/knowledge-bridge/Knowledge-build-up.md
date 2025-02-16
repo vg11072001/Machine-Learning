@@ -47,6 +47,47 @@
 -  https://pytorch.org/docs/stable/data.html#torch.utils.data._utils.collate.collate
 
 - https://huggingface.co/docs/transformers/en/main_classes/data_collator
+- https://colab.research.google.com/drive/16jcaJoc6bCFAQ96jDe2HwtXj7BMD_-m5#scrollTo=S36RbV7uk1L8
+	- use the sample following code to test Lazy config feature working
+```
+%%writefile config.py
+# config.py
+from detectron2.config import LazyCall as L
+
+# my_app/optimizer.py
+class Optimizer:
+    def __init__(self, lr, algo):
+        self.lr = lr
+        self.algo = algo
+
+# my_app/trainer.py
+class Trainer:
+    def __init__(self, optimizer):
+        self.optimizer = optimizer
+
+# Define the configuration
+cfg = L(Trainer)(
+    optimizer=L(Optimizer)(
+        lr=0.01,
+        algo="SGD"
+    )
+)
+
+```
+
+```
+# my_code.py
+from detectron2.config import LazyConfig, instantiate
+
+# Load the configuration
+cfg = LazyConfig.load("config.py")  # Use relative path
+
+# Instantiate the Trainer object
+trainer = instantiate(cfg)
+
+# Access and print the optimizer's learning rate
+print(trainer.cfg.optimizer.lr)  # Output: 0.01
+```
 
 torch.utils.data
 At the heart of PyTorch data loading utility is the torch.utils.data.DataLoader class. 
