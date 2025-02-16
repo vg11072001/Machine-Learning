@@ -47,6 +47,22 @@
 -  https://pytorch.org/docs/stable/data.html#torch.utils.data._utils.collate.collate
 
 - https://huggingface.co/docs/transformers/en/main_classes/data_collator
+
+torch.utils.data
+At the heart of PyTorch data loading utility is the torch.utils.data.DataLoader class. 
+It represents a Python iterable over a dataset, with support for
+1. map-style and iterable-style datasets,
+2. customizing data loading order,
+3. automatic batching,
+4. single- and multi-process data loading,
+5. automatic memory pinning.
+
+# Model
+
+- Transformer package: https://huggingface.co/transformers/v3.0.2/training.html 
+- ![](Pasted%20image%2020241218135156.png)![](Pasted%20image%2020241218135213.png)
+
+## Lazy Config from detectron2:
 - https://colab.research.google.com/drive/16jcaJoc6bCFAQ96jDe2HwtXj7BMD_-m5#scrollTo=S36RbV7uk1L8
 	- use the sample following code to test Lazy config feature working
 ```python
@@ -88,20 +104,7 @@ trainer = instantiate(cfg)
 # Access and print the optimizer's learning rate
 print(trainer.cfg.optimizer.lr)  # Output: 0.01
 ```
-
-torch.utils.data
-At the heart of PyTorch data loading utility is the torch.utils.data.DataLoader class. 
-It represents a Python iterable over a dataset, with support for
-1. map-style and iterable-style datasets,
-2. customizing data loading order,
-3. automatic batching,
-4. single- and multi-process data loading,
-5. automatic memory pinning.
-
-# Model
-
-- Transformer package: https://huggingface.co/transformers/v3.0.2/training.html 
-- ![](Pasted%20image%2020241218135156.png)![](Pasted%20image%2020241218135213.png)
+- further reading https://github.com/facebookresearch/detectron2/blob/main/docs/tutorials/lazyconfigs.md
 
 
 ## Fvcore
