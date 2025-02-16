@@ -43,6 +43,20 @@
 
 
 # data collection
+- Subclassing in Python
+In the context of Python and machine learning libraries like PyTorch, datasets are often represented as classes that subclass a base class like `torch.utils.data.Dataset`. This base class provides a standard interface for accessing data samples using keys.
+Here’s a breakdown of the methods mentioned:
+1. `__getitem__()`:
+This method is required and is used to fetch a data sample given a key (or index).
+It should return a single data sample.
+2.`__len__()`:
+This method is optional but commonly implemented.
+It returns the total number of data samples in the dataset.
+This is useful for many Sampler implementations and the default options of DataLoader.
+3. `__getitems__()`:
+This method is optional and is used for fetching multiple data samples at once.
+It accepts a list of indices and returns a list of corresponding data samples.
+This can be useful for speeding up batched data loading.
 
 -  https://pytorch.org/docs/stable/data.html#torch.utils.data._utils.collate.collate
 
