@@ -49,14 +49,66 @@ Here’s a breakdown of the methods mentioned:
 1. `__getitem__()`:
 This method is required and is used to fetch a data sample given a key (or index).
 It should return a single data sample.
+
 2.`__len__()`:
 This method is optional but commonly implemented.
 It returns the total number of data samples in the dataset.
 This is useful for many Sampler implementations and the default options of DataLoader.
+
 3. `__getitems__()`:
 This method is optional and is used for fetching multiple data samples at once.
 It accepts a list of indices and returns a list of corresponding data samples.
 This can be useful for speeding up batched data loading.
+
+In the context of PyTorch's DataLoader, the term "collate" refers to the process of combining individual data samples into a batch. The collate_fn is a function that defines how these samples should be combined.
+
+Explanation
+When you fetch data samples from a dataset, each sample might be a tuple, a dictionary, or any other type of object. The DataLoader needs to combine these individual samples into a batch, which is typically a list or a tensor. The collate_fn is responsible for this combination.
+
+Default Collation Behavior
+By default, PyTorch's DataLoader uses a collation function that works well for most common data types. Here’s what it does:
+- Tensors: Stacks tensors along a new dimension.
+- Numbers: Stacks numbers into a tensor.
+- Strings: Collects strings into a list.
+- Dictionaries: Recursively collates the values of dictionaries.
+- Lists/Tuples: Recursively collates the elements of lists or tuples.
+For example, if your dataset returns samples as tuples of tensors, the default collation will stack these tensors into a batch.
+
+```python
+from torch.utils.data import Dataset, DataLoader
+
+class CustomDataset(Dataset):
+    def __init__(self, data):
+        self.data = data
+
+    def __getitem__(self, idx):
+        # Each sample is a dictionary
+        return {'image': self.data[idx][0], 'label': self.data[idx][1]}
+
+    def __len__(self):
+        return len(self.data)
+
+# Example data
+data = [
+    (torch.tensor([1, 2, 3]), 0),
+    (torch.tensor([4, 5, 6]), 1),
+    (torch.tensor([7, 8, 9]), 0),
+]
+
+dataset = CustomDataset(data)
+```
+
+```python
+def custom_collate_fn(batch):
+    images = torch.stack([item['image'] for item in batch])
+    labels = torch.tensor([item['label'] for item in batch])
+    return {'images': images, 'labels': labels}
+
+dataloader = DataLoader(dataset, batch_size=2, collate_fn=custom_collate_fn)
+
+for batch in dataloader:
+    print(batch)
+```
 
 -  https://pytorch.org/docs/stable/data.html#torch.utils.data._utils.collate.collate
 
