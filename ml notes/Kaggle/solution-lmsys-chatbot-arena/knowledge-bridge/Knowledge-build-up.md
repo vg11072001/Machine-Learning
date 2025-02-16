@@ -49,7 +49,7 @@
 - https://huggingface.co/docs/transformers/en/main_classes/data_collator
 - https://colab.research.google.com/drive/16jcaJoc6bCFAQ96jDe2HwtXj7BMD_-m5#scrollTo=S36RbV7uk1L8
 	- use the sample following code to test Lazy config feature working
-```
+```python
 %%writefile config.py
 # config.py
 from detectron2.config import LazyCall as L
@@ -75,7 +75,7 @@ cfg = L(Trainer)(
 
 ```
 
-```
+```python
 # my_code.py
 from detectron2.config import LazyConfig, instantiate
 
