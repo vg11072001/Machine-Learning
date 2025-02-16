@@ -175,6 +175,35 @@ print(trainer.cfg.optimizer.lr)  # Output: 0.01
 we are using Autotokenizer: 
 - https://huggingface.co/transformers/v3.0.2/model_doc/auto.html#autotokenizer
 
+```python
+from transformers import AutoTokenizer
+
+# Load the tokenizer
+tokenizer_testing = AutoTokenizer.from_pretrained("google/gemma-2-9b-it")
+
+# Example text
+text_testing = "This is an example sentence model path when have acces to dowload weights from HF"
+max_length1 = 10
+# tokenizer(text, add_special_tokens=False, max_length=max_length, truncation=True).input_ids
+
+# Tokenize the text
+inputs_testing = tokenizer_testing(text_testing, return_tensors='pt', max_length=512, truncation=True, padding='max_length')
+inputs_testing1 = tokenizer_testing(text_testing, add_special_tokens=False, max_length=max_length1, truncation=True)
+
+# Print the tokenized input
+print(inputs_testing)
+print(inputs_testing1)
+print(len(text_testing))
+print(len(inputs_testing1.input_ids))
+# print(len(inputs_testing['input_ids'][0]))
+# print(len(inputs_testing['attention_mask']))
+```
+
+for `input_testing` : Return Type: PyTorch tensor. Padding: The sequence is padded to max_length=512, Truncation: The sequence is truncated if it exceeds max_length=512., Special Tokens: Special tokens are added by default.
+
+for `input_testing1`: Return Type: Dictionary of lists (default behavior), Padding: The sequence is not padded to a fixed length, Truncation: The sequence is truncated if it exceeds max_length1, Special Tokens: Special tokens are not added.
+
+
 # Model
 
 - Transformer package: https://huggingface.co/transformers/v3.0.2/training.html 
