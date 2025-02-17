@@ -376,3 +376,10 @@ LMDeploy is a toolkit for compressing, deploying, and serving LLM, developed by 
 
 - Unprecedented acceleration at every scale
 - link - https://www.nvidia.com/en-in/data-center/a100/
+
+
+# New reads to get the other flows of finetuning:
+- https://github.com/georgian-io/LLM-Finetuning-Toolkit
+- https://github.com/hiyouga/LLaMA-Factory
+- https://github.com/philschmid/deep-learning-pytorch-huggingface/blob/main/training/fine-tune-llms-in-2024-with-trl.ipynb
+- https://github.com/ashishpatel26/LLM-Finetuning

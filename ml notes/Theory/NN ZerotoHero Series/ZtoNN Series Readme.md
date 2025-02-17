@@ -472,7 +472,7 @@ Suggested exercises:
 
 - Low Precision Training with Kahan Summation [link](https://optimi.benjaminwarner.dev/kahan_summation/)
 - Automatic Mixed Precision package - torch.amp [link](https://pytorch.org/docs/stable/amp.html#automatic-mixed-precision-package-torch-amp)
-
+check this open source: https://www.kernl.ai/ and its repo  to learn how to made trnasformer fast
 
 ## 16th:  **Need for Speed III: Distributed** (distributed optimization, DDP, ZeRO)
 
@@ -480,6 +480,13 @@ Suggested exercises:
 - Distributed Data Parallel Model Training in PyTorch [link](https://www.youtube.com/@NCSAatIllinois)
 - https://pytorch.org/docs/stable/distributed.html
 - ![alt text](/images-session/image-4.png)
+- ![](Pasted%20image%2020250214193030.png)
+- ![](Pasted%20image%2020250214193150.png)
+- ![](Pasted%20image%2020250214193317.png)
+- ![](Pasted%20image%2020250214193420.png)
+- ![](Pasted%20image%2020250214193737.png)![](Pasted%20image%2020250214193756.png)
+- ![](Pasted%20image%2020250214194404.png)
+- ![](Pasted%20image%2020250214194432.png)
 - Distributed Pytorch [link](https://www.youtube.com/@marksaroufim)
 - PyTorch Distributed Overview[pytorch site](https://pytorch.org/tutorials/beginner/dist_overview.html#pytorch-distributed-overview)
 - Writing Distributed Applications with PyTorch[link](https://pytorch.org/tutorials/intermediate/dist_tuto.html#writing-distributed-applications-with-pytorch)
@@ -576,7 +583,13 @@ Check out [GPT-Transformer-LLM](GPT-Transformer-LLM.md)
 
 
 
-## 22th:  **Deployment** (API, web app)
+## 22th:  **Deployment** (API, web app) and **Scaling Laws**
+
+- ![](Pasted%20image%2020250214185928.png)
+- ![](Pasted%20image%2020250214190028.png)
+- ![](Pasted%20image%2020250214191041.png)
+- ![](Pasted%20image%2020250214191505.png)
+
 - Starter pack using gradio to access the LLM thru API - [youtube link](https://www.youtube.com/watch?v=kAD3mPf3m9Q)
 - option streamlit
 - [Link](https://www.youtube.com/watch?v=qscVKkqf3q4&t=1s) You will learn about various LLM deployment scenarios tailored for personal use, small businesses, and enterprise settings, highlighting the distinctions and considerations for each. This video delves into the critical choice between local models and paid services, illuminating the benefits and drawbacks of both approaches. Special emphasis is placed on the importance of utilizing GPUs over CPUs for their superior processing power, crucial for handling the demands of Large Language Models (LLMs). The guide covers:
@@ -643,7 +656,7 @@ Check out [GPT-Transformer-LLM](GPT-Transformer-LLM.md)
 - https://maharshi.bearblog.dev/optimizing-softmax-cuda/
 - https://github.com/mayank31398/cute-kernels
 - Umar Jamil for Cuda 100 days discord channel
-
+check this open source: https://www.kernl.ai/ and its repo  to learn how to made transformer fast
 ### Useful Links
 - Retrieval augmented generation, a current popular method to utilize LLMs to retrieve from a database instead of putting everything in a context window. But how does it work? Today I will walk through the most basic idea of RAG and the current meta of how RAG is used, and what it is composed of. some papers 
 - [Web + RAG] https://arxiv.org/abs/2408.07611
