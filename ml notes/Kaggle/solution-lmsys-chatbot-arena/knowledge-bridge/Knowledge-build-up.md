@@ -112,9 +112,9 @@ dataloader = DataLoader(dataset, batch_size=2, collate_fn=custom_collate_fn)
 for batch in dataloader:
     print(batch)
 ```
-
--  https://pytorch.org/docs/stable/data.html#torch.utils.data._utils.collate.collate
-
+- https://huggingface.co/docs/transformers/main/en/chat_templating
+- https://pytorch.org/docs/stable/data.html#torch.utils.data.DataLoader
+- https://pytorch.org/docs/stable/data.html#torch.utils.data._utils.collate.collate
 - https://huggingface.co/docs/transformers/en/main_classes/data_collator
 
 torch.utils.data
